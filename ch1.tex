@@ -1,0 +1,115 @@
+% Preamble
+\documentclass{article}
+\usepackage{amsmath}
+\title{BSc Project}
+\date{September 2018}
+\author{Folarin, Wasiu Junior}
+\begin{document}
+    \normalsize
+    \linespread{2.0}
+    \pagenumbering{gobble}
+    % \maketitle
+    \newpage
+    \pagenumbering{arabic}
+    \LARGE
+    Chapter 1
+    \normalsize
+    \section{Introduction}
+        \paragraph{In}
+        everyday human and industrial activities, we are faced with the challenges of optimal resource assignment. In the face of limited resources, low tolerance for scrap and rework, need for greater degree of accuracy and scalability, optimization is paramount.
+        \paragraph{In}
+        introducing this study, we shall proceed under the following sub-headings:
+        \begin{itemize}
+            \item Preamble
+            \item Motivation
+            \item A Sample Problem
+            \item Objective
+            \item Definition of terms
+        \end{itemize}
+        \newpage
+        \subsection{Preamble}
+            \paragraph{}
+                Over the years, several Mathematical Optimization methods in Operations Research (OR) especially, have been developed to help with these class of problems witha good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques, which are defined thus:
+                \begin{verse}
+                    \textit{
+                        \begin{center}
+                        Linear Programming is a mathematical technique for determining the optimal allocation of resources and obtaining a particular objective (i.e, cost minimization or inversely profit maximization) when there are alternative uses of resources: Land, Capital, Materials, Machines, etc
+                        \end{center}
+                    }
+                \end{verse}
+                Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
+            \paragraph{}
+                The general formulation of a Linear Programming problem is given below:
+                \begin{verse}
+                    \begin{center}
+                        \textit{
+                            Let Z be a linear function defined by \\
+                            $Z = c_1x_1 + c_2x_2+...+c_nx_n$ \\
+                            where $c_j$'s are constants \\
+                            Let $(a_{ij})$ be mn constants and let $(b_i)$ be a set of m constants such that \\
+                            $a_{11}x_1+a_{12}x_2+...+a_{1n}x_n (\leq,=,\geq) b_1$ \\
+                            $a_{21}x_1+a_{22}x_2+...+a_{2n}x_n (\leq,=,\geq) b_2$ \\
+                            $\cdot$ \\
+                            $\cdot$ \\
+                            $\cdot$ \\
+                            $a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n (\leq,=,\geq) b_m$ \\
+                            $x_1\geq0,x_2\geq0,...,x_n\geq0$ \\
+                        }                   
+                    \end{center}
+                 \end{verse}
+                The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
+            \paragraph{}
+                Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed perspectives of optimum assignment problems
+        \\
+        \subsection{Motivation}
+            \paragraph{}
+            This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the otherhand interested in
+                \begin{verse}
+                    \textit{
+                        \begin{center}
+                        Allocation of objects to non-overlapping groups, based on properties possessed by the objects, and one or more constraining conditions
+                        \end{center}
+                    }
+                \end{verse}
+                Mathematical Optimization techniques, have not been formulated to solve problems as this, and thus the motivaiton for this study.
+        \\
+        \subsection{A Sample Problem}
+            \paragraph{}
+            In deploying intending NYSC members to a serving state, the following constraints needs be satisfied:
+            \begin{itemize}
+                \item No student should be deployed to his/her state of origin
+                \item No student should be deployed to his state of study
+                \item All enlisted students must be deployed to a state
+                \item No state should be allocated more students that it has resources to accommodate
+            \end{itemize}
+            The foregoing problem statement needs a rather new approach as the OR methods aren't designed to solve problems like this. On this problem, we shall propose a solution to this problem using the model proposed by this study
+        \\
+            \subsection{Objective}
+            \paragraph{}
+                The aim of this study is to:
+                \begin{enumerate}
+                    \item Develop a mathematical model to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
+                    \item Create a simulation, exercising this model on a sample problem
+                    \item Sketch a path to evolving this class of solution to more complex problems having similar formulation
+                \end{enumerate}
+        
+            \subsection{Definitions}
+            \paragraph{}
+            Below are definitions of some terms used severally in the text. The user is assumed familiar with the conventional set notations and Operations
+            \subsubsection{Search Space}
+                The group of all items to be assigned to various group is called the search space of the problem under considerations
+            \subsubsection{Partitions of a set}
+                Let X be a set and U,V be disjoint subsets of X. The sets U and V are said to be partitions of X if $U \cup V = X$ and $U \cap V = \emptyset$. If such sets U and V exist, they are said to be the Separation of the set X.
+            \subsubsection{Feasible Solution}
+                Any successful assignment of the objects to groups is referred to as a \textit{Feasible Solution}, whether or not all the constraints are satisfied.
+            \subsubsection{Constraints}
+                These are conditions that restrict the domain of our feasible solutions and thus state the conditions under which any given solution is assessed for correctness. Example of constraints are as follows
+                \begin{itemize}
+                    \item Each group has a maximum capacity that should not be exceeded
+                    \item All objects in the search space must be assigned
+                    \item No object must be assigned more than once
+                    \item Whenever possible, don't leave a group emptyset
+                \end{itemize}
+            \paragraph{}
+                Throughout this text, all mathematical notations retain their usual meanings, unless otherwise explicitly stated.
+\end{document}
