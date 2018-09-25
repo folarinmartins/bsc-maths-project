@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd columnalign="left">
+     <mstyle mathvariant="bold">
+      <mrow>
+       <mi mathvariant="italic">Problem</mi>
+       <mi mathvariant="italic">Statement</mi>
+       <mi mathvariant="normal">:</mi>
+      </mrow>
+     </mstyle>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mspace width="8em"/>
+      <mi mathvariant="italic">Given</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">set</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">objects</mi>
+      <mi mathvariant="italic">possessing</mi>
+      <mi mathvariant="italic">certain</mi>
+      <mi mathvariant="italic">defining</mi>
+      <mi mathvariant="italic">characteristics</mi>
+      <mi>,</mi>
+      <mi mathvariant="italic">how</mi>
+      <mi mathvariant="italic">do</mi>
+      <mi mathvariant="italic">we</mi>
+      <mi mathvariant="italic">partition</mi>
+      <mi mathvariant="italic">these</mi>
+      <mi mathvariant="italic">objects</mi>
+      <mi mathvariant="italic">into</mi>
+      <mi mathvariant="italic">non</mi>
+      <mi mathvariant="italic">overlapping</mi>
+      <mi mathvariant="italic">classes</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">objects</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mtext>In</mtext>
+      <mi mathvariant="italic">tackling</mi>
+      <mspace width="0.5em"/>
+      <mi mathvariant="italic">this</mi>
+      <mi mathvariant="italic">problem</mi>
+      <mi mathvariant="italic">we</mi>
+      <mi mathvariant="italic">proceed</mi>
+      <mi mathvariant="italic">by</mi>
+      <mi mathvariant="italic">defining</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">following</mi>
+      <mi mathvariant="normal">:</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="6em"/>
+      <mi mathvariant="italic">Let</mi>
+      <mrow>
+       <mstyle mathvariant="bold">
+        <mi>U</mi>
+       </mstyle>
+       <mo stretchy="false">=</mo>
+       <mtext>{</mtext>
+      </mrow>
+      <msub>
+       <mi>u</mi>
+       <mn>1,</mn>
+      </msub>
+      <msub>
+       <mi>u</mi>
+       <mn>2,</mn>
+      </msub>
+      <msub>
+       <mi>u</mi>
+       <mrow>
+        <mn>3,.</mn>
+        <mn>..</mn>
+       </mrow>
+      </msub>
+      <mi>,</mi>
+      <msub>
+       <mi>u</mi>
+       <mi>n</mi>
+      </msub>
+      <mtext>}</mtext>
+      <mspace width="2em"/>
+      <mi mathvariant="italic">be</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">set</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">all</mi>
+      <mi mathvariant="italic">objects</mi>
+      <mtext>to</mtext>
+      <mi mathvariant="italic">be</mi>
+      <mi mathvariant="italic">split</mi>
+      <mi mathvariant="italic">into</mi>
+      <mi mathvariant="italic">partitions</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">alignl bold{ Problem Statement: }
+newline 
+~~~~Given a set of objects possessing certain defining characteristics, how do we partition these objects into non overlapping classes of objects
+newline
+newline
+alignl &quot;In&quot;tackling`this problem we proceed by defining the following:
+newline
+newline
+alignl ~~~Let bold U = &quot;{&quot;u sub 1, u sub 2, u sub 3,...,u sub n&quot;}&quot; ~be the set of all objects &quot;to&quot; be split into partitions
+
+ </annotation>
+ </semantics>
+</math>
