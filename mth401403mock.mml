@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">OBAFEMI</mi>
+      <mi mathvariant="italic">AWOLOWO</mi>
+      <mi mathvariant="italic">UNIVERSITY</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">DEPARTMENT</mi>
+      <mi mathvariant="italic">OF</mi>
+      <mi mathvariant="italic">MATHEMATICS</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">MTH</mi>
+      <mrow>
+       <mn>401</mn>
+       <mo stretchy="false">/</mo>
+       <mn>403</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">MOCK</mi>
+      <mi mathvariant="italic">TEST</mi>
+      <mrow>
+       <mn>2017</mn>
+       <mo stretchy="false">/</mo>
+       <mn>2018</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <munder accentunder="true">
+      <mstyle mathvariant="bold">
+       <mrow>
+        <mi mathvariant="italic">MTH</mi>
+        <mrow>
+         <mn>401</mn>
+         <mo stretchy="false">−</mo>
+         <mn>1</mn>
+        </mrow>
+        <mi mathvariant="italic">hr</mi>
+       </mrow>
+      </mstyle>
+      <mo>̲
+      </mo>
+     </munder>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mn>1</mn>
+      <mi>a</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Define</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mspace width="2em"/>
+      <mi>A</mi>
+      <mi mathvariant="italic">Topological</mi>
+      <mi mathvariant="italic">space</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Discrete</mi>
+      <mi mathvariant="italic">Topology</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Cofinite</mi>
+      <mi mathvariant="italic">Topology</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Base</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">topology</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="4em"/>
+      <mi>b</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Let</mi>
+      <mstyle mathvariant="bold">
+       <msub>
+        <mi>J</mi>
+        <mn>1</mn>
+       </msub>
+      </mstyle>
+      <mtext>and</mtext>
+      <mstyle mathvariant="bold">
+       <msub>
+        <mi>J</mi>
+        <mn>2</mn>
+       </msub>
+      </mstyle>
+      <mi mathvariant="italic">be</mi>
+      <mi mathvariant="italic">topologies</mi>
+      <mi mathvariant="italic">on</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">nonempty</mi>
+      <mi mathvariant="italic">set</mi>
+      <mstyle mathvariant="bold">
+       <mi>X</mi>
+      </mstyle>
+      <mi>,</mi>
+      <mi mathvariant="italic">show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mrow>
+       <mstyle mathvariant="bold">
+        <msub>
+         <mi>J</mi>
+         <mn>1</mn>
+        </msub>
+       </mstyle>
+       <mo stretchy="false">∩</mo>
+       <mstyle mathvariant="bold">
+        <msub>
+         <mi>J</mi>
+         <mn>2</mn>
+        </msub>
+       </mstyle>
+      </mrow>
+      <mspace width="2em"/>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">also</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">topology</mi>
+      <mi mathvariant="italic">on</mi>
+      <mstyle mathvariant="bold">
+       <mi>X</mi>
+      </mstyle>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="4em"/>
+      <mi>c</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">composition</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">continuous</mi>
+      <mi mathvariant="italic">mappings</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">also</mi>
+      <mi mathvariant="italic">continuous</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="4em"/>
+      <mi>d</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Let</mi>
+      <mstyle mathvariant="bold">
+       <mi>B</mi>
+      </mstyle>
+      <mi mathvariant="italic">be</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">class</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">subsets</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">nonempty</mi>
+      <mi mathvariant="italic">set</mi>
+      <mi>X</mi>
+      <mi>.</mi>
+      <mspace width="2em"/>
+      <mi mathvariant="italic">Show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mstyle mathvariant="bold">
+       <mi>B</mi>
+      </mstyle>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">base</mi>
+      <mi mathvariant="italic">for</mi>
+      <mi mathvariant="italic">some</mi>
+      <mi mathvariant="italic">topology</mi>
+      <mi mathvariant="italic">on</mi>
+      <mstyle mathvariant="bold">
+       <mi>X</mi>
+      </mstyle>
+      <mi mathvariant="italic">if</mi>
+      <mtext>and</mtext>
+      <mi mathvariant="italic">only</mi>
+      <mi mathvariant="italic">if</mi>
+      <mi mathvariant="italic">it</mi>
+      <mi mathvariant="italic">possesses</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">following</mi>
+      <mi mathvariant="italic">two</mi>
+      <mi mathvariant="italic">properties</mi>
+      <mi mathvariant="normal">:</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="12em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mrow>
+       <mstyle mathvariant="bold">
+        <mi>X</mi>
+       </mstyle>
+       <mo stretchy="false">=</mo>
+       <mstyle mathvariant="bold">
+        <mi>U</mi>
+       </mstyle>
+      </mrow>
+      <mo stretchy="false">{</mo>
+      <mi mathvariant="normal">β</mi>
+      <mi mathvariant="normal">:</mi>
+      <mrow>
+       <mi mathvariant="normal">β</mi>
+       <mo stretchy="false">∈</mo>
+       <mstyle mathvariant="bold">
+        <mi>B</mi>
+       </mstyle>
+      </mrow>
+      <mo stretchy="false">}</mo>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="10em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">For</mi>
+      <mi mathvariant="italic">any</mi>
+      <mi mathvariant="normal">β</mi>
+      <mi>,</mi>
+      <mrow>
+       <msup>
+        <mi mathvariant="normal">β</mi>
+        <mtext>*</mtext>
+       </msup>
+       <mo stretchy="false">∈</mo>
+       <mstyle mathvariant="bold">
+        <mi>B</mi>
+       </mstyle>
+      </mrow>
+      <mi>,</mi>
+      <mrow>
+       <mi mathvariant="normal">β</mi>
+       <mo stretchy="false">∩</mo>
+       <msup>
+        <mi mathvariant="normal">β</mi>
+        <mtext>*</mtext>
+       </msup>
+      </mrow>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">the</mi>
+      <mtext>union</mtext>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">members</mi>
+      <mi mathvariant="italic">of</mi>
+      <mstyle mathvariant="bold">
+       <mi>B</mi>
+      </mstyle>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="4em"/>
+      <mi>e</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Define</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi>a</mi>
+      <mi mathvariant="italic">continuous</mi>
+      <mi mathvariant="italic">function</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">an</mi>
+      <mi mathvariant="italic">open</mi>
+      <mi mathvariant="italic">function</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi>a</mi>
+      <mi mathvariant="italic">homeomorphism</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iv</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">absolute</mi>
+      <mi mathvariant="italic">value</mi>
+      <mi mathvariant="italic">function</mi>
+      <mstyle mathvariant="bold">
+       <mi>f</mi>
+      </mstyle>
+      <mi mathvariant="italic">on</mi>
+      <mi mathvariant="normal">ℝ</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">continuous</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mn>2</mn>
+      <mi>a</mi>
+      <mi>.</mi>
+      <mspace width="2em"/>
+      <mi mathvariant="italic">Define</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Compact</mi>
+      <mi mathvariant="italic">Space</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">an</mi>
+      <mi mathvariant="italic">open</mi>
+      <mi mathvariant="italic">covering</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="2em"/>
+      <mi>b</mi>
+      <mi>.</mi>
+      <mspace width="2em"/>
+      <mi mathvariant="italic">When</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">topological</mi>
+      <mi mathvariant="italic">space</mi>
+      <mi mathvariant="italic">said</mi>
+      <mtext>to</mtext>
+      <mi mathvariant="italic">be</mi>
+      <mi mathvariant="italic">compact</mi>
+      <mi>?</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="2em"/>
+      <mi>c</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Prove</mi>
+      <mi mathvariant="italic">that</mi>
+      <mi mathvariant="italic">every</mi>
+      <mi mathvariant="italic">metric</mi>
+      <mi mathvariant="italic">space</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">Hausdorff</mi>
+      <mi mathvariant="italic">space</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <munder accentunder="true">
+      <mstyle mathvariant="bold">
+       <mrow>
+        <mi mathvariant="italic">MTH</mi>
+        <mrow>
+         <mn>403</mn>
+         <mo stretchy="false">−</mo>
+         <mn>1</mn>
+        </mrow>
+        <mi mathvariant="italic">hr</mi>
+       </mrow>
+      </mstyle>
+      <mo>̲
+      </mo>
+     </munder>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mn>1</mn>
+      <mi>a</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Define</mi>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">following</mi>
+      <mi mathvariant="italic">terms</mi>
+      <mi mathvariant="normal">:</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Outer</mi>
+      <mi mathvariant="italic">measure</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Measurable</mi>
+      <mi mathvariant="italic">set</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Measurable</mi>
+      <mi mathvariant="italic">space</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iv</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Measurable</mi>
+      <mi mathvariant="italic">map</mi>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>v</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mrow>
+       <mi mathvariant="normal">σ</mi>
+       <mo stretchy="false">−</mo>
+       <mi mathvariant="italic">ring</mi>
+      </mrow>
+      <mspace width="2em"/>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iv</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">Boolean</mi>
+      <mi mathvariant="italic">algebra</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="2em"/>
+      <mi>b</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mi mathvariant="italic">the</mi>
+      <mtext>union</mtext>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">two</mi>
+      <mi mathvariant="italic">measurable</mi>
+      <mi mathvariant="italic">sets</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">measurable</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="2em"/>
+      <mi>c</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Suppose</mi>
+      <mi mathvariant="italic">that</mi>
+      <mrow>
+       <mstyle mathvariant="bold">
+        <msub>
+         <mi>F</mi>
+         <mi>o</mi>
+        </msub>
+       </mstyle>
+       <mo stretchy="false">=</mo>
+       <mrow>
+        <mo fence="true" stretchy="false">[</mo>
+        <mrow>
+         <mrow>
+          <msub>
+           <mi>a</mi>
+           <mi>o</mi>
+          </msub>
+          <mi>,</mi>
+          <msub>
+           <mi>b</mi>
+           <mi>o</mi>
+          </msub>
+         </mrow>
+        </mrow>
+        <mo fence="true" stretchy="false">]</mo>
+       </mrow>
+      </mrow>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">closed</mi>
+      <mi mathvariant="italic">interval</mi>
+      <mi mathvariant="italic">contained</mi>
+      <mtext>in</mtext>
+      <mi mathvariant="italic">the</mi>
+      <mtext>union</mtext>
+      <mi mathvariant="italic">of</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">finite</mi>
+      <mi mathvariant="italic">number</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">bounded</mi>
+      <mi mathvariant="italic">open</mi>
+      <mi mathvariant="italic">intervals</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">Prove</mi>
+      <mi mathvariant="italic">that</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <msub>
+        <mi>b</mi>
+        <mi>o</mi>
+       </msub>
+       <mo stretchy="false">−</mo>
+       <msub>
+        <mi>a</mi>
+        <mi>o</mi>
+       </msub>
+      </mrow>
+      <mo stretchy="false">&lt;</mo>
+      <mrow>
+       <munderover>
+        <mo stretchy="false">∑</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy="false">=</mo>
+         <mn>1</mn>
+        </mrow>
+        <mi>n</mi>
+       </munderover>
+       <mrow>
+        <mo fence="true" stretchy="false">(</mo>
+        <mrow>
+         <mrow>
+          <msub>
+           <mi>b</mi>
+           <mi>i</mi>
+          </msub>
+          <mo stretchy="false">−</mo>
+          <msub>
+           <mi>a</mi>
+           <mi>i</mi>
+          </msub>
+         </mrow>
+        </mrow>
+        <mo fence="true" stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mn>2</mn>
+      <mi>a</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">When</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">set</mi>
+      <mi mathvariant="italic">said</mi>
+      <mtext>to</mtext>
+      <mi mathvariant="italic">be</mi>
+      <mi mathvariant="normal">:</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi>i</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">subadditive</mi>
+      <mi>;</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">ii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">finitely</mi>
+      <mi mathvariant="italic">subadditive</mi>
+      <mi>;</mi>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">iii</mi>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="italic">countably</mi>
+      <mi mathvariant="italic">subadditive</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd columnalign="left">
+     <mrow>
+      <mspace width="2em"/>
+      <mi>b</mi>
+      <mi>.</mi>
+      <mi mathvariant="italic">If</mi>
+      <mo stretchy="false">{</mo>
+      <msub>
+       <mi>E</mi>
+       <mi>j</mi>
+      </msub>
+      <msubsup>
+       <mo stretchy="false">}</mo>
+       <mrow>
+        <mi>j</mi>
+        <mo stretchy="false">=</mo>
+        <mn>1</mn>
+       </mrow>
+       <mi mathvariant="normal">∞</mi>
+      </msubsup>
+      <mi mathvariant="italic">is</mi>
+      <mi>a</mi>
+      <mi mathvariant="italic">sequence</mi>
+      <mi mathvariant="italic">of</mi>
+      <mi mathvariant="italic">sets</mi>
+      <mtext>in</mtext>
+      <mi mathvariant="italic">the</mi>
+      <mi mathvariant="italic">class</mi>
+      <mtext>of</mtext>
+      <mi mathvariant="italic">semiclosed</mi>
+      <mi mathvariant="italic">intervals</mi>
+      <mi mathvariant="italic">such</mi>
+      <mi mathvariant="italic">that</mi>
+      <mrow>
+       <msub>
+        <mi>E</mi>
+        <mn>0</mn>
+       </msub>
+       <mo stretchy="false">⊂</mo>
+       <mstyle mathvariant="bold">
+        <msubsup>
+         <mi>U</mi>
+         <mrow>
+          <mi>j</mi>
+          <mo stretchy="false">=</mo>
+          <mn>1</mn>
+         </mrow>
+         <mi mathvariant="normal">∞</mi>
+        </msubsup>
+       </mstyle>
+      </mrow>
+      <msub>
+       <mi>E</mi>
+       <mi>j</mi>
+      </msub>
+      <mi>,</mi>
+      <mi mathvariant="italic">show</mi>
+      <mi mathvariant="italic">that</mi>
+      <mi mathvariant="normal">μ</mi>
+      <mrow>
+       <mrow>
+        <mo fence="true" stretchy="false">(</mo>
+        <mrow>
+         <msub>
+          <mi>E</mi>
+          <mn>0</mn>
+         </msub>
+        </mrow>
+        <mo fence="true" stretchy="false">)</mo>
+       </mrow>
+       <mo stretchy="false">≤</mo>
+       <mrow>
+        <munderover>
+         <mo stretchy="false">∑</mo>
+         <mrow>
+          <mi>j</mi>
+          <mo stretchy="false">=</mo>
+          <mn>1</mn>
+         </mrow>
+         <mi mathvariant="normal">∞</mi>
+        </munderover>
+        <mi mathvariant="normal">μ</mi>
+       </mrow>
+      </mrow>
+      <mrow>
+       <mo fence="true" stretchy="false">(</mo>
+       <mrow>
+        <msub>
+         <mi>E</mi>
+         <mi>j</mi>
+        </msub>
+       </mrow>
+       <mo fence="true" stretchy="false">)</mo>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow/>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">GOOD</mi>
+      <mi mathvariant="italic">LUCK</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">OBAFEMI AWOLOWO UNIVERSITY newline 
+DEPARTMENT OF MATHEMATICS newline 
+MTH 401/403newline MOCK TEST 2017/2018 newline
+ 
+newline
+underline bold {MTH 401 - 1 hr}
+newline
+newline
+
+
+alignl 1a. Define ( i )~A Topological space ~(ii) Discrete Topology ~( iii ) Cofinite Topology ( iii )Base of a topology
+newline
+alignl~~b. Let bold J sub 1 &quot;and&quot; bold J sub 2 be topologies on a nonempty set bold X, show that bold J sub 1 intersection bold J sub 2~is also a topology on bold X
+newline
+alignl~~c. Show that the composition of continuous mappings is also continuous
+newline
+alignl~~d. Let bold B be a class of subsets of a nonempty set X. ~Show that bold B is a base for some topology on bold X if &quot;and&quot; only if it possesses the following two properties:
+newline
+alignl~~~~~~(i) bold X = bold U\{ %beta : %beta in bold B \}
+newline
+alignl~~~~~( ii )For any %beta,%beta rsup &quot;*&quot; in bold B,  %beta intersection %beta rsup &quot;*&quot; is the &quot;union&quot; of members of bold B
+newline
+alignl~~e. Define ~( i ) a continuous function ~( ii ) an open function ~( iii ) a homeomorphism ~( iv ) show that the absolute value function bold f on setr is continuous
+newline
+newline
+alignl 2a. 
+ ~Define~ (i)Compact Space ~( ii )an open covering
+ newline
+alignl~b.~When is a topological space said &quot;to&quot; be compact?
+newline
+alignl~c. Prove that every metric space is a Hausdorff space
+newline
+newline
+newline
+underline bold {MTH 403 - 1hr }
+newline
+newline
+alignl 1a. Define the following terms: ~(i) Outer measure ~(ii) Measurable set (iii) Measurable space ~( iv ) Measurable map ~(v) %sigma - ring ~(iv) Boolean algebra
+newline
+alignl ~b. Show that the &quot;union&quot; of two measurable sets is measurable
+newline
+newline
+alignl ~c. Suppose that bold F sub o = [ a sub o ,b sub o ] is a closed interval contained &quot;in&quot; the &quot;union&quot; of a finite number of bounded open intervals. Prove that
+newline
+b sub o - a sub o lt  sum from i=1 to n ( b sub i - a sub i ) 
+newline
+newline
+alignl 2a. When is a set said &quot;to&quot; be:(i)subadditive; (ii)finitely subadditive; (iii)countably subadditive
+newline
+alignl~b.If \{ E sub j \}sub {j=1} sup infinity is a sequence of sets &quot;in&quot; the class &quot;of&quot; semiclosed intervals such that E sub 0 subset bold U sub {j=1} sup infinity E sub j, show that  %mu( E sub 0 ) le sum from { j=1 } to infinity  %mu ( E sub j )
+newline
+newline
+GOOD LUCK</annotation>
+ </semantics>
+</math>

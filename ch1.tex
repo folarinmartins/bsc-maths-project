@@ -1,6 +1,6 @@
-% Preamble
+% pdflatex ch1.tex
 \documentclass{article}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb,latexsym}
 \title{BSc Project}
 \date{September 2018}
 \author{Folarin, Wasiu Junior}
@@ -11,105 +11,286 @@
     % \maketitle
     \newpage
     \pagenumbering{arabic}
-    \LARGE
-    Chapter 1
-    \normalsize
+    % \LARGE
+	% Chapter 1
+    % \normalsize
     \section{Introduction}
-        \paragraph{In}
-        everyday human and industrial activities, we are faced with the challenges of optimal resource assignment. In the face of limited resources, low tolerance for scrap and rework, need for greater degree of accuracy and scalability, optimization is paramount.
         \paragraph{In}
         introducing this study, we shall proceed under the following sub-headings:
         \begin{itemize}
             \item Preamble
             \item Motivation
             \item A Sample Problem
-            \item Objective
-            \item Definition of terms
+            \item Objective of the study
         \end{itemize}
-        \newpage
         \subsection{Preamble}
-            \paragraph{}
-                Over the years, several Mathematical Optimization methods in Operations Research (OR) especially, have been developed to help with these class of problems witha good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques, which are defined thus:
-                \begin{verse}
-                    \textit{
-                        \begin{center}
-                        Linear Programming is a mathematical technique for determining the optimal allocation of resources and obtaining a particular objective (i.e, cost minimization or inversely profit maximization) when there are alternative uses of resources: Land, Capital, Materials, Machines, etc
-                        \end{center}
-                    }
-                \end{verse}
-                Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
-            \paragraph{}
-                The general formulation of a Linear Programming problem is given below:
-                \begin{verse}
-                    \begin{center}
-                        \textit{
-                            Let Z be a linear function defined by \\
-                            $Z = c_1x_1 + c_2x_2+...+c_nx_n$ \\
-                            where $c_j$'s are constants \\
-                            Let $(a_{ij})$ be mn constants and let $(b_i)$ be a set of m constants such that \\
-                            $a_{11}x_1+a_{12}x_2+...+a_{1n}x_n (\leq,=,\geq) b_1$ \\
-                            $a_{21}x_1+a_{22}x_2+...+a_{2n}x_n (\leq,=,\geq) b_2$ \\
-                            $\cdot$ \\
-                            $\cdot$ \\
-                            $\cdot$ \\
-                            $a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n (\leq,=,\geq) b_m$ \\
-                            $x_1\geq0,x_2\geq0,...,x_n\geq0$ \\
-                        }                   
-                    \end{center}
-                 \end{verse}
-                The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
-            \paragraph{}
-                Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed perspectives of optimum assignment problems
+        \paragraph{In}
+			everyday human, corporate and industrial activities, we are faced with the challenges of optimal resource assignment. In the face of limited resources, low tolerance for scrap and rework, need for greater degree of accuracy and scalability, optimization of resources is paramount.
+            Over the years, several Mathematical Optimization techniques in Operations Research (OR) specifically, have been developed to help with these class of problems witha good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques.
         \\
-        \subsection{Motivation}
+		\subsection{Motivation}
+			\paragraph{The University Timetable Problem:}
+			This study, though it doesn't directly proffer a solution to this problem, it attempts to solve a simplified variant of it.
+			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating an examination timetable that caters to all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
+			\\Studies show that, in order to prepare a well usable timetabling system, provision has to be made for such considerations as the following parameters:
+			\begin{enumerate}
+				\item \underline{Time Clash}: A student group cannot have more than one exam at one time
+				\item \underline{Semester Clash}: Student groups from the same major but in different semesters cannot have exams at the same time
+				\item \underline{Core Exams}: A student group cannot take more than one core exam a day
+				\item \underline{Maximum Exams}: A student group cannot have more than one exam per day
+				\item \underline{Difficulty Level}: A student group cannot have two difficult exams in two consecutive days
+				\item \underline{Capacity}: The total number of students seating for exams in a particular time cannot exceed predefined limits
+				\item \underline{One-period Execution}: Each course must occur at the same time for all student groups
+				\item \underline{Periodic Unavailability}: Some exams may not be scheduled at particular time slots
+				\item \underline{Comprehensiveness of Coverage}: All exams on the timetable have to be assigned
+				\item \underline{Pre-assignment Capabilities}: A course may be assigned to a particular target time slot
+				\item \underline{Controllable Exams Conclusion}: Student in all student groups should conclude their exams at approximately the same time
+			\end{enumerate}
+			\\The foregoing attributes have been cited as some of the desirable properties of a credible timetabling system. Proffering credible solutions to the timetabling problem has been a major challenge in the wide, that annually, the International Timetabling Competition 2019 (www.itc2019.org) holds to select a number of outstanding solutions to the timetabling problem.
+			\\Although, this problem has been identified as a NP-Hard class of problems, it is still a long way from being efficiently solved to tackle the highlighted problems
             \paragraph{}
-            This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the otherhand interested in
+            	This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the otherhand interested in
                 \begin{verse}
                     \textit{
                         \begin{center}
-                        Allocation of objects to non-overlapping groups, based on properties possessed by the objects, and one or more constraining conditions
+                        Allocation of objects to non-intersecting groups, based on attributes possessed by the objects, and one or more constraining conditions
                         \end{center}
-                    }
+                   }
                 \end{verse}
                 Mathematical Optimization techniques, have not been formulated to solve problems as this, and thus the motivaiton for this study.
         \\
-        \subsection{A Sample Problem}
-            \paragraph{}
-            In deploying intending NYSC members to a serving state, the following constraints needs be satisfied:
-            \begin{itemize}
-                \item No student should be deployed to his/her state of origin
-                \item No student should be deployed to his state of study
-                \item All enlisted students must be deployed to a state
-                \item No state should be allocated more students that it has resources to accommodate
-            \end{itemize}
-            The foregoing problem statement needs a rather new approach as the OR methods aren't designed to solve problems like this. On this problem, we shall propose a solution to this problem using the model proposed by this study
-        \\
-            \subsection{Objective}
-            \paragraph{}
+        \subsection{A Reduction Problem}
+            \paragraph{Consider the following problem statement:}
+            In deploying intending NYSC members to a serving state, the following constraints need be satisfied:
+            \begin{enumerate}
+                \item \underline{State of Origin}: No student should be deployed to his/her state of origin
+                \item \underline{State of Study}: No student should be deployed to his state of study
+                \item \underline{Comprehensiveness of Coverage}: All enlisted students must be deployed
+                \item \underline{Capacity}: No state should be allocated more students that it has resources to accommodate
+            \end{enumerate}
+            The foregoing problem statement is an attempt at reducing the more complex University Timetabling problem to a simpler form where the parameters involved are better appreciated. This study focuses on resolving the simpler NYSC batching problem, and makes recommendations on applying the concepts herein in tackling the more complex University Timetabling Problem.
+		\subsection{Objective}
+            \paragraph
                 The aim of this study is to:
-                \begin{enumerate}
-                    \item Develop a mathematical model to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
-                    \item Create a simulation, exercising this model on a sample problem
-                    \item Sketch a path to evolving this class of solution to more complex problems having similar formulation
-                \end{enumerate}
-        
-            \subsection{Definitions}
-            \paragraph{}
-            Below are definitions of some terms used severally in the text. The user is assumed familiar with the conventional set notations and Operations
-            \subsubsection{Search Space}
-                The group of all items to be assigned to various group is called the search space of the problem under considerations
-            \subsubsection{Partitions of a set}
-                Let X be a set and U,V be disjoint subsets of X. The sets U and V are said to be partitions of X if $U \cup V = X$ and $U \cap V = \emptyset$. If such sets U and V exist, they are said to be the Separation of the set X.
-            \subsubsection{Feasible Solution}
-                Any successful assignment of the objects to groups is referred to as a \textit{Feasible Solution}, whether or not all the constraints are satisfied.
-            \subsubsection{Constraints}
-                These are conditions that restrict the domain of our feasible solutions and thus state the conditions under which any given solution is assessed for correctness. Example of constraints are as follows
                 \begin{itemize}
-                    \item Each group has a maximum capacity that should not be exceeded
-                    \item All objects in the search space must be assigned
-                    \item No object must be assigned more than once
-                    \item Whenever possible, don't leave a group emptyset
-                \end{itemize}
-            \paragraph{}
-                Throughout this text, all mathematical notations retain their usual meanings, unless otherwise explicitly stated.
+                    \item Develop a mathematical algorithm to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
+                    \item Create a simulation, exercising this model on a sample problem
+                    \item Sketch a path to evolving this class of solution to more complex University Timetabling problem, owing to its more complex constraints formulation.
+                \end{itemize}        
+				Throughout this text, all mathematical notations retain their usual meanings, unless otherwise stated.
+		\newpage
+	\section{Literature Review}
+		\paragraph{In}
+			this section we shall proceed to show some theoretical framework of this work.
+		\subsection{Linear Programming (LP)}
+			Although not used in this study, it bears mentioningAs mentioned above, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
+				\begin{verse}
+					\textit{
+						\begin{center}
+						Linear Programming is a mathematical technique for determining the optimal allocation of resources and obtaining a particular objective (i.e, cost minimization or inversely profit maximization) when there are alternative uses of resources: Land, Capital, Materials, Machines, etc
+						\end{center}
+					}
+				\end{verse}
+			Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
+			\paragraph
+				The general formulation of a Linear Programming problem is given below:
+				\begin{verse}
+					\begin{center}
+						\textit{
+							Let Z be a linear function defined by \\
+							$Z = c_1x_1 + c_2x_2+...+c_nx_n$ \\
+							where $c_j$'s are constants \\
+							Let $(a_{ij})$ be mn constants and let $(b_i)$ be a set of m constants such that \\
+							$a_{11}x_1+a_{12}x_2+...+a_{1n}x_n (\leq,=,\geq) b_1$ \\
+							$a_{21}x_1+a_{22}x_2+...+a_{2n}x_n (\leq,=,\geq) b_2$ \\
+							$\cdot$ \\
+							$\cdot$ \\
+							$\cdot$ \\
+							$a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n (\leq,=,\geq) b_m$ \\
+							$x_1\geq0,x_2\geq0,...,x_n\geq0$ \\
+						}                   
+					\end{center}
+				\end{verse}
+				The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
+			\paragraph
+				Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed perspectives of optimum assignment problems
+		\subsection{Fuzzy Set}
+			Since its inception in 1965, the theory of fuzzy sets has advanced in a variety of ways and in many disciplines. Applications of this theory can be found, for example, in artificial intelligence, computer science, medicine, control engineering, decision theory, expert systems, logic, management science, operations research, pattern recognition, and robotics. 
+			Mathematical developments have advanced to a very high standard and are still forthcoming to day. In this review, the basic mathematical framework of fuzzy set theory will be described.
+			\\We begin with a definition of the Fuzzy Set Theory:
+			\begin{verse}
+				\textit{
+					\begin{center}
+						If X is a nonempty collection of objects denoted
+						generically by $x_1,x_2,...,x_n$ for $n = 1$,~$2$, $\dots$, then a fuzzy set A in X is a pair \\$(A,\mu_A)$
+						\\where $A \subset X $ and $\mu_A \colon \textbf{R} \to [0,1]$, called the \emph{membership function of A}
+					\end{center}
+				}
+			\end{verse}
+			\subsubsection{Examples of Fuzzy Sets}
+				To better understand the concept of Fuzzy Sets, let us consider the following Examples
+				\paragraph{Example 1}
+					Let us define a fuzzy set 
+					\[
+					A = \{\, x \mid x \in R, \text{ real numbers near 0 } \,\}
+					\]
+					\\The boundary for set “real number near 0” is pretty ambiguous. The possibility of real number x to be a member of prescribed set can be defined by the following membership function.
+					\\We define the membership function\\
+					\begin{verse}
+						$ \mu_A \colon \textbf{R} \to [0,1] $
+					\end{verse}
+					\\Defining the membership of elements of \textbf{R} in \textbf{A}
+					\\Defined as:
+					\begin{verse}
+						\begin{equation}
+							\mu_A(x) = \frac{1}{1+x^2}
+						\end{equation}
+					\end{verse}
+				\paragraph{Example 2}
+					Let us define a similar fuzzy set 
+					\[
+					B = \{\, x \mid x \in R, \text{ real numbers very near 0 } \,\}
+					\]
+					\\We define the membership function\\
+					\begin{verse}
+						$\mu_B\colon \textbf{R} \to [0,1] $
+					\end{verse}
+					\\Defining the membership of elements of \textbf{R} in \textbf{B}
+					\\such that:
+					\begin{verse}
+						\begin{equation}
+							\mu_B(x) = \left( \frac{1}{1+x^2} \right)^{2}
+						\end{equation}
+					\end{verse}
+				\paragraph
+					The Theory of Fuzzy Sets forms the basic framework upon which the solution proposed by this work is formulated
+	\newpage
+	\section{Algorithm}
+		\paragraph{In}
+			this section we shall proceed to develop the algrithm needed to solve the reduction problem proposed in the previous section.
+		\paragraph{Let the set $\mathbb(U)$} be a collection of objects to be assigned to partitioning sets
+			\[
+				\mathbb{U} = \{u_1, u_2,\dots,u_n\}
+				\\
+			\]
+			where each $u_i i=1,2,\dots$,n are the objects possessing characteristics to be assigned to various partition classes, e.g say, the group of graduates to be posted to NYSC serving states
+		\paragraph{And let}
+		\[
+			p_1,p_2,\dots,p_k
+		\]
+			be the partitions to which objects $u_i$'s are to be assigned. We observe that there are $k$ such classes, eg, each $p_i$ would be a state where graduates can be posted to for their Service Year
+		\paragraph{We now let}
+			\[
+				J(p_i) = j_i
+			\]
+			be the maxiumum capacity the partition $p_i$ can contain. That is, the maximum number of $u_i$'s each partition $p_i$ can contain
+		\paragraph{Let V,}
+			\[
+				V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
+			\]
+			be the total capacity of the system, that is, the total number of $u_i$'s all the partitions can contain combined.\\ \\
+			NB: It should be noted that for an optimum solution to be feasible, $\mid U \mid \leq V$ needs be satisfied
+		\paragraph{We}
+			now define the weight, $w_i$ of each partition $p_i$
+			\[
+				w_i = \frac{j_i}{V} = \frac{J(p_i)}{\sum_{i=1}^{k}{J(p_i)}}  \textit{ for i=1,2,3,}\dots\text{,}k
+			\]
+			The weight, $w_i$ represents the proportion of each $p_i$'s capacity in the whole
+		\paragraph{We}
+			now define the expected cardinality, $\mid p_i \mid$ of each partition $p_i$
+			\[
+				\mid p_i \mid = w_i \cdot \mid U \mid = w_i \cdot n, \textit{for i=1,2,3,}\dots\text{,}k
+			\]
+			The cardinality, $\mid p_i \mid$ represents the number of objects proportionately assignable to each partition $p_i$
+		\paragraph{}
+			We now proceed to define constraints functions, akin to membership function of a Fuzzy Set. But in this case, they membership functions are of two types: inclusion and exclusion types.\\ \\
+			Inclusion Constraints require that the value of a characteristic measured on candidate objects, $u_i$ match that prescribed by the constraints, while on the otherhand, Exclusion constraints define characteristics that once a candidate object $u_i$ posseses, it is disqualified ( by assigning a value of 0 ) from being a probable member of the partition in question\\ \\
+			Constraints, like membership functions, are generally of the form
+			\[
+				\mu \colon U \mapsto [ 0,1 ]
+			\]
+			
+			Inclusion Constraints are defined thus:
+			\[
+				\mu_j(u_i) = \frac{1}{1+\left( j - s(u_i) \right)^2}
+			\]
+			
+			And, Exclusion Constraints are defined thus:
+			\[
+				\mu_j(u_i) = \frac{\left( j - s(u_i) \right)^2}{1+\left( j - s(u_i) \right)^2}
+			\]
+			$\textit{for i=1,2,}\dots\text{,}n$ and $\textit{ j=1,2,}\dots\text{,}k$\\
+			and
+			\[
+				s\colon U\mapsto \{ 1,2,\dots,k \}
+			\]
+			is a helper function defined by the individual Constraint function, $\mu_j$ to get the index of the partition class $p_j$ with which each object $u_i$ shares the characteristic being measured\\ \\
+			For instance, if $s$ is the state of origin helper function, it returns the index of the partition class $p_i$ to which the object $u_i$ maps as a state of origin\\ \\
+			NB: $p_1, p_2,\dots,k$ are indexed based on proximity or similarity. That is, the difference between the indices of any two partitions is directly proportional to the distance between them. \\ \\
+		\paragraph{}
+			Now, in situations where there are more than one Constraint functions defined, we obtain a single Constraint function by multiplying through viz:
+			\[
+				\mu_i(u_j) = \prod_{t=1}^{s}{\mu_{i_t}(u_j)}
+			\]
+			$\textit{for i=1,2,}\dots\text{,}k$; $\textit{ j=1,2,}\dots\text{,}n$ and $s$ is the total number of Constraint functions defined
+		\paragraph{}
+			We now define the membership set for each partition. These sets list the probability of each object $u_i$ being a member of the partition $p_j$
+			\[
+				\mu_i = \{ \mu_i(u_1), \mu_i(u_2),\dots,\mu_i(u_n) \}
+			\]
+			So, for example
+			\[
+				\mu_1 = \{ \mu_1(u_1), \mu_1(u_2),\dots,\mu_1(u_n) \}
+			\]
+			and,
+			\[
+				\mu_2 = \{ \mu_2(u_1), \mu_2(u_2),\dots,\mu_2(u_n) \}
+			\]
+			and,
+			\[
+				\mu_3 = \{ \mu_3(u_1), \mu_3(u_2),\dots,\mu_3(u_n) \}
+			\]
+			\[
+				\vdots
+			\]
+			\[
+				\mu_k = \{ \mu_k(u_1), \mu_k(u_2),\dots,\mu_k(u_n) \}
+			\]
+		\paragraph{}
+			We now proceed to populate each partition with the objects with the highest membership probability, in turn \\ \\
+			Let
+			\[
+				\mu_{p_i} = \mu_i \backslash \bigcup_{j=1}^{u-1}{ \{ \mu_j(u_x) \forall u_x \in p_j \} }
+			\]
+			That is, isolating the already assigned objects $u_x$ from the membership set to avoid multiple membership
+		\paragraph{}
+			Now, sorting out the first $\mid p_k \mid$ objects with the highest membership points:\\
+			Let
+				\[
+					Q_1 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \right\}
+				\]
+			And
+				\[
+					Q_2 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \right\}
+				\]
+			And
+				\[
+					Q_3 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \bigcup Q_2 \right\}
+				\]
+			And
+				\[
+					Q_4 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \bigcup Q_2 \bigcup Q_3 \right\}
+				\]
+				\[
+					\vdots
+				\]
+				\[
+					Q_{\mid p_i \mid} = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \bigcup_{j=1}^{\mid p_i \mid - 1} \left\{  \mu_i(u_y) \mid u_y \in Q_j \right\} \right\}
+				\]
+			Whence we finally have that
+				\[
+					p_i = \bigcup_{j=1}^{\mid p_i \mid}\left\{Q_j\right\} \qquad \textit{for i=1,2,}\dots\text{,}k
+				\]
+		\newpage
+	\section{Discussion}
 \end{document}
