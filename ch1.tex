@@ -1,5 +1,5 @@
 % pdflatex ch1.tex
-\documentclass{article}
+\documentclass[a4paper]{book}
 \usepackage{amsmath,amssymb,latexsym}
 \title{BSc Project}
 \date{September 2018}
@@ -9,12 +9,11 @@
     \linespread{2.0}
     \pagenumbering{gobble}
     % \maketitle
-    \newpage
     \pagenumbering{arabic}
     % \LARGE
 	% Chapter 1
     % \normalsize
-    \section{Introduction}
+    \chapter{Introduction}
         \paragraph{In}
         introducing this study, we shall proceed under the following sub-headings:
         \begin{itemize}
@@ -23,12 +22,12 @@
             \item A Sample Problem
             \item Objective of the study
         \end{itemize}
-        \subsection{Preamble}
+        \section{Preamble}
         \paragraph{In}
 			everyday human, corporate and industrial activities, we are faced with the challenges of optimal resource assignment. In the face of limited resources, low tolerance for scrap and rework, need for greater degree of accuracy and scalability, optimization of resources is paramount.
             Over the years, several Mathematical Optimization techniques in Operations Research (OR) specifically, have been developed to help with these class of problems witha good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques.
         \\
-		\subsection{Motivation}
+		\section{Motivation}
 			\paragraph{The University Timetable Problem:}
 			This study, though it doesn't directly proffer a solution to this problem, it attempts to solve a simplified variant of it.
 			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating an examination timetable that caters to all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
@@ -46,8 +45,8 @@
 				\item \underline{Pre-assignment Capabilities}: A course may be assigned to a particular target time slot
 				\item \underline{Controllable Exams Conclusion}: Student in all student groups should conclude their exams at approximately the same time
 			\end{enumerate}
-			\\The foregoing attributes have been cited as some of the desirable properties of a credible timetabling system. Proffering credible solutions to the timetabling problem has been a major challenge in the wide, that annually, the International Timetabling Competition 2019 (www.itc2019.org) holds to select a number of outstanding solutions to the timetabling problem.
-			\\Although, this problem has been identified as a NP-Hard class of problems, it is still a long way from being efficiently solved to tackle the highlighted problems
+			The foregoing attributes have been cited as some of the desirable properties of a credible timetabling system. Proffering credible solutions to the timetabling problem has been a major challenge in the wide, that annually, the International Timetabling Competition 2019 (www.itc2019.org) holds to select a number of outstanding solutions to the timetabling problem.\\
+			Although, this problem has been identified as a NP-Hard class of problems, it is still a long way from being efficiently solved to tackle the highlighted problems
             \paragraph{}
             	This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the otherhand interested in
                 \begin{verse}
@@ -59,7 +58,7 @@
                 \end{verse}
                 Mathematical Optimization techniques, have not been formulated to solve problems as this, and thus the motivaiton for this study.
         \\
-        \subsection{A Reduction Problem}
+        \section{A Reduction Problem}
             \paragraph{Consider the following problem statement:}
             In deploying intending NYSC members to a serving state, the following constraints need be satisfied:
             \begin{enumerate}
@@ -69,7 +68,7 @@
                 \item \underline{Capacity}: No state should be allocated more students that it has resources to accommodate
             \end{enumerate}
             The foregoing problem statement is an attempt at reducing the more complex University Timetabling problem to a simpler form where the parameters involved are better appreciated. This study focuses on resolving the simpler NYSC batching problem, and makes recommendations on applying the concepts herein in tackling the more complex University Timetabling Problem.
-		\subsection{Objective}
+		\section{Objective}
             \paragraph
                 The aim of this study is to:
                 \begin{itemize}
@@ -78,11 +77,10 @@
                     \item Sketch a path to evolving this class of solution to more complex University Timetabling problem, owing to its more complex constraints formulation.
                 \end{itemize}        
 				Throughout this text, all mathematical notations retain their usual meanings, unless otherwise stated.
-		\newpage
-	\section{Literature Review}
+	\chapter{Literature Review}
 		\paragraph{In}
-			this section we shall proceed to show some theoretical framework of this work.
-		\subsection{Linear Programming (LP)}
+			this section we shall proceed to show some theoretical framework for this work.
+		\section{Linear Programming (LP)}
 			Although not used in this study, it bears mentioningAs mentioned above, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
 				\begin{verse}
 					\textit{
@@ -92,7 +90,7 @@
 					}
 				\end{verse}
 			Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
-			\paragraph
+			\paragraph{}
 				The general formulation of a Linear Programming problem is given below:
 				\begin{verse}
 					\begin{center}
@@ -112,9 +110,9 @@
 					\end{center}
 				\end{verse}
 				The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
-			\paragraph
+			\paragraph{}
 				Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed perspectives of optimum assignment problems
-		\subsection{Fuzzy Set}
+		\section{Fuzzy Set}
 			Since its inception in 1965, the theory of fuzzy sets has advanced in a variety of ways and in many disciplines. Applications of this theory can be found, for example, in artificial intelligence, computer science, medicine, control engineering, decision theory, expert systems, logic, management science, operations research, pattern recognition, and robotics. 
 			Mathematical developments have advanced to a very high standard and are still forthcoming to day. In this review, the basic mathematical framework of fuzzy set theory will be described.
 			\\We begin with a definition of the Fuzzy Set Theory:
@@ -134,13 +132,13 @@
 					\[
 					A = \{\, x \mid x \in R, \text{ real numbers near 0 } \,\}
 					\]
-					\\The boundary for set “real number near 0” is pretty ambiguous. The possibility of real number x to be a member of prescribed set can be defined by the following membership function.
-					\\We define the membership function\\
+					The boundary for set “real number near 0” is pretty ambiguous. The possibility of real number x to be a member of prescribed set can be defined by the following membership function.\\
+					We define the membership function\\
 					\begin{verse}
 						$ \mu_A \colon \textbf{R} \to [0,1] $
 					\end{verse}
-					\\Defining the membership of elements of \textbf{R} in \textbf{A}
-					\\Defined as:
+					Defining the membership of elements of $\mathbb{R}$ in $\mathbf{A}$\\
+					Defined as:
 					\begin{verse}
 						\begin{equation}
 							\mu_A(x) = \frac{1}{1+x^2}
@@ -155,52 +153,49 @@
 					\begin{verse}
 						$\mu_B\colon \textbf{R} \to [0,1] $
 					\end{verse}
-					\\Defining the membership of elements of \textbf{R} in \textbf{B}
-					\\such that:
+					Defining the membership of elements of $\mathbb{R}$ in $\mathbf{B}$ such that:
 					\begin{verse}
 						\begin{equation}
 							\mu_B(x) = \left( \frac{1}{1+x^2} \right)^{2}
 						\end{equation}
 					\end{verse}
-				\paragraph
+				\paragraph{}
 					The Theory of Fuzzy Sets forms the basic framework upon which the solution proposed by this work is formulated
-	\newpage
-	\section{Algorithm}
+	\chapter{The Algorithm}
 		\paragraph{In}
 			this section we shall proceed to develop the algrithm needed to solve the reduction problem proposed in the previous section.
 		\paragraph{Let the set $\mathbb(U)$} be a collection of objects to be assigned to partitioning sets
-			\[
-				\mathbb{U} = \{u_1, u_2,\dots,u_n\}
-				\\
-			\]
+			\begin{equation}
+				\mathbb{U} = \{u_1, u_2,\dots,u_n\}				
+			\end{equation}
 			where each $u_i i=1,2,\dots$,n are the objects possessing characteristics to be assigned to various partition classes, e.g say, the group of graduates to be posted to NYSC serving states
 		\paragraph{And let}
-		\[
+		\begin{equation}
 			p_1,p_2,\dots,p_k
-		\]
+		\end{equation}
 			be the partitions to which objects $u_i$'s are to be assigned. We observe that there are $k$ such classes, eg, each $p_i$ would be a state where graduates can be posted to for their Service Year
 		\paragraph{We now let}
-			\[
+			\begin{equation}
 				J(p_i) = j_i
-			\]
+			\end{equation}
 			be the maxiumum capacity the partition $p_i$ can contain. That is, the maximum number of $u_i$'s each partition $p_i$ can contain
 		\paragraph{Let V,}
-			\[
+			\begin{equation}
 				V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
-			\]
+			\end{equation}
 			be the total capacity of the system, that is, the total number of $u_i$'s all the partitions can contain combined.\\ \\
 			NB: It should be noted that for an optimum solution to be feasible, $\mid U \mid \leq V$ needs be satisfied
 		\paragraph{We}
 			now define the weight, $w_i$ of each partition $p_i$
-			\[
+			\begin{equation}
 				w_i = \frac{j_i}{V} = \frac{J(p_i)}{\sum_{i=1}^{k}{J(p_i)}}  \textit{ for i=1,2,3,}\dots\text{,}k
-			\]
+			\end{equation}
 			The weight, $w_i$ represents the proportion of each $p_i$'s capacity in the whole
 		\paragraph{We}
 			now define the expected cardinality, $\mid p_i \mid$ of each partition $p_i$
-			\[
+			\begin{equation}
 				\mid p_i \mid = w_i \cdot \mid U \mid = w_i \cdot n, \textit{for i=1,2,3,}\dots\text{,}k
-			\]
+			\end{equation}
 			The cardinality, $\mid p_i \mid$ represents the number of objects proportionately assignable to each partition $p_i$
 		\paragraph{}
 			We now proceed to define constraints functions, akin to membership function of a Fuzzy Set. But in this case, they membership functions are of two types: inclusion and exclusion types.\\ \\
@@ -211,86 +206,1237 @@
 			\]
 			
 			Inclusion Constraints are defined thus:
-			\[
+			\begin{equation}
 				\mu_j(u_i) = \frac{1}{1+\left( j - s(u_i) \right)^2}
-			\]
+			\end{equation}
 			
 			And, Exclusion Constraints are defined thus:
-			\[
+			\begin{equation}
 				\mu_j(u_i) = \frac{\left( j - s(u_i) \right)^2}{1+\left( j - s(u_i) \right)^2}
-			\]
+			\end{equation}
 			$\textit{for i=1,2,}\dots\text{,}n$ and $\textit{ j=1,2,}\dots\text{,}k$\\
 			and
-			\[
+			\begin{equation}
 				s\colon U\mapsto \{ 1,2,\dots,k \}
-			\]
+			\end{equation}
 			is a helper function defined by the individual Constraint function, $\mu_j$ to get the index of the partition class $p_j$ with which each object $u_i$ shares the characteristic being measured\\ \\
 			For instance, if $s$ is the state of origin helper function, it returns the index of the partition class $p_i$ to which the object $u_i$ maps as a state of origin\\ \\
 			NB: $p_1, p_2,\dots,k$ are indexed based on proximity or similarity. That is, the difference between the indices of any two partitions is directly proportional to the distance between them. \\ \\
 		\paragraph{}
 			Now, in situations where there are more than one Constraint functions defined, we obtain a single Constraint function by multiplying through viz:
-			\[
+			\begin{equation}
 				\mu_i(u_j) = \prod_{t=1}^{s}{\mu_{i_t}(u_j)}
-			\]
+			\end{equation}
 			$\textit{for i=1,2,}\dots\text{,}k$; $\textit{ j=1,2,}\dots\text{,}n$ and $s$ is the total number of Constraint functions defined
 		\paragraph{}
 			We now define the membership set for each partition. These sets list the probability of each object $u_i$ being a member of the partition $p_j$
-			\[
+			\begin{equation}
 				\mu_i = \{ \mu_i(u_1), \mu_i(u_2),\dots,\mu_i(u_n) \}
-			\]
+			\end{equation}
 			So, for example
-			\[
+			\begin{equation}
 				\mu_1 = \{ \mu_1(u_1), \mu_1(u_2),\dots,\mu_1(u_n) \}
-			\]
+			\end{equation}
 			and,
-			\[
+			\begin{equation}
 				\mu_2 = \{ \mu_2(u_1), \mu_2(u_2),\dots,\mu_2(u_n) \}
-			\]
+			\end{equation}
 			and,
-			\[
+			\begin{equation}
 				\mu_3 = \{ \mu_3(u_1), \mu_3(u_2),\dots,\mu_3(u_n) \}
-			\]
+			\end{equation}
 			\[
 				\vdots
 			\]
-			\[
+			\begin{equation}
 				\mu_k = \{ \mu_k(u_1), \mu_k(u_2),\dots,\mu_k(u_n) \}
-			\]
+			\end{equation}
 		\paragraph{}
 			We now proceed to populate each partition with the objects with the highest membership probability, in turn \\ \\
 			Let
-			\[
+			\begin{equation}
 				\mu_{p_i} = \mu_i \backslash \bigcup_{j=1}^{u-1}{ \{ \mu_j(u_x) \forall u_x \in p_j \} }
-			\]
+			\end{equation}
 			That is, isolating the already assigned objects $u_x$ from the membership set to avoid multiple membership
 		\paragraph{}
 			Now, sorting out the first $\mid p_k \mid$ objects with the highest membership points:\\
 			Let
-				\[
+				\begin{equation}
 					Q_1 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \right\}
-				\]
+				\end{equation}
 			And
-				\[
+				\begin{equation}
 					Q_2 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \right\}
-				\]
+				\end{equation}
 			And
-				\[
+				\begin{equation}
 					Q_3 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \bigcup Q_2 \right\}
-				\]
+				\end{equation}
 			And
-				\[
+				\begin{equation}
 					Q_4 = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \mu_i(u_y) \mid u_y \in Q_1 \bigcup Q_2 \bigcup Q_3 \right\}
-				\]
+				\end{equation}
 				\[
 					\vdots
 				\]
-				\[
+				\begin{equation}
 					Q_{\mid p_i \mid} = u_x \mid \mu_i(u_x) = \text{max}\left\{ \mu_{p_i} \backslash \bigcup_{j=1}^{\mid p_i \mid - 1} \left\{  \mu_i(u_y) \mid u_y \in Q_j \right\} \right\}
-				\]
+				\end{equation}
 			Whence we finally have that
-				\[
+				\begin{equation}
 					p_i = \bigcup_{j=1}^{\mid p_i \mid}\left\{Q_j\right\} \qquad \textit{for i=1,2,}\dots\text{,}k
-				\]
-		\newpage
-	\section{Discussion}
+				\end{equation}
+	\chapter{Solving A Sample Problem}
+		\paragraph{In}
+			this section, we attempt to apply the algorithm developed in the previous chapter to solve a sample problem. The problem is an attempt to assign a group of 20 University graduates to one of 5 states for service.
+		
+		\section{Statement of Constraints}
+			\begin{enumerate}
+				\item No students should be posted to their State of Origin
+				\item No students should be posted to their States of study
+				\item The maximum capacity of each state must not be exceeded
+				\item All students should be assigned
+			\end{enumerate}
+			The 3rd and 4th constraints are inately adhered to by the algorithm, so we'll focus only on constructing Constraint Functions for the first two constraints.
+		\section{The States}
+			\paragraph{}
+				The States in this problem stand for the partitions to be filled. In order to simplify the problem, we focus only on 5 states and assume each of the 20 graduates schooled in one of these and originated from one of these states. The data represented here is in the form \{State,Capacity\}
+				\begin{enumerate}
+					\item $p_1\colon$ \{Osun State, 3\}
+					\item $p_2\colon$ \{Kwara State, 2\}
+					\item $p_3\colon$ \{Enugu State, 1\}
+					\item $p_4\colon$ \{Akwa-Ibom State, 5\}
+					\item $p_5\colon$ \{Kano State, 10\}
+				\end{enumerate}
+		\section{The Graduates}
+			\paragraph{}
+				Each graduate has a number of characteristics which include names, State of origin, and Alma Mater. Here is our list of 20 graduates which we shall consider in this sample problem:
+				\begin{enumerate}
+					\item $u_1\colon$ \{GR01, Kwara(2), OAU(1)\}
+					\item $u_2\colon$ \{GR02, Kwara(2), BUK(5)\}
+					\item $u_3\colon$ \{GR03, Kwara(2), NSUKKA(3)\}
+					\item $u_4\colon$ \{GR04, Kwara(2), UNILORIN(2)\}
+					\item $u_5\colon$ \{GR05, Akwa-Ibom(4), OAU(1)\}
+					\item $u_6\colon$ \{GR06, Akwa-Ibom(4), BUK(5)\}
+					\item $u_7\colon$ \{GR07, Akwa-Ibom(4), NSUKKA(3)\}
+					\item $u_8\colon$ \{GR08, Akwa-Ibom(4), UNILORIN(2)\}
+					\item $u_9\colon$ \{GR09, Osun(1), OAU(1)\}
+					\item $u_{10}\colon$ \{GR10, Osun(1), BUK(5)\}
+					\item $u_{11}\colon$ \{GR11, Osun(1), NSUKKA(3)\}
+					\item $u_{12}\colon$ \{GR12, Osun(1), UNILORIN(2)\}
+					\item $u_{13}\colon$ \{GR13, Kano(5), OUI(1)\}
+					\item $u_{14}\colon$ \{GR14, Kano(5), NSUKKA(3)\}
+					\item $u_{15}\colon$ \{GR15, Kano(5), UNILORIN(2)\}
+					\item $u_{16}\colon$ \{GR16, Kano(5), AKSU(4)\}
+					\item $u_{17}\colon$ \{GR17, Enugu(3), UNIOSUN\}
+					\item $u_{18}\colon$ \{GR18, Enugu(3), BUK(5)\}
+					\item $u_{19}\colon$ \{GR19, Enugu(3), UNILORIN(2)\}
+					\item $u_{20}\colon$ \{GR20, Enugu(3), AKSU(4)\}
+				\end{enumerate}
+		\section{States - Capacity, Weights and Cardinality}
+			\paragraph{}
+				As indicated in the States data, each state has a capacity, $j_i$. So in this case,
+				\begin{itemize}
+					\item[ ] \[J(p_1) = j_1 = 3\]
+					\item[ ] \[J(p_2) = j_2 = 2\]
+					\item[ ] \[J(p_3) = j_3 = 1\]
+					\item[ ] \[J(p_4) = j_4 = 5\]
+					\item[ ] \[J(p_5) = j_5 = 10\]
+				\end{itemize}
+				Thus, the maximum capacity of the system is given as:
+				\begin{equation}
+					V = \sum_{i=1}^{5}{J(p_i)} = 3 + 2 + 1 + 5 + 10 = 21
+				\end{equation}
+			Since $V$ is less than the total number of graduates awaiting deployment (20), a feasible assignment is possible.
+			\paragraph{}
+				The weight, $w_i$ of each state is defined thus:
+				\begin{equation}
+					w_i = \frac{j_i}{V}, \qquad \textit{for i=1,2,...,5}
+				\end{equation}
+				\begin{equation}
+					w_1 = \frac{j_1}{V} = \frac{3}{21} = 0.143
+				\end{equation}
+				\begin{equation}
+					w_2 = \frac{j_2}{V} = \frac{2}{21} = 0.095
+				\end{equation}
+				\begin{equation}
+					w_3 = \frac{j_3}{V} = \frac{1}{21} = 0.048
+				\end{equation}
+				\begin{equation}
+					w_4 = \frac{j_4}{V} = \frac{5}{21} = 0.238
+				\end{equation}
+				\begin{equation}
+					w_5 = \frac{j_5}{V} = \frac{10}{21} = 0.476
+				\end{equation}
+			\paragraph{}
+				We now define the expected cardinality, $\mid p_i\mid$ of each state. That is, the expected number of Corp members posted to each state
+				\begin{equation}
+					\mid p_i \mid = w_i \cdot \text{no. of graduates} = w_i \cdot n = w_i \cdot 20, \qquad \textit{for i=1,2,...,5}
+				\end{equation}
+				\begin{equation}
+					\mid p_1 \mid = w_1 \times 20 = 0.143 \times 20 = 2.86 \approx 3
+				\end{equation}
+				\begin{equation}
+					\mid p_2 \mid = w_2 \times 20 = 0.095 \times 20 = 1.9 \approx 2
+				\end{equation}
+				\begin{equation}
+					\mid p_3 \mid = w_3 \times 20 = 0.048 \times 20 = 0.96 \approx 1
+				\end{equation}
+				\begin{equation}
+					\mid p_4 \mid = w_4 \times 20 = 0.238 \times 20 = 4.76 \approx 5
+				\end{equation}
+				\begin{equation}
+					\mid p_5 \mid = w_5 \times 20 = 0.476 \times 20 = 9.52 \approx 9
+				\end{equation}
+		\section{Constraints}
+			The sample problem has two statements of exclusion constraints. We will establish the Constraint functions defining the membership probability of each graduate into each state thus:
+			\paragraph{Constraint A, $\mu_A$: No student should be posted to their State of Origin}
+				\begin{equation}
+					\mu_{A_j}(u_i) = \frac{\left(j-s_A(u_i)\right)^2}{1 + \left(j-s_A(u_i)\right)^2}
+				\end{equation}
+				where $\mu_{A_j}(u_i)$ measures the degree of object $u_i$'s membership in State $j$ under the consideration of the \textit{state of origin} constraint and,
+				$s_A(u_i)$ represents the index of graduate $u_i$'s State of Origin\\
+				\begin{align}
+					\mu_{A_1}(u_1) &= \frac{\left(1-s_A(u_1)\right)^2}{1 + \left(1-s_A(u_1)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_2) &= \frac{\left(1-s_A(u_2)\right)^2}{1 + \left(1-s_A(u_2)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_3) &= \frac{\left(1-s_A(u_3)\right)^2}{1 + \left(1-s_A(u_3)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_4) &= \frac{\left(1-s_A(u_4)\right)^2}{1 + \left(1-s_A(u_4)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_5) &= \frac{\left(1-s_A(u_5)\right)^2}{1 + \left(1-s_A(u_5)\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_6) &= \frac{\left(1-s_A(u_6)\right)^2}{1 + \left(1-s_A(u_6)\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_7) &= \frac{\left(1-s_A(u_7)\right)^2}{1 + \left(1-s_A(u_7)\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_8) &= \frac{\left(1-s_A(u_8)\right)^2}{1 + \left(1-s_A(u_8)\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_9) &= \frac{\left(1-s_A(u_9)\right)^2}{1 + \left(1-s_A(u_9)\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{10}) &= \frac{\left(1-s_A(u_{10})\right)^2}{1 + \left(1-s_A(u_{10})\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{11}) &= \frac{\left(1-s_A(u_{11})\right)^2}{1 + \left(1-s_A(u_{11})\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{12}) &= \frac{\left(1-s_A(u_{12})\right)^2}{1 + \left(1-s_A(u_{12})\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{13}) &= \frac{\left(1-s_A(u_{13})\right)^2}{1 + \left(1-s_A(u_{13})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{14}) &= \frac{\left(1-s_A(u_{14})\right)^2}{1 + \left(1-s_A(u_{14})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{15}) &= \frac{\left(1-s_A(u_{15})\right)^2}{1 + \left(1-s_A(u_{15})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{16}) &= \frac{\left(1-s_A(u_{16})\right)^2}{1 + \left(1-s_A(u_{16})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{17}) &= \frac{\left(1-s_A(u_{17})\right)^2}{1 + \left(1-s_A(u_{17})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{18}) &= \frac{\left(1-s_A(u_{18})\right)^2}{1 + \left(1-s_A(u_{18})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{19}) &= \frac{\left(1-s_A(u_{19})\right)^2}{1 + \left(1-s_A(u_{19})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_1}(u_{20}) &= \frac{\left(1-s_A(u_{20})\right)^2}{1 + \left(1-s_A(u_{20})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{A_2}(u_1) &= \frac{\left(2-s_A(u_1)\right)^2}{1 + \left(2-s_A(u_1)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_2) &= \frac{\left(2-s_A(u_2)\right)^2}{1 + \left(2-s_A(u_2)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_3) &= \frac{\left(2-s_A(u_3)\right)^2}{1 + \left(2-s_A(u_3)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_4) &= \frac{\left(2-s_A(u_4)\right)^2}{1 + \left(2-s_A(u_4)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_5) &= \frac{\left(2-s_A(u_5)\right)^2}{1 + \left(2-s_A(u_5)\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_6) &= \frac{\left(2-s_A(u_6)\right)^2}{1 + \left(2-s_A(u_6)\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_7) &= \frac{\left(2-s_A(u_7)\right)^2}{1 + \left(2-s_A(u_7)\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_8) &= \frac{\left(2-s_A(u_8)\right)^2}{1 + \left(2-s_A(u_8)\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_9) &= \frac{\left(2-s_A(u_9)\right)^2}{1 + \left(2-s_A(u_9)\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{10}) &= \frac{\left(2-s_A(u_{10})\right)^2}{1 + \left(2-s_A(u_{10})\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{11}) &= \frac{\left(2-s_A(u_{11})\right)^2}{1 + \left(2-s_A(u_{11})\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{12}) &= \frac{\left(2-s_A(u_{12})\right)^2}{1 + \left(2-s_A(u_{12})\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{13}) &= \frac{\left(2-s_A(u_{13})\right)^2}{1 + \left(2-s_A(u_{13})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{14}) &= \frac{\left(2-s_A(u_{14})\right)^2}{1 + \left(2-s_A(u_{14})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{15}) &= \frac{\left(2-s_A(u_{15})\right)^2}{1 + \left(2-s_A(u_{15})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{16}) &= \frac{\left(2-s_A(u_{16})\right)^2}{1 + \left(2-s_A(u_{16})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{17}) &= \frac{\left(2-s_A(u_{17})\right)^2}{1 + \left(2-s_A(u_{17})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{18}) &= \frac{\left(2-s_A(u_{18})\right)^2}{1 + \left(2-s_A(u_{18})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{19}) &= \frac{\left(2-s_A(u_{19})\right)^2}{1 + \left(2-s_A(u_{19})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_2}(u_{20}) &= \frac{\left(2-s_A(u_{20})\right)^2}{1 + \left(2-s_A(u_{20})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{A_3}(u_1) &= \frac{\left(3-s_A(u_1)\right)^2}{1 + \left(3-s_A(u_1)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_2) &= \frac{\left(3-s_A(u_2)\right)^2}{1 + \left(3-s_A(u_2)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_3) &= \frac{\left(3-s_A(u_3)\right)^2}{1 + \left(3-s_A(u_3)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_4) &= \frac{\left(3-s_A(u_4)\right)^2}{1 + \left(3-s_A(u_4)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_5) &= \frac{\left(3-s_A(u_5)\right)^2}{1 + \left(3-s_A(u_5)\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_6) &= \frac{\left(3-s_A(u_6)\right)^2}{1 + \left(3-s_A(u_6)\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_7) &= \frac{\left(3-s_A(u_7)\right)^2}{1 + \left(3-s_A(u_7)\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_8) &= \frac{\left(3-s_A(u_8)\right)^2}{1 + \left(3-s_A(u_8)\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_9) &= \frac{\left(3-s_A(u_9)\right)^2}{1 + \left(3-s_A(u_9)\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{10}) &= \frac{\left(3-s_A(u_{10})\right)^2}{1 + \left(3-s_A(u_{10})\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{11}) &= \frac{\left(3-s_A(u_{11})\right)^2}{1 + \left(3-s_A(u_{11})\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{12}) &= \frac{\left(3-s_A(u_{12})\right)^2}{1 + \left(3-s_A(u_{12})\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{13}) &= \frac{\left(3-s_A(u_{13})\right)^2}{1 + \left(3-s_A(u_{13})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{14}) &= \frac{\left(3-s_A(u_{14})\right)^2}{1 + \left(3-s_A(u_{14})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{15}) &= \frac{\left(3-s_A(u_{15})\right)^2}{1 + \left(3-s_A(u_{15})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{16}) &= \frac{\left(3-s_A(u_{16})\right)^2}{1 + \left(3-s_A(u_{16})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{17}) &= \frac{\left(3-s_A(u_{17})\right)^2}{1 + \left(3-s_A(u_{17})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{18}) &= \frac{\left(3-s_A(u_{18})\right)^2}{1 + \left(3-s_A(u_{18})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{19}) &= \frac{\left(3-s_A(u_{19})\right)^2}{1 + \left(3-s_A(u_{19})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_3}(u_{20}) &= \frac{\left(3-s_A(u_{20})\right)^2}{1 + \left(3-s_A(u_{20})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{A_4}(u_1) &= \frac{\left(4-s_A(u_1)\right)^2}{1 + \left(4-s_A(u_1)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_2) &= \frac{\left(4-s_A(u_2)\right)^2}{1 + \left(4-s_A(u_2)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_3) &= \frac{\left(4-s_A(u_3)\right)^2}{1 + \left(4-s_A(u_3)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_4) &= \frac{\left(4-s_A(u_4)\right)^2}{1 + \left(4-s_A(u_4)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_5) &= \frac{\left(4-s_A(u_5)\right)^2}{1 + \left(4-s_A(u_5)\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_6) &= \frac{\left(4-s_A(u_6)\right)^2}{1 + \left(4-s_A(u_6)\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_7) &= \frac{\left(4-s_A(u_7)\right)^2}{1 + \left(4-s_A(u_7)\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_8) &= \frac{\left(4-s_A(u_8)\right)^2}{1 + \left(4-s_A(u_8)\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_9) &= \frac{\left(4-s_A(u_9)\right)^2}{1 + \left(4-s_A(u_9)\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{10}) &= \frac{\left(4-s_A(u_{10})\right)^2}{1 + \left(4-s_A(u_{10})\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{11}) &= \frac{\left(4-s_A(u_{11})\right)^2}{1 + \left(4-s_A(u_{11})\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{12}) &= \frac{\left(4-s_A(u_{12})\right)^2}{1 + \left(4-s_A(u_{12})\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{13}) &= \frac{\left(4-s_A(u_{13})\right)^2}{1 + \left(4-s_A(u_{13})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{14}) &= \frac{\left(4-s_A(u_{14})\right)^2}{1 + \left(4-s_A(u_{14})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{15}) &= \frac{\left(4-s_A(u_{15})\right)^2}{1 + \left(4-s_A(u_{15})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{16}) &= \frac{\left(4-s_A(u_{16})\right)^2}{1 + \left(4-s_A(u_{16})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{17}) &= \frac{\left(4-s_A(u_{17})\right)^2}{1 + \left(4-s_A(u_{17})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{18}) &= \frac{\left(4-s_A(u_{18})\right)^2}{1 + \left(4-s_A(u_{18})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{19}) &= \frac{\left(4-s_A(u_{19})\right)^2}{1 + \left(4-s_A(u_{19})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_4}(u_{20}) &= \frac{\left(4-s_A(u_{20})\right)^2}{1 + \left(4-s_A(u_{20})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{A_5}(u_1) &= \frac{\left(5-s_A(u_1)\right)^2}{1 + \left(5-s_A(u_1)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_2) &= \frac{\left(5-s_A(u_2)\right)^2}{1 + \left(5-s_A(u_2)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_3) &= \frac{\left(5-s_A(u_3)\right)^2}{1 + \left(5-s_A(u_3)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_4) &= \frac{\left(5-s_A(u_4)\right)^2}{1 + \left(5-s_A(u_4)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_5) &= \frac{\left(5-s_A(u_5)\right)^2}{1 + \left(5-s_A(u_5)\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_6) &= \frac{\left(5-s_A(u_6)\right)^2}{1 + \left(5-s_A(u_6)\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_7) &= \frac{\left(5-s_A(u_7)\right)^2}{1 + \left(5-s_A(u_7)\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_8) &= \frac{\left(5-s_A(u_8)\right)^2}{1 + \left(5-s_A(u_8)\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_9) &= \frac{\left(5-s_A(u_9)\right)^2}{1 + \left(5-s_A(u_9)\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{10}) &= \frac{\left(5-s_A(u_{10})\right)^2}{1 + \left(5-s_A(u_{10})\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{11}) &= \frac{\left(5-s_A(u_{11})\right)^2}{1 + \left(5-s_A(u_{11})\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{12}) &= \frac{\left(5-s_A(u_{12})\right)^2}{1 + \left(5-s_A(u_{12})\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{13}) &= \frac{\left(5-s_A(u_{13})\right)^2}{1 + \left(5-s_A(u_{13})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{14}) &= \frac{\left(5-s_A(u_{14})\right)^2}{1 + \left(5-s_A(u_{14})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{15}) &= \frac{\left(5-s_A(u_{15})\right)^2}{1 + \left(5-s_A(u_{15})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{16}) &= \frac{\left(5-s_A(u_{16})\right)^2}{1 + \left(5-s_A(u_{16})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{17}) &= \frac{\left(5-s_A(u_{17})\right)^2}{1 + \left(5-s_A(u_{17})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{18}) &= \frac{\left(5-s_A(u_{18})\right)^2}{1 + \left(5-s_A(u_{18})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{19}) &= \frac{\left(5-s_A(u_{19})\right)^2}{1 + \left(5-s_A(u_{19})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{A_5}(u_{20}) &= \frac{\left(5-s_A(u_{20})\right)^2}{1 + \left(5-s_A(u_{20})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+			The foregoings, based on the first constraint, calculates the degree of membership of each object(graduate) $u_i$ in each state
+			\\
+			\\
+			\\
+			In a similar manner, we proceed to calculate the degree of membership of each object(graduate) in each state.
+			\paragraph{Constraint B, $\mu_B$: No student should be posted to their State of Studies}
+				\begin{equation}
+					\mu_{B_j}(u_i) = \frac{\left(j-s_B(u_i)\right)^2}{1 + \left(j-s_B(u_i)\right)^2}
+				\end{equation}
+				where $\mu_{B_j}(u_i)$ measures the degree of object $u_i$'s membership in State $j$ under the consideration of the \textit{state of origin} constraint and,
+				$s_B(u_i)$ represents the index of graduate $u_i$'s State of Study\\
+				\begin{align}
+					\mu_{B_1}(u_1) &= \frac{\left(1-s_B(u_1)\right)^2}{1 + \left(1-s_B(u_1)\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_2) &= \frac{\left(1-s_B(u_2)\right)^2}{1 + \left(1-s_B(u_2)\right)^2}\\
+					&= \frac{\left(1-2\right)^5}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_3) &= \frac{\left(1-s_B(u_3)\right)^2}{1 + \left(1-s_B(u_3)\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_4) &= \frac{\left(1-s_B(u_4)\right)^2}{1 + \left(1-s_B(u_4)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_5) &= \frac{\left(1-s_B(u_5)\right)^2}{1 + \left(1-s_B(u_5)\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_6) &= \frac{\left(1-s_B(u_6)\right)^2}{1 + \left(1-s_B(u_6)\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_7) &= \frac{\left(1-s_B(u_7)\right)^2}{1 + \left(1-s_B(u_7)\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_8) &= \frac{\left(1-s_B(u_8)\right)^2}{1 + \left(1-s_B(u_8)\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_9) &= \frac{\left(1-s_B(u_9)\right)^2}{1 + \left(1-s_B(u_9)\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{10}) &= \frac{\left(1-s_B(u_{10})\right)^2}{1 + \left(1-s_B(u_{10})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{11}) &= \frac{\left(1-s_B(u_{11})\right)^2}{1 + \left(1-s_B(u_{11})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{12}) &= \frac{\left(1-s_B(u_{12})\right)^2}{1 + \left(1-s_B(u_{12})\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{13}) &= \frac{\left(1-s_B(u_{13})\right)^2}{1 + \left(1-s_B(u_{13})\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{14}) &= \frac{\left(1-s_B(u_{14})\right)^2}{1 + \left(1-s_B(u_{14})\right)^2}\\
+					&= \frac{\left(1-3\right)^2}{1 + \left(1-3\right)^2} \notag \\
+					&= 0.80 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{15}) &= \frac{\left(1-s_B(u_{15})\right)^2}{1 + \left(1-s_B(u_{15})\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.50 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{16}) &= \frac{\left(1-s_B(u_{16})\right)^2}{1 + \left(1-s_B(u_{16})\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{17}) &= \frac{\left(1-s_B(u_{17})\right)^2}{1 + \left(1-s_B(u_{17})\right)^2}\\
+					&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{18}) &= \frac{\left(1-s_B(u_{18})\right)^2}{1 + \left(1-s_B(u_{18})\right)^2}\\
+					&= \frac{\left(1-5\right)^2}{1 + \left(1-5\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{19}) &= \frac{\left(1-s_B(u_{19})\right)^2}{1 + \left(1-s_B(u_{19})\right)^2}\\
+					&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_1}(u_{20}) &= \frac{\left(1-s_B(u_{20})\right)^2}{1 + \left(1-s_B(u_{20})\right)^2}\\
+					&= \frac{\left(1-4\right)^2}{1 + \left(1-4\right)^2} \notag \\
+					&= 0.90 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{B_2}(u_1) &= \frac{\left(2-s_B(u_1)\right)^2}{1 + \left(2-s_B(u_1)\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_2) &= \frac{\left(2-s_B(u_2)\right)^2}{1 + \left(2-s_B(u_2)\right)^2}\\
+					&= \frac{\left(2-2\right)^5}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_3) &= \frac{\left(2-s_B(u_3)\right)^2}{1 + \left(2-s_B(u_3)\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_4) &= \frac{\left(2-s_B(u_4)\right)^2}{1 + \left(2-s_B(u_4)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_5) &= \frac{\left(2-s_B(u_5)\right)^2}{1 + \left(2-s_B(u_5)\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_6) &= \frac{\left(2-s_B(u_6)\right)^2}{1 + \left(2-s_B(u_6)\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_7) &= \frac{\left(2-s_B(u_7)\right)^2}{1 + \left(2-s_B(u_7)\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_8) &= \frac{\left(2-s_B(u_8)\right)^2}{1 + \left(2-s_B(u_8)\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_9) &= \frac{\left(2-s_B(u_9)\right)^2}{1 + \left(2-s_B(u_9)\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{10}) &= \frac{\left(2-s_B(u_{10})\right)^2}{1 + \left(2-s_B(u_{10})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{11}) &= \frac{\left(2-s_B(u_{11})\right)^2}{1 + \left(2-s_B(u_{11})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{12}) &= \frac{\left(2-s_B(u_{12})\right)^2}{1 + \left(2-s_B(u_{12})\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{13}) &= \frac{\left(2-s_B(u_{13})\right)^2}{1 + \left(2-s_B(u_{13})\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{14}) &= \frac{\left(2-s_B(u_{14})\right)^2}{1 + \left(2-s_B(u_{14})\right)^2}\\
+					&= \frac{\left(2-3\right)^2}{1 + \left(2-3\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{15}) &= \frac{\left(2-s_B(u_{15})\right)^2}{1 + \left(2-s_B(u_{15})\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{16}) &= \frac{\left(2-s_B(u_{16})\right)^2}{1 + \left(2-s_B(u_{16})\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{17}) &= \frac{\left(2-s_B(u_{17})\right)^2}{1 + \left(2-s_B(u_{17})\right)^2}\\
+					&= \frac{\left(2-1\right)^2}{1 + \left(2-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{18}) &= \frac{\left(2-s_B(u_{18})\right)^2}{1 + \left(2-s_B(u_{18})\right)^2}\\
+					&= \frac{\left(2-5\right)^2}{1 + \left(2-5\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{19}) &= \frac{\left(2-s_B(u_{19})\right)^2}{1 + \left(2-s_B(u_{19})\right)^2}\\
+					&= \frac{\left(2-2\right)^2}{1 + \left(2-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_2}(u_{20}) &= \frac{\left(2-s_B(u_{20})\right)^2}{1 + \left(2-s_B(u_{20})\right)^2}\\
+					&= \frac{\left(2-4\right)^2}{1 + \left(2-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{B_3}(u_1) &= \frac{\left(3-s_B(u_1)\right)^2}{1 + \left(3-s_B(u_1)\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_2) &= \frac{\left(3-s_B(u_2)\right)^2}{1 + \left(3-s_B(u_2)\right)^2}\\
+					&= \frac{\left(3-2\right)^5}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_3) &= \frac{\left(3-s_B(u_3)\right)^2}{1 + \left(3-s_B(u_3)\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_4) &= \frac{\left(3-s_B(u_4)\right)^2}{1 + \left(3-s_B(u_4)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_5) &= \frac{\left(3-s_B(u_5)\right)^2}{1 + \left(3-s_B(u_5)\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_6) &= \frac{\left(3-s_B(u_6)\right)^2}{1 + \left(3-s_B(u_6)\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_7) &= \frac{\left(3-s_B(u_7)\right)^2}{1 + \left(3-s_B(u_7)\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_8) &= \frac{\left(3-s_B(u_8)\right)^2}{1 + \left(3-s_B(u_8)\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_9) &= \frac{\left(3-s_B(u_9)\right)^2}{1 + \left(3-s_B(u_9)\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{10}) &= \frac{\left(3-s_B(u_{10})\right)^2}{1 + \left(3-s_B(u_{10})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{11}) &= \frac{\left(3-s_B(u_{11})\right)^2}{1 + \left(3-s_B(u_{11})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{12}) &= \frac{\left(3-s_B(u_{12})\right)^2}{1 + \left(3-s_B(u_{12})\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{13}) &= \frac{\left(3-s_B(u_{13})\right)^2}{1 + \left(3-s_B(u_{13})\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{14}) &= \frac{\left(3-s_B(u_{14})\right)^2}{1 + \left(3-s_B(u_{14})\right)^2}\\
+					&= \frac{\left(3-3\right)^2}{1 + \left(3-3\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{15}) &= \frac{\left(3-s_B(u_{15})\right)^2}{1 + \left(3-s_B(u_{15})\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{16}) &= \frac{\left(3-s_B(u_{16})\right)^2}{1 + \left(3-s_B(u_{16})\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{17}) &= \frac{\left(3-s_B(u_{17})\right)^2}{1 + \left(3-s_B(u_{17})\right)^2}\\
+					&= \frac{\left(3-1\right)^2}{1 + \left(3-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{18}) &= \frac{\left(3-s_B(u_{18})\right)^2}{1 + \left(3-s_B(u_{18})\right)^2}\\
+					&= \frac{\left(3-5\right)^2}{1 + \left(3-5\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{19}) &= \frac{\left(3-s_B(u_{19})\right)^2}{1 + \left(3-s_B(u_{19})\right)^2}\\
+					&= \frac{\left(3-2\right)^2}{1 + \left(3-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_3}(u_{20}) &= \frac{\left(3-s_B(u_{20})\right)^2}{1 + \left(3-s_B(u_{20})\right)^2}\\
+					&= \frac{\left(3-4\right)^2}{1 + \left(3-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{B_4}(u_1) &= \frac{\left(4-s_B(u_1)\right)^2}{1 + \left(4-s_B(u_1)\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_2) &= \frac{\left(4-s_B(u_2)\right)^2}{1 + \left(4-s_B(u_2)\right)^2}\\
+					&= \frac{\left(4-2\right)^5}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_3) &= \frac{\left(4-s_B(u_3)\right)^2}{1 + \left(4-s_B(u_3)\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_4) &= \frac{\left(4-s_B(u_4)\right)^2}{1 + \left(4-s_B(u_4)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_5) &= \frac{\left(4-s_B(u_5)\right)^2}{1 + \left(4-s_B(u_5)\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_6) &= \frac{\left(4-s_B(u_6)\right)^2}{1 + \left(4-s_B(u_6)\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_7) &= \frac{\left(4-s_B(u_7)\right)^2}{1 + \left(4-s_B(u_7)\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_8) &= \frac{\left(4-s_B(u_8)\right)^2}{1 + \left(4-s_B(u_8)\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_9) &= \frac{\left(4-s_B(u_9)\right)^2}{1 + \left(4-s_B(u_9)\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{10}) &= \frac{\left(4-s_B(u_{10})\right)^2}{1 + \left(4-s_B(u_{10})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{11}) &= \frac{\left(4-s_B(u_{11})\right)^2}{1 + \left(4-s_B(u_{11})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{12}) &= \frac{\left(4-s_B(u_{12})\right)^2}{1 + \left(4-s_B(u_{12})\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{13}) &= \frac{\left(4-s_B(u_{13})\right)^2}{1 + \left(4-s_B(u_{13})\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{14}) &= \frac{\left(4-s_B(u_{14})\right)^2}{1 + \left(4-s_B(u_{14})\right)^2}\\
+					&= \frac{\left(4-3\right)^2}{1 + \left(4-3\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{15}) &= \frac{\left(4-s_B(u_{15})\right)^2}{1 + \left(4-s_B(u_{15})\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{16}) &= \frac{\left(4-s_B(u_{16})\right)^2}{1 + \left(4-s_B(u_{16})\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{17}) &= \frac{\left(4-s_B(u_{17})\right)^2}{1 + \left(4-s_B(u_{17})\right)^2}\\
+					&= \frac{\left(4-1\right)^2}{1 + \left(4-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{18}) &= \frac{\left(4-s_B(u_{18})\right)^2}{1 + \left(4-s_B(u_{18})\right)^2}\\
+					&= \frac{\left(4-5\right)^2}{1 + \left(4-5\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{19}) &= \frac{\left(4-s_B(u_{19})\right)^2}{1 + \left(4-s_B(u_{19})\right)^2}\\
+					&= \frac{\left(4-2\right)^2}{1 + \left(4-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_4}(u_{20}) &= \frac{\left(4-s_B(u_{20})\right)^2}{1 + \left(4-s_B(u_{20})\right)^2}\\
+					&= \frac{\left(4-4\right)^2}{1 + \left(4-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\\
+				\\
+				\\
+				\begin{align}
+					\mu_{B_5}(u_1) &= \frac{\left(5-s_B(u_1)\right)^2}{1 + \left(5-s_B(u_1)\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_2) &= \frac{\left(5-s_B(u_2)\right)^2}{1 + \left(5-s_B(u_2)\right)^2}\\
+					&= \frac{\left(5-2\right)^5}{1 + \left(5-5\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_3) &= \frac{\left(5-s_B(u_3)\right)^2}{1 + \left(5-s_B(u_3)\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_4) &= \frac{\left(5-s_B(u_4)\right)^2}{1 + \left(5-s_B(u_4)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.5 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_5) &= \frac{\left(5-s_B(u_5)\right)^2}{1 + \left(5-s_B(u_5)\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_6) &= \frac{\left(5-s_B(u_6)\right)^2}{1 + \left(5-s_B(u_6)\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_7) &= \frac{\left(5-s_B(u_7)\right)^2}{1 + \left(5-s_B(u_7)\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_8) &= \frac{\left(5-s_B(u_8)\right)^2}{1 + \left(5-s_B(u_8)\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.9 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_9) &= \frac{\left(5-s_B(u_9)\right)^2}{1 + \left(5-s_B(u_9)\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{10}) &= \frac{\left(5-s_B(u_{10})\right)^2}{1 + \left(5-s_B(u_{10})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{11}) &= \frac{\left(5-s_B(u_{11})\right)^2}{1 + \left(5-s_B(u_{11})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{12}) &= \frac{\left(5-s_B(u_{12})\right)^2}{1 + \left(5-s_B(u_{12})\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{13}) &= \frac{\left(5-s_B(u_{13})\right)^2}{1 + \left(5-s_B(u_{13})\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{14}) &= \frac{\left(5-s_B(u_{14})\right)^2}{1 + \left(5-s_B(u_{14})\right)^2}\\
+					&= \frac{\left(5-3\right)^2}{1 + \left(5-3\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{15}) &= \frac{\left(5-s_B(u_{15})\right)^2}{1 + \left(5-s_B(u_{15})\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{16}) &= \frac{\left(5-s_B(u_{16})\right)^2}{1 + \left(5-s_B(u_{16})\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.94 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{17}) &= \frac{\left(5-s_B(u_{17})\right)^2}{1 + \left(5-s_B(u_{17})\right)^2}\\
+					&= \frac{\left(5-1\right)^2}{1 + \left(5-1\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{18}) &= \frac{\left(5-s_B(u_{18})\right)^2}{1 + \left(5-s_B(u_{18})\right)^2}\\
+					&= \frac{\left(5-5\right)^2}{1 + \left(5-5\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{19}) &= \frac{\left(5-s_B(u_{19})\right)^2}{1 + \left(5-s_B(u_{19})\right)^2}\\
+					&= \frac{\left(5-2\right)^2}{1 + \left(5-2\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\begin{align}
+					\mu_{B_5}(u_{20}) &= \frac{\left(5-s_B(u_{20})\right)^2}{1 + \left(5-s_B(u_{20})\right)^2}\\
+					&= \frac{\left(5-4\right)^2}{1 + \left(5-4\right)^2} \notag \\
+					&= 0.8 \notag
+				\end{align}
+				\\
+				\\
+				\\
+	\chapter{Discussion}
+	\paragraph{}
+	As must have been observed in the algorithm designed in the previous section, this study attempts to solve a simplified version of the University. Here, the Constraints are of a simpler construct with no inter-constraint interaction.\\ \\
+	In the more complicated University Timetabling problem, the are such that interactions are more complicated with more subtle nuances. Further studies will go on into applying the methodology applied in this study to solve the University Timetabling problem\\ \\
+	In this
 \end{document}
