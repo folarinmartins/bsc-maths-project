@@ -1,0 +1,33 @@
+\BOOKMARK [0][]{chapter*.1}{CERTIFICATION}{}% 1
+\BOOKMARK [0][]{chapter*.2}{DEDICATION}{}% 2
+\BOOKMARK [0][]{chapter*.3}{ACKNOWLEDGEMENT}{}% 3
+\BOOKMARK [0][]{chapter*.4}{ABSTRACT}{}% 4
+\BOOKMARK [0][]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][]{section.1.1}{Preamble}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.2}{Motivation}{chapter.1}% 7
+\BOOKMARK [1][]{section.1.3}{A Reduction Problem}{chapter.1}% 8
+\BOOKMARK [1][]{section.1.4}{Objective}{chapter.1}% 9
+\BOOKMARK [1][]{section.1.5}{Definition of Terms}{chapter.1}% 10
+\BOOKMARK [2][]{subsection.1.5.1}{Membership Probability or Degree}{section.1.5}% 11
+\BOOKMARK [2][]{subsection.1.5.2}{Partition}{section.1.5}% 12
+\BOOKMARK [0][]{chapter.2}{Literature Review}{}% 13
+\BOOKMARK [1][]{section.2.1}{Linear Programming \(LP\)}{chapter.2}% 14
+\BOOKMARK [1][]{section.2.2}{Fuzzy Set}{chapter.2}% 15
+\BOOKMARK [0][]{chapter.3}{The Algorithm}{}% 16
+\BOOKMARK [1][]{section.3.1}{Defining of Resources and Objects}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.2}{Adjusting for Capacities}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.3}{Working with the Constraints}{chapter.3}% 19
+\BOOKMARK [1][]{section.3.4}{Assigning the Objects}{chapter.3}% 20
+\BOOKMARK [0][]{chapter.4}{Solving A Sample Problem}{}% 21
+\BOOKMARK [1][]{section.4.1}{Statement of Constraints}{chapter.4}% 22
+\BOOKMARK [1][]{section.4.2}{The States}{chapter.4}% 23
+\BOOKMARK [1][]{section.4.3}{The Graduates}{chapter.4}% 24
+\BOOKMARK [1][]{section.4.4}{States - Capacity, Weights and Cardinality}{chapter.4}% 25
+\BOOKMARK [1][]{section.4.5}{Constraints}{chapter.4}% 26
+\BOOKMARK [1][]{section.4.6}{Populating the States\(Partitions\)}{chapter.4}% 27
+\BOOKMARK [2][]{subsection.4.6.1}{The Assignment Table}{section.4.6}% 28
+\BOOKMARK [0][]{chapter.5}{Discussion and Conclusion}{}% 29
+\BOOKMARK [1][]{section.5.1}{Discussion of Results}{chapter.5}% 30
+\BOOKMARK [1][]{section.5.2}{Improvement Suggestions}{chapter.5}% 31
+\BOOKMARK [1][]{section.5.3}{Further Work}{chapter.5}% 32
+\BOOKMARK [0][]{chapter*.44}{Bibliography}{}% 33
