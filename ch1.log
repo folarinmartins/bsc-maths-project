@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  17 FEB 2019 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  24 FEB 2019 20:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -336,27 +336,30 @@ Overfull \hbox (100.02592pt too wide) in paragraph at lines 1536--1538
  []
 
 [44]
-Overfull \hbox (32.52646pt too wide) in paragraph at lines 1629--1674
-[][] 
+Overfull \hbox (32.52646pt too wide) in paragraph at lines 1632--1677
+ [] 
  []
 
 [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-Overfull \vbox (19.3915pt too high) has occurred while \output is active []
+LaTeX Warning: Text page 46 contains only floats.
 
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[46]
 
- [48]
-Overfull \hbox (22.91408pt too wide) detected at line 1744
+LaTeX Warning: Text page 47 contains only floats.
+
+[47]
+
+LaTeX Warning: Text page 48 contains only floats.
+
+[48]
+Overfull \hbox (22.91408pt too wide) detected at line 1750
 []
  []
 
 
-Overfull \hbox (57.79228pt too wide) in paragraph at lines 1749--1794
-[][] 
+Overfull \hbox (57.79228pt too wide) in paragraph at lines 1756--1801
+ [] 
  []
 
 [49] [50]
@@ -364,17 +367,17 @@ Chapter 5.
 [51
 
 ] [52] (./ch1.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1813.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1821.
  [53
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1813.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1821.
  (./ch1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1813.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1813.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1821.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1821.
 Package rerunfilecheck Info: File `ch1.out' has not changed.
 (rerunfilecheck)             Checksum: BD919D97FCD9D7F2309BECF617B2B6C6;2032.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1813.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1821.
  ) 
 Here is how much of TeX's memory you used:
  6178 strings out of 494923
@@ -385,7 +388,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  28i,11n,28p,584b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ch1.pdf (61 pages, 272067 bytes).
+Output written on ch1.pdf (61 pages, 271938 bytes).
 PDF statistics:
  947 PDF objects out of 1000 (max. 8388607)
  860 compressed objects within 9 object streams
