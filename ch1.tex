@@ -1,13 +1,13 @@
 % pdflatex ch1.tex
 \documentclass[a4paper,openany]{book}
-\usepackage{amsmath,amssymb,latexsym}
+\usepackage{amsmath,amssymb,latexsym,enumerate}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,bookmarksopen=true]{hyperref}
 \title{A SOLUTION TO ATTRIBUTE-BASED ASSIGNMENT PROBLEMS: A PRIMER SOLUTION TO THE UNIVERSITY TIMETABLING PROBLEM}
 \date{September 2018}
 \author{Folarin, Wasiu Junior}
 \begin{document}
     \normalsize
-	\pagenumbering{arabic}	
+	\pagenumbering{arabic}
 	\frontmatter
 	\begin{titlepage}
 		\begin{center}
@@ -55,7 +55,7 @@
 	\chapter[ACKNOWLEDGEMENT]{ \centering ACKNOWLEDGEMENT}
 		Great acknowledgement to the Most High: The ONLY Wise One. And to my family, friends and colleagues for their much love. And specially to my Supervisor, Dr. B. S. Ogundare, for giving me the freedom and support to develop the techniques presented in this work.
 	\chapter[ABSTRACT]{ \centering ABSTRACT}
-		In this work, we take a mathematical exploration of certain assignment problems involving assigning a set of objects to non-overlapping subsets (partitions), in which assignment is based on certain properties possessed by the objects and the partitioning sets. Putting this in perspective, we attempt to solve a sample NYSC assigment problem. The algorithm is developed in this work, and certain notes on improvement cited.  We also attempt to generalize this technique to the more general and complex University Timetabling problem.
+		In this work, we take a mathematical exploration of certain assignment problems involving assigning a set of objects to non-overlapping subsets (partitions), in which assignment is based on certain properties possessed by the objects and the partitioning sets. Putting this in perspective, we attempt to solve a sample NYSC assignment problem. The algorithm is developed in this work, and certain notes on improvement cited.  We also attempt to generalize this technique to the more general and complex University Timetabling problem.
 	% \listoffigures
 	\tableofcontents
 	\listoftables
@@ -73,7 +73,7 @@
         \section{Preamble}
         \paragraph{In}
 			everyday human, corporate and industrial activities, we are faced with the challenges of optimal resource assignment. In the face of limited resources, low tolerance for scrap and rework, need for greater degree of accuracy and scalability, optimization of resources is paramount.
-            Over the years, several Mathematical Optimization techniques in Operations Research (OR) specifically, have been developed to help with these class of problems witha good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques.
+            Over the years, several Mathematical Optimization techniques in Operations Research (OR) specifically, have been developed to help with these class of problems with a good amount of success recorded. Nonetheless, there still remains a great room for improvement on these. Classical approaches to solving assignment problems, among others include the well revered Linear Programming techniques.
 		\section{Motivation}
 			\paragraph{The University Timetable Problem:}
 			This study, though it doesn't directly proffer a solution to this problem, it attempts to solve a simplified variant of it.
@@ -95,7 +95,7 @@
 			The foregoing attributes have been cited as some of the desirable properties of a credible timetabling system. Proffering credible solutions to the timetabling problem has been a major challenge in the wide, that annually, the International Timetabling Competition 2019 \cite{itc2019} holds to select a number of outstanding solutions to the timetabling problem.\\
 			Although several aspects of this problem have been attempted over the years, it is still a long way from being efficiently solved to tackle the highlighted problems
             \paragraph{}
-            	This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the otherhand interested in
+            	This study takes a whole new look at Mathematical Optimization: what if our optimization goal doesn't involve minimizing ( or maximizing ) any variable or group of variables such as cost, profit, or even price? What if we're on the other hand interested in
                 \begin{verse}
                     \textit{
                         \begin{center}
@@ -103,7 +103,7 @@
                         \end{center}
                    }
                 \end{verse}
-                Mathematical Optimization techniques, have not been formulated to solve problems as this, and thus the motivaiton for this study.
+                Mathematical Optimization techniques, have not been formulated to solve problems as this, and thus the motivation for this study.
         \section{A Reduction Problem}
             \paragraph{Consider the following problem statement:}
             In deploying intending NYSC members to a serving state, the following constraints need be satisfied:
@@ -115,109 +115,121 @@
             \end{enumerate}
             The foregoing problem statement is an attempt at reducing the more complex University Timetabling problem to a simpler form where the parameters involved are better appreciated. This study focuses on resolving the simpler NYSC batching problem, and makes recommendations on applying the concepts herein in tackling the more complex University Timetabling Problem.
 		\section{Objective}
-            \paragraph
+            \paragraph{}
                 The aim of this study is to:
-                \begin{itemize}
+                \begin{enumerate}[(i)]
                     \item Develop a mathematical algorithm to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
                     \item Create a simulation, exercising this model on a sample problem
                     \item Sketch a path to evolving this class of solution to more complex University Timetabling problem, owing to its more complex constraints formulation.
-                \end{itemize}        
-				Throughout this text, all mathematical notations retain their usual meanings, unless otherwise stated.
-		\section{Definition of Terms}
+                \end{enumerate}        
+		\section{Definition of Terms and Concepts}
+			\subsection{Fuzzy Set Theory}
+				Since its inception in 1965, the theory of fuzzy sets has advanced in a variety of ways and in many disciplines. Applications of this theory can be found, for example, in artificial intelligence, computer science, medicine, control engineering, decision theory, expert systems, logic, management science, operations research, pattern recognition, and robotics. 
+				Mathematical developments have advanced to a very high standard and are still forthcoming to day. In this review, the basic mathematical framework of fuzzy set theory will be described.
+				\\We begin with a definition of the Fuzzy Set Theory:
+				\begin{verse}
+					\textit{
+						\begin{center}
+							If X is a nonempty collection of objects denoted
+							generically by $x_1,x_2,...,x_n$ for $n = 1$,~$2$, $\dots$, then a fuzzy set A in X is a pair \\$(A,\mu_A)$
+							\\where $A \subset X $ and $\mu_A \colon \textbf{R} \to [0,1]$, called the \emph{membership function of A}\cite{fuz}
+						\end{center}
+					}
+				\end{verse}
+				\subsubsection{Examples of Fuzzy Sets}
+					To better understand the concept of Fuzzy Sets, let us consider the following Examples
+					\paragraph{Example 1:}
+						Let us define a fuzzy set 
+						\[
+						A = \{\, x \mid x \in R, \text{ real numbers near 0 } \,\}
+						\]
+						The boundary for set “real number near 0” is pretty ambiguous. The possibility of real number x to be a member of prescribed set can be defined by the following membership function.\\
+						We define the membership function
+						\begin{verse}
+							$ \mu_A \colon \textbf{R} \to [0,1] $
+						\end{verse}
+						Defining the membership of elements of $\mathbb{R}$ in $\mathbf{A}$\\
+						Defined as:
+						\begin{verse}
+							\begin{equation}
+								\mu_A(x) = \frac{1}{1+x^2}
+							\end{equation}
+						\end{verse}
+					\paragraph{Example 2:}
+						Let us define a similar fuzzy set 
+						\[
+						B = \{\, x \mid x \in R, \text{ real numbers very near 0 } \,\}
+						\]
+						\\We define the membership function
+						\begin{verse}
+							$\mu_B\colon \textbf{R} \to [0,1] $
+						\end{verse}
+						Defining the membership of elements of $\mathbb{R}$ in $\mathbf{B}$ such that:
+						\begin{verse}
+							\begin{equation}
+								\mu_B(x) = \left( \frac{1}{1+x^2} \right)^{2}
+							\end{equation}
+						\end{verse}
+					\paragraph{}
+						The Theory of Fuzzy Sets forms the basic framework upon which the solution proposed by this work is formulated		
             \subsection{Membership Probability or Degree}
                Each assignable object in all cases studied in this text, belong to each assignable slot with varying degrees of membership, usually a value in the interval [0,1]. An object with a membership degree of 0 is referred to as unfit for the class, while an object have a higher value has a better fit, with the value of 1 being a perfect fit into the class in question.
             \subsection{Partition}
                Let X be a set, and $A_1, A_2,...,A_n$ be subsets of sets such that $A_1 \cap A_2 \cap \dots \cap A_n = \emptyset$ and $A_1 \cup A_2 \cup \dots \cup A_n = X$. The disjoint sets $A_1, A_2, \dots, A_n$ are referred to as a \textit{partition} of the set X
-			
-			   Throughout this text, all mathematical notations retain their usual meanings, unless otherwise stated.
 	\chapter{Literature Review}
-		\paragraph{In}
-			this section we shall proceed to show some theoretical framework for this work.
+		\paragraph{}
+			Finding mathematical solutions to optimization problems has had a long history in coming. This becomes imperative when the problems become enormous both in terms of volume and dimension, where contraction isn't easily achieved based on popular heuristics.
+		\paragraph{}
+			In mathematics, computer science and operations research, mathematical optimization or mathematical programming is the selection of a best element (with regard to some criterion) from some set of available alternatives. \cite{arjang}
+		\paragraph{}
+			In Operations Research, applied mathematics and theoretical computer science, combinatorial optimization is a topic that consists of finding an optimal object from a finite set of objects. \cite{schrijver2}
+		\paragraph{}
+			Operations research (OR) had its origins in the late 1930s when a group of British Royal Air Force officers and civilian scientists were asked to determine how recently developed radar technology could be used for controlled interception of enemy aircraft. \cite{arjang}. Several successful outcomes were attributed to this collaboration which also promulgated into developing strategies for the World War II, hence the popular remark that \textit{OR helped the Allied forces win the war} \cite{arjang}. At the end of WWII, the U.S. military services, recognizing the wartime contributions of OR, continued their support of OR groups with the problems now focused on logistics, combat modeling, and force planning. Similarly, senior scientists who had participated in wartime OR in the U.K and U.S. were convinced that OR could be used to solve management and operational problems of nonmilitary enterprises and government \cite{arjang}. 
+		\paragraph{}
 		\section{Linear Programming (LP)}
-			Although not used in this study, it bears mentioningAs mentioned above, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
-				\begin{verse}
-					\textit{
-						\begin{center}
-						Linear Programming is a mathematical technique for determining the optimal allocation of resources and obtaining a particular objective (i.e, cost minimization or inversely profit maximization) when there are alternative uses of resources: Land, Capital, Materials, Machines, etc \cite{stats}
-						\end{center}
-					}
-				\end{verse}
-			Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
-			\paragraph{}
-				The general formulation of a Linear Programming problem is given below:
-				\begin{verse}
-					\begin{center}
-						\textit{
-							Let Z be a linear function defined by \\
-							$Z = c_1x_1 + c_2x_2+...+c_nx_n$ \\
-							where $c_j$'s are constants \\
-							Let $(a_{ij})$ be mn constants and let $(b_i)$ be a set of m constants such that \\
-							$a_{11}x_1+a_{12}x_2+...+a_{1n}x_n (\leq,=,\geq) b_1$ \\
-							$a_{21}x_1+a_{22}x_2+...+a_{2n}x_n (\leq,=,\geq) b_2$ \\
-							$\cdot$ \\
-							$\cdot$ \\
-							$\cdot$ \\
-							$a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n (\leq,=,\geq) b_m$ \\
-							$x_1\geq0,x_2\geq0,...,x_n\geq0$ \\
-						}                   
-					\end{center}
-				\end{verse}
-				The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
-			\paragraph{}
-				Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed perspectives of optimum assignment problems
-		\section{Fuzzy Set}
-			Since its inception in 1965, the theory of fuzzy sets has advanced in a variety of ways and in many disciplines. Applications of this theory can be found, for example, in artificial intelligence, computer science, medicine, control engineering, decision theory, expert systems, logic, management science, operations research, pattern recognition, and robotics. 
-			Mathematical developments have advanced to a very high standard and are still forthcoming to day. In this review, the basic mathematical framework of fuzzy set theory will be described.
-			\\We begin with a definition of the Fuzzy Set Theory: \cite{fuz}
+			As highlighted above, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
 			\begin{verse}
 				\textit{
 					\begin{center}
-						If X is a nonempty collection of objects denoted
-						generically by $x_1,x_2,...,x_n$ for $n = 1$,~$2$, $\dots$, then a fuzzy set A in X is a pair \\$(A,\mu_A)$
-						\\where $A \subset X $ and $\mu_A \colon \textbf{R} \to [0,1]$, called the \emph{membership function of A}
+					Linear Programming is a mathematical technique for determining the optimal allocation of resources and obtaining a particular objective (i.e, cost minimization or inversely profit maximization) when there are alternative uses of resources: Land, Capital, Materials, Machines, etc \cite{stats}
 					\end{center}
 				}
+			\end{verse}			
+		Solving an assignment problem with Linear Programming techniques, often requires a clear statement of an Objective function, resources constraints, usually expressed as a set of multivariate linear equations.
+			\subsection{Typical LP Problems}
+				Three problems have become classical illustrations in Linear Programming: \cite{stats}
+				\begin{enumerate}
+					\item \textbf{The Diet Problem:} It is the problem of deciding how much of 'n' different foods to include in a diet, given the cost of each food, and the particular combination of nutrients each food contains. The objective is to minimize the cost of the diet such that it contains a certain minimum amount of each nutrient.
+					\item \textbf{Optimal Product Lines Problem:} How much of 'n' different products a firm should produce and sell. When each product requires a particular combination of labour, machine, time and warehouse space per unit of output and where there are fixed limits on the amounts of labour, machine-time and warehouse space available?
+					\item \textbf{Transportation Problem:} It is a problem of determining a shipping schedule for a commodity, say, steel or oil, from each of a number of plants (or oil-fields) at different locations to each of a number of markets (or refineries) at different locations in such a way as to minimize the total shipping cost subject to the constraints that (1) the demands at each market (refinery) will be satisfied, and (2) the supply at the plant (oil field) will not be exceeded.
+				\end{enumerate}
+				Other classifications include the Homemaker's Problem, Blending Problem, On-the-Job Training Problem, etc. \cite{dantzig,dantzig2}
+		\paragraph{}
+			The general formulation of a Linear Programming problem is given below:
+			\begin{verse}
+				\begin{center}
+					\textit{
+						Let Z be a linear function defined by \\
+						$Z = c_1x_1 + c_2x_2+...+c_nx_n$ \\
+						where $c_j$'s are constants \\
+						Let $(a_{ij})$ be mn constants and let $(b_i)$ be a set of m constants such that \\
+						$a_{11}x_1+a_{12}x_2+...+a_{1n}x_n (\leq,=,\geq) b_1$ \\
+						$a_{21}x_1+a_{22}x_2+...+a_{2n}x_n (\leq,=,\geq) b_2$ \\
+						$\cdot$ \\
+						$\cdot$ \\
+						$\cdot$ \\
+						$a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n (\leq,=,\geq) b_m$ \\
+						$x_1\geq0,x_2\geq0,...,x_n\geq0$ \\
+					} \cite{stats}
+				\end{center}
 			\end{verse}
-			\subsubsection{Examples of Fuzzy Sets}
-				To better understand the concept of Fuzzy Sets, let us consider the following Examples
-				\paragraph{Example 1}
-					Let us define a fuzzy set 
-					\[
-					A = \{\, x \mid x \in R, \text{ real numbers near 0 } \,\}
-					\]
-					The boundary for set “real number near 0” is pretty ambiguous. The possibility of real number x to be a member of prescribed set can be defined by the following membership function.\\
-					We define the membership function
-					\begin{verse}
-						$ \mu_A \colon \textbf{R} \to [0,1] $
-					\end{verse}
-					Defining the membership of elements of $\mathbb{R}$ in $\mathbf{A}$\\
-					Defined as:
-					\begin{verse}
-						\begin{equation}
-							\mu_A(x) = \frac{1}{1+x^2}
-						\end{equation}
-					\end{verse}
-				\paragraph{Example 2}
-					Let us define a similar fuzzy set 
-					\[
-					B = \{\, x \mid x \in R, \text{ real numbers very near 0 } \,\}
-					\]
-					\\We define the membership function
-					\begin{verse}
-						$\mu_B\colon \textbf{R} \to [0,1] $
-					\end{verse}
-					Defining the membership of elements of $\mathbb{R}$ in $\mathbf{B}$ such that:
-					\begin{verse}
-						\begin{equation}
-							\mu_B(x) = \left( \frac{1}{1+x^2} \right)^{2}
-						\end{equation}
-					\end{verse}
-				\paragraph{}
-					The Theory of Fuzzy Sets forms the basic framework upon which the solution proposed by this work is formulated
+			The problem of determining the values of $x_1, x_2,...,x_n$, which makes Z a minimum ( or maximum ) and which satisfies (ii) and (iii) is called the General Linear Programming Problem    
+		\paragraph{}
+		Indeed, linear programming forms the hinge in the history of combinatorial optimization. \cite{schrijver}. Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed aspects of optimization problems, one of which, as introduced in the previous chapter, is the focus of this text.
 	\chapter{The Algorithm}
 		\section{Defining of Resources and Objects}
 			\paragraph{In}
-				this section we shall proceed to develop the algrithm needed to solve the reduction problem proposed in the previous section.
+				this section we shall proceed to develop the algorithm needed to solve the reduction problem proposed in the previous section.
 			\paragraph{Let the set $\mathbb(U)$} be a collection of objects to be assigned to partitioning sets
 				\begin{equation}
 					\mathbb{U} = \{u_1, u_2,\dots,u_n\}				
@@ -233,7 +245,7 @@
 				\begin{equation}
 					J(p_i) = j_i
 				\end{equation}
-				be the maxiumum capacity the partition $p_i$ can contain. That is, the maximum number of $u_i$'s each partition $p_i$ can contain
+				be the maximum capacity the partition $p_i$ can contain. That is, the maximum number of $u_i$'s each partition $p_i$ can contain
 			\paragraph{Let V,}
 				\begin{equation}
 					V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
@@ -255,7 +267,7 @@
 		\section{Working with the Constraints}
 			\paragraph{}
 				We now proceed to define constraints functions, akin to membership function of a Fuzzy Set. But in this case, they membership functions are of two types: inclusion and exclusion types.\\
-				Inclusion Constraints require that the value of a characteristic measured on candidate objects, $u_i$ match that prescribed by the constraints, while on the otherhand, Exclusion constraints define characteristics that once a candidate object $u_i$ posseses, it is disqualified ( by assigning a value of 0 ) from being a probable member of the partition in question\\
+				Inclusion Constraints require that the value of a characteristic measured on candidate objects, $u_i$ match that prescribed by the constraints, while on the other hand, Exclusion constraints define characteristics that once a candidate object $u_i$ possesses, it is disqualified ( by assigning a value of 0 ) from being a probable member of the partition in question\\
 				Constraints, like membership functions, are generally of the form
 				\[
 					\mu \colon U \mapsto [ 0,1 ]
@@ -354,7 +366,7 @@
 				\item The maximum capacity of each state must not be exceeded
 				\item All students should be assigned
 			\end{enumerate}
-			The 3rd and 4th constraints are inately adhered to by the algorithm, so we'll focus only on constructing Constraint Functions for the first two constraints.
+			The 3rd and 4th constraints are innately adhered to by the algorithm, so we'll focus only on constructing Constraint Functions for the first two constraints.
 		\section{The States}
 			\paragraph{}
 				The States in this problem stand for the partitions to be filled. In order to simplify the problem, we focus only on 5 states and assume each of the 20 graduates schooled in one of these and originated from one of these states. The data represented here is in the form \{State,Capacity\}
@@ -367,8 +379,8 @@
 				\end{enumerate}
 		\section{The Graduates}
 			\paragraph{}
-				Each graduate has a number of characteristics which include names, State of origin, and Alma Mater. Here is our list of 20 graduates which we shall consider in this sample problem:
-				\begin{enumerate}
+				Each graduate has a number of characteristics which include names, State of origin, and Alma Mater. Here is our list of 20 graduates which we shall consider in this sample problem - \{Name,State of Origin,School\}:
+				\begin{enumerate}[1.]
 					\item $u_1\colon$ \{GR01, Kwara(2), OAU(1)\}
 					\item $u_2\colon$ \{GR02, Kwara(2), BUK(5)\}
 					\item $u_3\colon$ \{GR03, Kwara(2), NSUKKA(3)\}
@@ -1807,15 +1819,17 @@
 			\paragraph{}
 				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we point several points of possible improvements that can be explored to enhance the result.
 		\section{Improvement Suggestions}
-			Although, the sample problem outlined in the previous chapter got a 90\% success assignment, by making a few adjustments, we observe that the accuracy can be raised as high as 100\%
+			Although, the sample problem outlined in the previous chapter got a 85\% assignment accuracy, by making a few adjustments, we observe that the accuracy could be raised as high as 100\%
 			\begin{itemize}
 				\item When choosing objects into each partition, keep a tab on the number of non-zero assignable members left for each class, if this number is equal to the expected partition size of any class, proceed to make assignments into the class in question. This precaution ensures that each class gets the opportunity to get the maximum number assignments with fitness value different from zero.
+				\item As would be observed, the assignment of probabilities to each partition proceeds partition-wise, that is, iterating from partition to partition and filling them up in turn with the highest-probability member. We also exercised the member-wise assignment, that is, iterating through each object, and assigning each based on its highest probability, taking caution not to exceed the partition width. Putting this method to practise improved the assignment from 85\% to 90\%, which is a significant improvement.
+				\item As cited in the previous point, several routes can be taken to assign objects to the appropriate partitions. Since the candidate-wise iteration introduces some improvements to the assignment, we would investigate further to identify a 'hybrid' algorithm which combines both partition-based and object-based algorithm to make assignment, and this promises to further raise the accuracy level of the assignment schedule.
 			\end{itemize}
 		\section{Further Work}
-			As must have been observed in the algorithm designed in this text, an attempt was made to solve a simplified version of the University Timetabling problem. Here, the Constraints are of a simpler construct with no inter-constraint interaction. Such that, by simpley multiiplying out the individual constraints, we were able to estimate the degree of membership of each object in each partition. In the case of the University Timetabling problem, several constraints have more complex interactions which will be further studied.\\
-			Thank you.	
+			As must have observed in the algorithm designed in this text, an attempt was made to solve a simplified version of the University Timetabling problem. Here, the Constraints are of a simpler construct with no inter-constraint interaction. Such that, by simply multiplying out the individual constraints, we were able to estimate the degree of membership of each object in each partition. In the case of the University Timetabling problem, several constraints have more complex interactions which may not combine simply by multiplying out. The successful assignmt schedule achieved in this text would be improved to  will be further studied.
 	\newpage
+	\renewcommand\bibname{References}
 	\bibliography{ch1}
 	\bibliographystyle{apalike}
-	\addcontentsline{toc}{chapter}{Bibliography}
+	\addcontentsline{toc}{chapter}{References}
 \end{document}
