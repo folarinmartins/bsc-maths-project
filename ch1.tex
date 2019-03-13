@@ -2,8 +2,21 @@
 \documentclass[a4paper,openany]{book}
 \usepackage{amsmath,amssymb,latexsym,enumerate}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,bookmarksopen=true]{hyperref}
+\usepackage[left=1in,right=1in,top=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\doublespacing
+\pagestyle{fancyplain}
+% \fancyhead[L]{\leftmark}
+% \fancyhead[C]{} 
+% \fancyhead[R]{\rightmark}
+% \fancyfoot[L]{}
+% \fancyfoot[C]{\thepage}
+% \fancyfoot[R]{}
+% \pagenumbering{gobble}
+
 \title{A SOLUTION TO ATTRIBUTE-BASED ASSIGNMENT PROBLEMS: A PRIMER SOLUTION TO THE UNIVERSITY TIMETABLING PROBLEM}
-\date{September 2018}
+\date{March 2019}
 \author{Folarin, Wasiu Junior}
 \begin{document}
     \normalsize
@@ -29,11 +42,11 @@
 			OBAFEMI AWOLOWO UNIVERSITY, ILE-IFE, NIGERIA\\
 			IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE AWARD OF 
 			BACHELOR OF SCIENCE (B.Sc Hons) DEGREE IN MATHEMATICS\\ \bigskip
-			FEBRUARY, 2019
+			MARCH, 2019
 		\end{center}
 	\end{titlepage}
 	\chapter[CERTIFICATION]{\centering CERTIFICATION}
-	I certify that FOLARIN, Wasiu Junior has fulfilled all requirements for the award of B.Sc (Hons) Degree in Mathematics. This project is the result of the research work carried out by him under my supervision during the course of his undergraduate studies in the Department of Mathematics, Obafemi Awolowo University, Ile-Ife, Nigeria.
+	This is to certify that this project was carried out by FOLARIN, Wasiu Junior in partial fulfilment for the award of B.Sc (Hons) Degree in Mathematics. This project is the result of the research work carried out by him under my supervision during the course of his undergraduate studies in the Department of Mathematics, Obafemi Awolowo University, Ile-Ife, Nigeria.
 	\\[1in]
 	\rule{1.5in}{0.1pt} \hfill \rule{1in}{0.4pt}
 	\\[2ex]
@@ -1817,7 +1830,7 @@
 	\chapter{Discussion and Conclusion}
 		\section{Discussion of Results}
 			\paragraph{}
-				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we point several points of possible improvements that can be explored to enhance the result.
+				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we make several points for possible improvements that can be explored to enhance the result.
 		\section{Improvement Suggestions}
 			Although, the sample problem outlined in the previous chapter got a 85\% assignment accuracy, by making a few adjustments, we observe that the accuracy could be raised as high as 100\%
 			\begin{itemize}
@@ -1826,7 +1839,7 @@
 				\item As cited in the previous point, several routes can be taken to assign objects to the appropriate partitions. Since the candidate-wise iteration introduces some improvements to the assignment, we would investigate further to identify a 'hybrid' algorithm which combines both partition-based and object-based algorithm to make assignment, and this promises to further raise the accuracy level of the assignment schedule.
 			\end{itemize}
 		\section{Further Work}
-			As must have observed in the algorithm designed in this text, an attempt was made to solve a simplified version of the University Timetabling problem. Here, the Constraints are of a simpler construct with no inter-constraint interaction. Such that, by simply multiplying out the individual constraints, we were able to estimate the degree of membership of each object in each partition. In the case of the University Timetabling problem, several constraints have more complex interactions which may not combine simply by multiplying out. The successful assignmt schedule achieved in this text would be improved to  will be further studied.
+			As must have been observed in the algorithm designed in this text, an attempt was made to solve a simplified version of the University Timetabling problem. Here, the Constraints are of a simpler construct with no inter-constraint interaction. Such that, by simply multiplying out the individual constraints, we were able to estimate the degree of membership of each object in each partition. In the case of the University Timetabling problem, several constraints have more complex interactions which may not combine simply by multiplying out. The successful assignmt schedule achieved in this text would be improved upon for this cause.
 	\newpage
 	\renewcommand\bibname{References}
 	\bibliography{ch1}
