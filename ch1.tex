@@ -3,8 +3,11 @@
 \usepackage{amsmath,amssymb,latexsym,enumerate}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,bookmarksopen=true]{hyperref}
 \usepackage[left=1in,right=1in,top=1in]{geometry}
+\usepackage{longtable}
 \usepackage{fancyhdr}
 \usepackage{setspace}
+% \usepackage{pdflscape}
+\usepackage{lscape}
 \doublespacing
 \pagestyle{fancyplain}
 % \fancyhead[L]{\leftmark}
@@ -76,12 +79,14 @@
     \linespread{2.0}
     \chapter{Introduction}
         \paragraph{In}
-        introducing this study, we shall proceed under the following sub-headings:
+        introducing this study, we shall proceed under the following main sub-headings:
         \begin{itemize}
             \item Preamble
             \item Motivation
             \item A Sample Problem
-            \item Objective of the study
+            \item Objective of the Study
+            % \item Scope of Work
+            % \item Definition of Terms and Concepts
         \end{itemize}
         \section{Preamble}
         \paragraph{In}
@@ -90,7 +95,7 @@
 		\section{Motivation}
 			\paragraph{The University Timetable Problem:}
 			This study, though it doesn't directly proffer a solution to this problem, it attempts to solve a simplified variant of it.
-			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating an examination timetable that caters to all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
+			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating a lecture or examination timetable that caters to all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
 			\\Studies show that, in order to prepare a well usable timetabling system, provision has to be made for such considerations as the following parameters:
 			\begin{enumerate}
 				\item \underline{Time Clash}: A student group cannot have more than one exam at one time
@@ -129,12 +134,15 @@
             The foregoing problem statement is an attempt at reducing the more complex University Timetabling problem to a simpler form where the parameters involved are better appreciated. This study focuses on resolving the simpler NYSC batching problem, and makes recommendations on applying the concepts herein in tackling the more complex University Timetabling Problem.
 		\section{Objective}
             \paragraph{}
-                The aim of this study is to:
+                While this study seeks to address Assignment Problems involving objects with certain characteristics of interest, the specific aim of this study is to:
                 \begin{enumerate}[(i)]
                     \item Develop a mathematical algorithm to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
-                    \item Create a simulation, exercising this model on a sample problem
-                    \item Sketch a path to evolving this class of solution to more complex University Timetabling problem, owing to its more complex constraints formulation.
-                \end{enumerate}        
+                    \item Exercising this model on a sample problem
+                    \item Sketch a path to evolving this class of solution to the University Timetabling problem, owing to its more complex constraints formulation.
+				\end{enumerate}        
+		\section{Scope of Work}
+			\paragraph{}
+			This work explores the problem applying concepts of probabilities. It uses the concept of membership functions in the Theory of Fuzzy Set. While the theory of Fuzzy Set is a large space to explore, involving concepts such as Fuzzy Logic, Fuzzy Algebra, etc. This work only takes into consideration concepts of membership funtion from the Theory Fuzzy Set.
 		\section{Definition of Terms and Concepts}
 			\subsection{Fuzzy Set Theory}
 				Since its inception in 1965, the theory of fuzzy sets has advanced in a variety of ways and in many disciplines. Applications of this theory can be found, for example, in artificial intelligence, computer science, medicine, control engineering, decision theory, expert systems, logic, management science, operations research, pattern recognition, and robotics. 
@@ -200,7 +208,7 @@
 			Operations research (OR) had its origins in the late 1930s when a group of British Royal Air Force officers and civilian scientists were asked to determine how recently developed radar technology could be used for controlled interception of enemy aircraft. \cite{arjang}. Several successful outcomes were attributed to this collaboration which also promulgated into developing strategies for the World War II, hence the popular remark that \textit{OR helped the Allied forces win the war} \cite{arjang}. At the end of WWII, the U.S. military services, recognizing the wartime contributions of OR, continued their support of OR groups with the problems now focused on logistics, combat modeling, and force planning. Similarly, senior scientists who had participated in wartime OR in the U.K and U.S. were convinced that OR could be used to solve management and operational problems of nonmilitary enterprises and government \cite{arjang}. 
 		\paragraph{}
 		\section{Linear Programming (LP)}
-			As highlighted above, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
+			As highlighted in the preceding paragraphs, Linear Programming techniques often lend themselves to making optimum resource allocation in many cases. The following definition accurately captures these techniques:
 			\begin{verse}
 				\textit{
 					\begin{center}
@@ -240,38 +248,38 @@
 		\paragraph{}
 		Indeed, linear programming forms the hinge in the history of combinatorial optimization. \cite{schrijver}. Linear Programming techniques, as well as other Mathematical Optimization techniques have been reputed a great success, nonetheless, there are several yet unaddressed aspects of optimization problems, one of which, as introduced in the previous chapter, is the focus of this text.
 	\chapter{The Algorithm}
-		\section{Defining of Resources and Objects}
-			\paragraph{In}
-				this section we shall proceed to develop the algorithm needed to solve the reduction problem proposed in the previous section.
-			\paragraph{Let the set $\mathbb(U)$} be a collection of objects to be assigned to partitioning sets
+		\section{Defining Resources and Objects}
+			\paragraph{}
+				In this section we shall proceed to develop the algorithm needed to solve the reduction problem proposed in the previous section.
+			\paragraph{}Let the set $\mathbb{U}$ be a collection of objects to be assigned to partitioning sets
 				\begin{equation}
 					\mathbb{U} = \{u_1, u_2,\dots,u_n\}				
 				\end{equation}
-				where each $u_i i=1,2,\dots$,n are the objects possessing characteristics to be assigned to various partition classes, e.g say, the group of graduates to be posted to NYSC serving states
-			\paragraph{And let}
+				where each $u_i, i=1,2,\dots$,n are the objects possessing characteristics to be assigned to various partition classes, e.g say, the group of graduates to be posted to NYSC serving states
+			\paragraph{}And let
 			\begin{equation}
 				p_1,p_2,\dots,p_k
 			\end{equation}
 				be the partitions to which objects $u_i$'s are to be assigned. We observe that there are $k$ such classes, eg, each $p_i$ would be a state where graduates can be posted to for their Service Year
 		\section{Adjusting for Capacities}
-			\paragraph{We now let}
+			\paragraph{}We now let
 				\begin{equation}
 					J(p_i) = j_i
 				\end{equation}
 				be the maximum capacity the partition $p_i$ can contain. That is, the maximum number of $u_i$'s each partition $p_i$ can contain
-			\paragraph{Let V,}
+			\paragraph{}Let V,
 				\begin{equation}
 					V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
 				\end{equation}
 				be the total capacity of the system, that is, the total number of $u_i$'s all the partitions can contain combined.\\
 				NB: It should be noted that for an optimum solution to be feasible, $\mid U \mid \leq V$ needs be satisfied
-			\paragraph{We}
+			\paragraph{}We
 				now define the weight, $w_i$ of each partition $p_i$
 				\begin{equation}
 					w_i = \frac{j_i}{V} = \frac{J(p_i)}{\sum_{i=1}^{k}{J(p_i)}}  \textit{ for i=1,2,3,}\dots\text{,}k
 				\end{equation}
 				The weight, $w_i$ represents the proportion of each $p_i$'s capacity in the whole
-			\paragraph{We}
+			\paragraph{}We 
 				now define the expected cardinality, $\mid p_i \mid$ of each partition $p_i$
 				\begin{equation}
 					\mid p_i \mid = w_i \cdot \mid U \mid = w_i \cdot n, \textit{for i=1,2,3,}\dots\text{,}k
@@ -429,7 +437,7 @@
 				\begin{equation}
 					V = \sum_{i=1}^{5}{J(p_i)} = 3 + 2 + 1 + 5 + 10 = 21
 				\end{equation}
-			Since $V$ is less than the total number of graduates awaiting deployment (20), a feasible assignment is possible.
+			Since $V$ is greater than the total number of graduates awaiting deployment (20), an optimum assignment is feasible.
 			\paragraph{}
 				The weight, $w_i$ of each state is defined thus:
 				\begin{equation}
@@ -1008,7 +1016,7 @@
 				\end{align}
 			The foregoings, based on the first constraint, calculates the degree of membership of each object(graduate) $u_i$ in each state
 			\\
-			In a similar manner, we proceed to calculate the degree of membership of each object(graduate) in each state.
+			In a similar manner, we now proceed to calculate the degree of membership of each object(graduate) in each state, under the second constraint.
 			\paragraph{Constraint B, $\mu_B$: No student should be posted to their State of Studies}
 				\begin{equation}
 					\mu_{B_j}(u_i) = \frac{\left(j-s_B(u_i)\right)^2}{1 + \left(j-s_B(u_i)\right)^2}
@@ -1563,6 +1571,7 @@
 				\begin{equation}
 					\mu_i(u_j) = \mu_{A_i}(u_j) \cdot \mu_{B_i}(u_j)
 				\end{equation}
+				% So that,
 				\begin{align}
 					\mu_1(u_1) &= \mu_{A_1}(u_1) \cdot \mu_{B_1}(u_1) \\
 					&= 0.50 \times 0 \notag \\
@@ -1599,161 +1608,72 @@
 					\mu_5 &= \{ \mu_5(u_1), \mu_5(u_2), \mu_5(u_3),\dots,\mu_5(u_20) \}\\
 					&= \{ 0.84, 0, 0.72,\dots,0.40 \} \notag					
 				\end{align}
-				Summarized fully in the table below:
+				% The constraint values are summarized in the next page:
 				
-				\begin{table}[!th]
-					\begin{center}
-						\begin{tabular}{|l|c|c|c|c|c|c|}
+				\begin{center}
+					\begin{landscape}
+						\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 							\hline
-							\textbf{$i$} & \textbf{$\mu_{A_1}(u_i)$} & \textbf{$\mu_{B_1}(u_i)$} & \textbf{$\mu_{A_1}\cdot\mu_{B_1}$} & \textbf{$\mu_{A_2}(u_i)$} & \textbf{$\mu_{B_2}(u_i)$} & \textbf{$\mu_{A_2}(u_i)\cdot\mu_{B_2}(u_i)$}\\
+							\textbf{$i$} & \textbf{$\mu_{A_1}$} & \textbf{$\mu_{B_1}$} & \textbf{$\mu_1 = \mu_{A_1}\cdot\mu_{B_1}$} & \textbf{$\mu_{A_2}$} & \textbf{$\mu_{B_2}$} & \textbf{$\mu_2 = \mu_{A_2}\cdot\mu_{B_2}$}& \textbf{$\mu_{A_3}$} & \textbf{$\mu_{B_3}$} & \textbf{$\mu_{A_3}\cdot\mu_{B_3}$}  & \textbf{$\mu_{A_4}$} & \textbf{$\mu_{B_4}$} & \textbf{$\mu_{A_4}\cdot\mu_{B_4}$} & \textbf{$\mu_{A_5}$} & \textbf{$\mu_{B_5}$} & \textbf{$\mu_{A_5}\cdot\mu_{B_5}$}\\
 							\hline
-							1. & 0.5 & 0 & 0 & 0 & 0.5 & 0 \\
+							\endfirsthead
+							
+							% \hline
+							% \multicolumn{10}{ r }{...continued from previous page}\\
+							% \hline
+							% \textbf{$i$} & \textbf{$\mu_{A_1}$} & \textbf{$\mu_{B_1}$} & \textbf{$\mu_1 = \mu_{A_1}\cdot\mu_{B_1}$} & \textbf{$\mu_{A_2}$} & \textbf{$\mu_{B_2}$} & \textbf{$\mu_2 = \mu_{A_2}\cdot\mu_{B_2}$}& \textbf{$\mu_{A_3}$} & \textbf{$\mu_{B_3}$} & \textbf{$\mu_{A_3}\cdot\mu_{B_3}$}  & \textbf{$\mu_{A_4}$} & \textbf{$\mu_{B_4}$} & \textbf{$\mu_{A_4}\cdot\mu_{B_4}$} & \textbf{$\mu_{A_5}$} & \textbf{$\mu_{B_5}$} & \textbf{$\mu_{A_5}\cdot\mu_{B_5}$}\\
+							% \hline
+							% \endhead
+							
+							\caption{Summary of the constraint values }\label{table:tb1}\\
+							\endfoot
+							
+							% \caption{Showing the constraint values, for $\mu_1, \mu_2 \text{ and } \mu_3$ }\label{table:tb1}\\
+							% \endlastfoot
+
+							1. & 0.5 & 0 & 0 & 0 & 0.5 & 0 & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 & 0.9 & 0.94 & 0.84 \\
 							\hline
-							2. & 0.5 & 0.94 & 0.47 & 0 & 0.5 & 0 \\
+							2. & 0.5 & 0.94 & 0.47 & 0 & 0.5 & 0  & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 & 0.9 & 0.94 & 0.84\\
 							\hline
-							3. & 0.5 & 0.80 & 0.40 & 0 & 0.5 & 0 \\
+							3. & 0.5 & 0.80 & 0.40 & 0 & 0.5 & 0 & 0.5 & 0 & 0 & 0.8 & 0.5 & 0.4 & 0.9 & 0.8 & 0.72 \\
 							\hline
-							4. & 0.5 & 0.5 & 0.25 & 0 & 0 & 0 \\
+							4. & 0.5 & 0.5 & 0.25 & 0 & 0 & 0& 0.5 & 0.5 & 0.25 & 0.8 & 0.8 & 0.64 & 0.9 & 0.9 & 0.81 \\
 							\hline
-							5. & 0.9 & 0 & 0 & 0.8 & 0.5 & 0.4 \\
+							5. & 0.9 & 0 & 0 & 0.8 & 0.5 & 0.4 & 0.5 & 0.8 & 0.4 & 0 & 0.9 & 0 & 0.5 & 0.94 & 0.47 \\
 							\hline
-							6. & 0.9 & 0.94 & 0.85 & 0.8 & 0.9 & 0.72 \\
+							6. & 0.9 & 0.94 & 0.85 & 0.8 & 0.9 & 0.72 & 0.5 & 0.8 & 0.4 & 0 & 0.5 & 0 & 0.5 & 0 & 0  \\
 							\hline
-							7. & 0.9 & 0.8 & 0.72 & 0.8 & 0.5 & 0.4 \\
+							7. & 0.9 & 0.8 & 0.72 & 0.8 & 0.5 & 0.4 & 0.5 & 0 & 0 & 0 & 0.5 & 0 & 0.5 & 0.8 & 0.4 \\
 							\hline
-							8. & 0.9 & 0.5 & 0.45 & 0.8 & 0 & 0 \\
+							8. & 0.9 & 0.5 & 0.45 & 0.8 & 0 & 0 & 0.5 & 0.5 & 0.25 & 0 & 0.8 & 0 & 0.5 & 0.9 & 0.45  \\
 							\hline
-							9. & 0 & 0 & 0 & 0 & 0.5 & 0 \\
+							9. & 0 & 0 & 0 & 0 & 0.5 & 0 & 0.8 & 0.8 & 0.64 & 0.9 & 0.9 & 0.81 & 0.94 & 0.94 & 0.88  \\
 							\hline
-							10. & 0 & 0 & 0 & 0.5 & 0.5 & 0.25 \\
+							10. & 0 & 0 & 0 & 0.5 & 0.5 & 0.25 & 0.8 & 0.8 & 0.64 & 0.9 & 0.5 & 0.45 & 0.94 & 0 & 0  \\
 							\hline
-							11. & 0 & 0.8 & 0 & 0.5 & 0.5 & 0.25 \\
+							11. & 0 & 0.8 & 0 & 0.5 & 0.5 & 0.25 & 0.8 & 0 & 0 & 0 & 0.5 & 0.45 & 0.94 & 0.8 & 0.75  \\
 							\hline
-							12. & 0 & 0.5 & 0 & 0.5 & 0.5 & 0.25 \\
+							12. & 0 & 0.5 & 0 & 0.5 & 0.5 & 0.25 & 0.8 & 0.5 & 0.45 & 0.9 & 0.8 & 0.72 & 0.94 & 0.9 & 0.84  \\
 							\hline
-							13. & 0.94 & 0 & 0 & 0.9 & 0.5 & 0.45 \\
+							13. & 0.94 & 0 & 0 & 0.9 & 0.5 & 0.45 & 0.8 & 0.8 & 0.64 & 0.5 & 0.9 & 0.45 & 0 & 0.94 & 0 \\
 							\hline
-							14. & 0.94 & 0 & 0 & 0 & 0.5 & 0 \\
+							14. & 0.94 & 0 & 0 & 0 & 0.5 & 0  & 0.8 & 0 & 0 & 0.5 & 0.5 & 0.25 & 0 & 0.8 & 0  \\
 							\hline
-							15. & 0.94 & 0.8 & 0.75 & 0.7 & 0.5 & 0.45 \\
+							15. & 0.94 & 0.8 & 0.75 & 0.7 & 0.5 & 0.45 & 0.8 & 0.5 & 0.4 & 0.5 & 0.8 & 0.4 & 0 & 0.90 & 0  \\
 							\hline
-							16. & 0.94 & 0.9 & 0.85 & 0.9 & 0.8 & 0.72 \\
+							16. & 0.94 & 0.9 & 0.85 & 0.9 & 0.8 & 0.72 & 0.8 & 0.5 & 0.4 & 0.5 & 0 & 0 & 0 & 0.5 & 0  \\
 							\hline
-							17. & 0.8 & 0 & 0 & 0.5 & 0.5 & 0.25 \\
+							17. & 0.8 & 0 & 0 & 0.5 & 0.5 & 0.25 & 0.9 & 0.8 & 0 & 0.5 & 0.9 & 0.45 & 0.8 & 0.94 & 0.75  \\
 							\hline
-							18. & 0.8 & 0.94 & 0.75 & 0.5 & 0.9 & 0.45 \\
+							18. & 0.8 & 0.94 & 0.75 & 0.5 & 0.9 & 0.45 & 0 & 0.8 & 0 & 0.5 & 0.5 & 0.25 & 0.8 & 0 & 0  \\
 							\hline
-							19. & 0.8 & 0.5 & 0.4 & 0.5 & 0 & 0 \\
+							19. & 0.8 & 0.5 & 0.4 & 0.5 & 0 & 0 & 0 & 0.5 & 0 & 0.5 & 0.8 & 0.4 & 0.8 & 0.9 & 0.72  \\
 							\hline
-							20. & 0.8 & 0.9 & 0.72 & 0.5 & 0.8 & 0.40 \\
+							20. & 0.8 & 0.9 & 0.72 & 0.5 & 0.8 & 0.40 & 0 & 0.5 & 0 & 0.5 & 0 & 0 & 0.8 & 0.5 & 0.4  \\
 							\hline
-						\end{tabular}
-						\caption{The Membership Degree Distribution for the Sample Assignment Problem, I of III}
-						\label{ex:table2}
-					\end{center}
-				\end{table}
-				\begin{table}[!th]
-					\begin{center}
-						\begin{tabular}{|l|c|c|c|c|c|c|}
-							\hline
-							\textbf{$i$} & \textbf{$\mu_{A_3}(u_i)$} & \textbf{$\mu_{B_3}(u_i)$} & \textbf{$\mu_{A_3}(u_i)\cdot\mu_{B_3}(u_i)$} & \textbf{$\mu_{A_4}(u_i)$} & \textbf{$\mu_{B_4}(u_i)$} & \textbf{$\mu_{A_4}(u_i)\cdot\mu_{B_4}(u_i)$}\\
-							\hline
-							1. & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 \\
-							\hline
-							2. & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 \\
-							\hline
-							3. & 0.5 & 0 & 0 & 0.8 & 0.5 & 0.4 \\
-							\hline
-							4. & 0.5 & 0.5 & 0.25 & 0.8 & 0.8 & 0.64 \\
-							\hline
-							5. & 0.5 & 0.8 & 0.4 & 0 & 0.9 & 0 \\
-							\hline
-							6. & 0.5 & 0.8 & 0.4 & 0 & 0.5 & 0 \\
-							\hline
-							7. & 0.5 & 0 & 0 & 0 & 0.5 & 0 \\
-							\hline
-							8. & 0.5 & 0.5 & 0.25 & 0 & 0.8 & 0 \\
-							\hline
-							9. & 0.8 & 0.8 & 0.64 & 0.9 & 0.9 & 0.81 \\
-							\hline
-							10. & 0.8 & 0.8 & 0.64 & 0.9 & 0.5 & 0.45 \\
-							\hline
-							11. & 0.8 & 0 & 0 & 0 & 0.5 & 0.45 \\
-							\hline
-							12. & 0.8 & 0.5 & 0.45 & 0.9 & 0.8 & 0.72 \\
-							\hline
-							13. & 0.8 & 0.8 & 0.64 & 0.5 & 0.9 & 0.45 \\
-							\hline
-							14. & 0.8 & 0 & 0 & 0.5 & 0.5 & 0.25 \\
-							\hline
-							15. & 0.8 & 0.5 & 0.4 & 0.5 & 0.8 & 0.4 \\
-							\hline
-							16. & 0.8 & 0.5 & 0.4 & 0.5 & 0 & 0 \\
-							\hline
-							17. & 0.9 & 0.8 & 0 & 0.5 & 0.9 & 0.45 \\
-							\hline
-							18. & 0 & 0.8 & 0 & 0.5 & 0.5 & 0.25 \\
-							\hline
-							19. & 0 & 0.5 & 0 & 0.5 & 0.8 & 0.4 \\
-							\hline
-							20. & 0 & 0.5 & 0 & 0.5 & 0 & 0 \\
-							\hline
-						\end{tabular}
-						\caption{The Membership Degree Distribution for the Sample Assignment Problem, II of III}
-						\label{ex:table3}
-					\end{center}					
-				\end{table}
-				\begin{table}[!th]
-					\begin{center}
-						\begin{tabular}{|l|c|c|c|c|c|c|}
-							\hline
-							\textbf{$i$} & \textbf{$\mu_{A_5}(u_i)$} & \textbf{$\mu_{B_5}(u_i)$} & \textbf{$\mu_{A_5}(u_i)\cdot\mu_{B_5}(u_i)$}\\
-							\hline
-							1. & 0.9 & 0.94 & 0.84 \\
-							\hline
-							2. & 0.9 & 0 & 0 \\
-							\hline
-							3. & 0.9 & 0.8 & 0.72 \\
-							\hline
-							4. & 0.9 & 0.9 & 0.81 \\
-							\hline
-							5. & 0.5 & 0.94 & 0.47 \\
-							\hline
-							6. & 0.5 & 0 & 0 \\
-							\hline
-							7. & 0.5 & 0.8 & 0.4 \\
-							\hline
-							8. & 0.5 & 0.9 & 0.45 \\
-							\hline
-							9. & 0.94 & 0.94 & 0.88 \\
-							\hline
-							10. & 0.94 & 0 & 0 \\
-							\hline
-							11. & 0.94 & 0.8 & 0.75 \\
-							\hline
-							12. & 0.94 & 0.9 & 0.84 \\
-							\hline
-							13. & 0 & 0.94 & 0 \\
-							\hline
-							14. & 0 & 0.8 & 0 \\
-							\hline
-							15. & 0 & 0.90 & 0 \\
-							\hline
-							16. & 0 & 0.5 & 0 \\
-							\hline
-							17. & 0.8 & 0.94 & 0.75 \\
-							\hline
-							18. & 0.8 & 0 & 0 \\
-							\hline
-							19. & 0.8 & 0.9 & 0.72 \\
-							\hline
-							20. & 0.8 & 0.5 & 0.4 \\
-							\hline
-						\end{tabular}
-						\caption{The Membership Degree Distribution for the Sample Assignment Problem, III of III}
-						\label{ex:table4}
-					\end{center}					
-				\end{table}
+						\end{longtable}
+					\end{landscape}
+				\end{center}
 		\section{Populating the States(Partitions)}
 			\paragraph{}
 				Having achieved a well defined membership probability for each of the graduates into each of the states, in the previous section, we now proceed to assigning the most qualifying candidates to each state, while not exceeding each State's defined expected partition size, capacity that is.
@@ -1775,69 +1695,69 @@
 				\end{align}
 				After successfully applying the algorithm developed in the previous section to make the assignment on the sample problem, we have been able to reach an assignment explained thus:
 				\subsection{The Assignment Table}
-					\paragraph{}
-						\begin{table}[!th]
-							\begin{center}
-								\begin{tabular}{|l|c|c|c|c|}
-									\hline
-									\textbf{Name} & \textbf{State of Origin} & \textbf{College} & \textbf{Posting} & \textbf{Membership Degree} \\
-									\hline
-									GR06 & Akwa-Ibom & BUK, Kano & Osun & 85\% \\
-									\hline
-									GR16 & Kano & AKSU, Akwa-Ibom & Osun & 84\% \\
-									\hline
-									GR14 & Kano & NSUKKA, Enugu & Osun & 74\% \\
-									\hline
-									GR10 & Osun & BUK, Kano & Kwara & 45\% \\
-									\hline
-									GR13 & Kano & OUI, Osun & Kwara & 45\% \\
-									\hline
-									GR09 & Osun & OAU, Osun & Enugu & 64\% \\
-									\hline
-									GR12 & Osun & UNILORIN, Kwara & Akwa-Ibom & 72\% \\
-									\hline
-									GR04 & Kwara & UNILORIN, Kwara & Akwa-Ibom & 64\% \\
-									\hline
-									GR11 & Osun & NSUKKA, Enugu & Akwa-Ibom & 45\% \\
-									\hline
-									GR17 & Enugu & UNIOSUN, Osun & Akwa-Ibom & 45\% \\
-									\hline
-									GR01 & Kwara & OAU, Osun & Akwa-Ibom & 45\% \\
-									\hline
-									GR03 & Kwara & NSUKKA, Enugu & Kano & 88\% \\
-									\hline
-									GR19 & Enugu & UNILORIN, Kwara & Kano & 72\% \\
-									\hline
-									GR08 & Akwa-Ibom & UNILORIN, Kwara & Kano & 72\% \\
-									\hline
-									GR05 & Akwa-Ibom & OAU, Osun & Kano & 47\% \\
-									\hline
-									GR07 & Akwa-Ibom & NSUKKA, Enugu & Kano & 45\% \\
-									\hline
-									GR20 & Enugu & AKSU, Akwa-Ibom & Kano & 40\% \\
-									\hline
-									GR02 & Kwara & BUK, Kano & Kano & 0\% \\
-									\hline
-									GR18 & Enugu & BUK, Kano & Kano & 0\% \\
-									\hline
-									GR15 & Kano & UNILORIN, Kwara & Kano & 0\% \\
-									\hline
-								\end{tabular}
-								\caption{Showing the NYSC Deployment Schedule}
-								\label{ex:table}
-							\end{center}							
-						\end{table}
+					% \paragraph{}
+						% \begin{table}[!th]
+							% \begin{center}
+						\begin{longtable}{|l|c|c|c|c|}
+							\hline
+							\textbf{Name} & \textbf{State of Origin} & \textbf{College} & \textbf{Posting} & \textbf{Membership Degree} \\
+							\hline
+							GR06 & Akwa-Ibom & BUK, Kano & Osun & 85\% \\
+							\hline
+							GR16 & Kano & AKSU, Akwa-Ibom & Osun & 84\% \\
+							\hline
+							GR14 & Kano & NSUKKA, Enugu & Osun & 74\% \\
+							\hline
+							GR10 & Osun & BUK, Kano & Kwara & 45\% \\
+							\hline
+							GR13 & Kano & OUI, Osun & Kwara & 45\% \\
+							\hline
+							GR09 & Osun & OAU, Osun & Enugu & 64\% \\
+							\hline
+							GR12 & Osun & UNILORIN, Kwara & Akwa-Ibom & 72\% \\
+							\hline
+							GR04 & Kwara & UNILORIN, Kwara & Akwa-Ibom & 64\% \\
+							\hline
+							GR11 & Osun & NSUKKA, Enugu & Akwa-Ibom & 45\% \\
+							\hline
+							GR17 & Enugu & UNIOSUN, Osun & Akwa-Ibom & 45\% \\
+							\hline
+							GR01 & Kwara & OAU, Osun & Akwa-Ibom & 45\% \\
+							\hline
+							GR03 & Kwara & NSUKKA, Enugu & Kano & 88\% \\
+							\hline
+							GR19 & Enugu & UNILORIN, Kwara & Kano & 72\% \\
+							\hline
+							GR08 & Akwa-Ibom & UNILORIN, Kwara & Kano & 72\% \\
+							\hline
+							GR05 & Akwa-Ibom & OAU, Osun & Kano & 47\% \\
+							\hline
+							GR07 & Akwa-Ibom & NSUKKA, Enugu & Kano & 45\% \\
+							\hline
+							GR20 & Enugu & AKSU, Akwa-Ibom & Kano & 40\% \\
+							\hline
+							GR02 & Kwara & BUK, Kano & Kano & 0\% \\
+							\hline
+							GR18 & Enugu & BUK, Kano & Kano & 0\% \\
+							\hline
+							GR15 & Kano & UNILORIN, Kwara & Kano & 0\% \\
+							\hline
+							\caption{Showing the NYSC Deployment Schedule\label{ex:table}}
+							% \endfoot
+						\end{longtable}								
+							% \end{center}							
+						% \end{table}
 	\chapter{Discussion and Conclusion}
 		\section{Discussion of Results}
 			\paragraph{}
 				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we make several points for possible improvements that can be explored to enhance the result.
 		\section{Improvement Suggestions}
 			Although, the sample problem outlined in the previous chapter got a 85\% assignment accuracy, by making a few adjustments, we observe that the accuracy could be raised as high as 100\%
-			\begin{itemize}
+			\begin{enumerate}
 				\item When choosing objects into each partition, keep a tab on the number of non-zero assignable members left for each class, if this number is equal to the expected partition size of any class, proceed to make assignments into the class in question. This precaution ensures that each class gets the opportunity to get the maximum number assignments with fitness value different from zero.
 				\item As would be observed, the assignment of probabilities to each partition proceeds partition-wise, that is, iterating from partition to partition and filling them up in turn with the highest-probability member. We also exercised the member-wise assignment, that is, iterating through each object, and assigning each based on its highest probability, taking caution not to exceed the partition width. Putting this method to practise improved the assignment from 85\% to 90\%, which is a significant improvement.
 				\item As cited in the previous point, several routes can be taken to assign objects to the appropriate partitions. Since the candidate-wise iteration introduces some improvements to the assignment, we would investigate further to identify a 'hybrid' algorithm which combines both partition-based and object-based algorithm to make assignment, and this promises to further raise the accuracy level of the assignment schedule.
-			\end{itemize}
+			\end{enumerate}
 		\section{Further Work}
 			As must have been observed in the algorithm designed in this text, an attempt was made to solve a simplified version of the University Timetabling problem. Here, the Constraints are of a simpler construct with no inter-constraint interaction. Such that, by simply multiplying out the individual constraints, we were able to estimate the degree of membership of each object in each partition. In the case of the University Timetabling problem, several constraints have more complex interactions which may not combine simply by multiplying out. The successful assignmt schedule achieved in this text would be improved upon for this cause.
 	\newpage
