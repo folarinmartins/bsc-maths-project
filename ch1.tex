@@ -71,7 +71,7 @@
 	\chapter[ACKNOWLEDGEMENT]{ \centering ACKNOWLEDGEMENT}
 		Great acknowledgement to the Most High: The ONLY Wise One. And to my family, friends and colleagues for their much love. And specially to my Supervisor, Dr. B. S. Ogundare, for giving me the freedom and support to develop the techniques presented in this work.
 	\chapter[ABSTRACT]{ \centering ABSTRACT}
-		In this work, we take a mathematical exploration of certain assignment problems involving assigning a set of objects to non-overlapping subsets (partitions), in which assignment is based on certain properties possessed by the objects and the partitioning sets. Putting this in perspective, we attempt to solve a sample NYSC assignment problem. The algorithm is developed in this work, and certain notes on improvement cited.  We also attempt to generalize this technique to the more general and complex University Timetabling problem.
+		In this work, we take a mathematical exploration of certain assignment problems involving assigning a set of objects to non-overlapping subsets (partitions), in which assignment is based on certain properties possessed by the objects and the partitioning sets. Putting this in perspective, we attempt to solve a sample NYSC assignment problem. The algorithm is developed in this work, and certain notes on improvement cited. We also attempt to generalize this technique to the more complex University Timetabling problem.
 	% \listoffigures
 	\tableofcontents
 	\listoftables
@@ -464,11 +464,11 @@
 					\mid p_i \mid = w_i \cdot \text{no. of graduates} = w_i \cdot n = w_i \cdot 20, \qquad \textit{for i=1,2,...,5}
 				\end{align}
 				\begin{align}
-					\mid p_1 \mid &= w_1 \times 20 = 0.143 \times 20 = 2.86 \approx 3 \\
+					\mid p_1 \mid &= w_1 \times 20 = 0.143 \times 20 = 2.86 \approx 3 \label{eq:p0} \\
 					\mid p_2 \mid &= w_2 \times 20 = 0.095 \times 20 = 1.9 \approx 2 \\
 					\mid p_3 \mid &= w_3 \times 20 = 0.048 \times 20 = 0.96 \approx 1 \\
 					\mid p_4 \mid &= w_4 \times 20 = 0.238 \times 20 = 4.76 \approx 5 \\
-					\mid p_5 \mid &= w_5 \times 20 = 0.476 \times 20 = 9.52 \approx 9
+					\mid p_5 \mid &= w_5 \times 20 = 0.476 \times 20 = 9.52 \approx 9 \label{eq:pn}
 				\end{align}
 		\section{Constraints}
 			The sample problem has two statements of exclusion constraints. We will establish the Constraint functions defining the membership probability of each graduate into each state thus:
@@ -1633,7 +1633,7 @@
 
 							1. & 0.5 & 0 & 0 & 0 & 0.5 & 0 & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 & 0.9 & 0.94 & 0.84 \\
 							\hline
-							2. & 0.5 & 0.94 & 0.47 & 0 & 0.5 & 0  & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 & 0.9 & 0.94 & 0.84\\
+							2. & 0.5 & 0.94 & 0.47 & 0 & 0.5 & 0  & 0.5 & 0.8 & 0.4 & 0.8 & 0.5 & 0.4 & 0.9 & 0 & 0\\
 							\hline
 							3. & 0.5 & 0.80 & 0.40 & 0 & 0.5 & 0 & 0.5 & 0 & 0 & 0.8 & 0.5 & 0.4 & 0.9 & 0.8 & 0.72 \\
 							\hline
@@ -1677,7 +1677,7 @@
 		\section{Populating the States(Partitions)}
 			\paragraph{}
 				Having achieved a well defined membership probability for each of the graduates into each of the states, in the previous section, we now proceed to assigning the most qualifying candidates to each state, while not exceeding each State's defined expected partition size, capacity that is.
-				Recall that from eq(4.9) to eq(4.18), we defined the expected assignment size of each state to be:
+				Recall that from equations \ref{eq:p0} through \ref{eq:pn}, we defined the expected assignment size of each state to be:
 				\begin{align}
 					\mid p_1 \mid &= 3 \notag \\
 					\mid p_2 \mid &= 2 \notag \\
@@ -1750,7 +1750,7 @@
 	\chapter{Discussion and Conclusion}
 		\section{Discussion of Results}
 			\paragraph{}
-				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we make several points for possible improvements that can be explored to enhance the result.
+				From the assignment achieved in the previous Chapter, the total optimal assignment is 17 out of 20, which is a score of 85\%, with an average membership score of 51.6\%. This algorithm can be assessed to have performed good on the task, nonethless, we make several points for possible improvements that could be explored to improve the result.
 		\section{Improvement Suggestions}
 			Although, the sample problem outlined in the previous chapter got a 85\% assignment accuracy, by making a few adjustments, we observe that the accuracy could be raised as high as 100\%
 			\begin{enumerate}
