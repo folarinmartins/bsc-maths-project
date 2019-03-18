@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  18 MAR 2019 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  19 MAR 2019 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,20 +256,20 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))) (./ch1.aux)
 \openout1 = `ch1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 \AtBeginShipoutBox=\box32
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -278,7 +278,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -286,9 +286,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (./ch1.out) (./ch1.out)
 \@outlinefile=\write3
 \openout3 = `ch1.out'.
@@ -390,46 +390,52 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ]
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
  [1
 
 
-] [2] [3] [4]
+] [2] [3]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [5] [6]
+ [4] [5]
 Chapter 2.
-[7
+[6
 
-] [8]
-Overfull \hbox (13.05162pt too wide) in paragraph at lines 249--250
+] [7]
+Overfull \hbox (13.05162pt too wide) in paragraph at lines 248--249
  [][] \OT1/cmr/m/n/10 In-deed, lin-ear pro-gram-ming forms the hinge in the his-tory of com-bi-na-to-rial op-ti-miza-tion. [[]].
  []
 
-[9]
+[8]
 Chapter 3.
-[10
+[9
 
-] [11]
-Underfull \vbox (badness 4492) has occurred while \output is active []
+]
+Underfull \vbox (badness 4024) has occurred while \output is active []
 
- [12]
-Underfull \vbox (badness 3724) has occurred while \output is active []
-
- [13] [14]
+ [10] [11] [12]
 Chapter 4.
-[15
+[13
 
-] [16] [17]
+] [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 2310) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
@@ -475,6 +481,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
+Overfull \hbox (0.19952pt too wide) in paragraph at lines 1015--1019
+\OT1/cmr/m/n/10 The fore-go-ings, based on the first con-straint, cal-cu-lates the de-gree of mem-ber-ship of each ob-ject(graduate)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1025
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
@@ -490,19 +506,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
-Overfull \hbox (0.19952pt too wide) in paragraph at lines 1016--1020
-\OT1/cmr/m/n/10 The fore-go-ings, based on the first con-straint, cal-cu-lates the de-gree of mem-ber-ship of each ob-ject(graduate)
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1026
-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
@@ -536,81 +542,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
-Overfull \hbox (41.18124pt too wide) in paragraph at lines 1569--1571
+Overfull \hbox (41.18124pt too wide) in paragraph at lines 1568--1570
  []\OT1/cmr/bx/n/10 Now,[] \OT1/cmr/m/n/10 Since our sam-ple prob-lem set de-fines two Con-straints, $\OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )$ and $\OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )[]$, 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59] [60]
-Overfull \vbox (11.86885pt too high) has occurred while \output is active []
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61
+ [51] [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53
 
 ]
-Underfull \vbox (badness 10000) detected at line 1742
+Underfull \vbox (badness 10000) detected at line 1741
  []
 
-[62
+[54
 
-] [63]
+] [55]
 Chapter 5.
-[64
+[56
 
-] [65] (./ch1.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1768.
- [66
+] [57] (./ch1.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1767.
+ [58
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1768.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1767.
  (./ch1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1768.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1768.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1767.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1767.
 Package rerunfilecheck Info: File `ch1.out' has not changed.
 (rerunfilecheck)             Checksum: 779077B6324510DEDA7A36D572745798;2171.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1768.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1767.
  ) 
 Here is how much of TeX's memory you used:
- 7175 strings out of 494923
- 101693 string characters out of 6180741
+ 7172 strings out of 494923
+ 101717 string characters out of 6180741
  233456 words of memory out of 5000000
  9931 multiletter control sequences out of 15000+600000
  11480 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,12n,43p,1008b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,12n,43p,1008b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ch1.pdf (74 pages, 287958 bytes).
+Output written on ch1.pdf (66 pages, 283707 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 941 compressed objects within 10 object streams
- 473 named destinations out of 1000 (max. 500000)
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 919 compressed objects within 10 object streams
+ 470 named destinations out of 1000 (max. 500000)
  281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

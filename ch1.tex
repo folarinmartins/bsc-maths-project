@@ -6,9 +6,8 @@
 \usepackage{longtable}
 \usepackage{fancyhdr}
 \usepackage{setspace}
-% \usepackage{pdflscape}
 \usepackage{lscape}
-\doublespacing
+\linespread{1.6}
 \pagestyle{fancyplain}
 % \fancyhead[L]{\leftmark}
 % \fancyhead[C]{} 
@@ -76,7 +75,7 @@
 	\tableofcontents
 	\listoftables
 	\mainmatter
-    \linespread{2.0}
+    \linespread{1.6}
     \chapter{Introduction}
         \paragraph{In}
         introducing this study, we shall proceed under the following main sub-headings:
@@ -423,16 +422,16 @@
 					\item $u_{19}\colon$ \{GR19, Enugu(3), UNILORIN(2)\}
 					\item $u_{20}\colon$ \{GR20, Enugu(3), AKSU(4)\}
 				\end{enumerate}
-		\section{States - Capacity, Weights and Cardinality}
+		\section{States - Capacity, Weights and Cardinality}		
 			\paragraph{}
 				As indicated in the States data, each state has a capacity, $j_i$. So in this case,
-				\begin{itemize}
-					\item[ ] \[J(p_1) = j_1 = 3\]
-					\item[ ] \[J(p_2) = j_2 = 2\]
-					\item[ ] \[J(p_3) = j_3 = 1\]
-					\item[ ] \[J(p_4) = j_4 = 5\]
-					\item[ ] \[J(p_5) = j_5 = 10\]
-				\end{itemize}
+				\begin{align}
+					J(p_1) &= j_1 = 3 \\
+					J(p_2) &= j_2 = 2\\
+					J(p_3) &= j_3 = 1\\
+					J(p_4) &= j_4 = 5\\
+					J(p_5) &= j_5 = 10
+				\end{align}
 				Thus, the maximum capacity of the system is given as:
 				\begin{equation}
 					V = \sum_{i=1}^{5}{J(p_i)} = 3 + 2 + 1 + 5 + 10 = 21
