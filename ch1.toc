@@ -65,7 +65,7 @@
 \contentsline {paragraph}{Constraint A, $\mu _A$: No student should be posted to their State of Origin}{18}{section*.43}
 \contentsline {paragraph}{Constraint B, $\mu _B$: No student should be posted to their State of Studies}{39}{section*.44}
 \contentsline {paragraph}{Now,}{59}{section*.45}
-\contentsline {section}{\numberline {4.6}Populating the States(Partitions)}{62}{section.4.6}
+\contentsline {section}{\numberline {4.6}Populating the States}{62}{section.4.6}
 \contentsline {paragraph}{}{62}{section*.46}
 \contentsline {subsection}{\numberline {4.6.1}The Assignment Table}{62}{subsection.4.6.1}
 \contentsline {chapter}{\numberline {5}Discussion and Conclusion}{64}{chapter.5}

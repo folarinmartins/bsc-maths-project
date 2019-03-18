@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  17 MAR 2019 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  18 MAR 2019 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,7 +595,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1768.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1768.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1768.
 Package rerunfilecheck Info: File `ch1.out' has not changed.
-(rerunfilecheck)             Checksum: 4D4DA451B59965D8FEC500A221AB015E;2185.
+(rerunfilecheck)             Checksum: 779077B6324510DEDA7A36D572745798;2171.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1768.
  ) 
 Here is how much of TeX's memory you used:
@@ -607,7 +607,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  29i,12n,43p,1008b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ch1.pdf (74 pages, 288022 bytes).
+Output written on ch1.pdf (74 pages, 287958 bytes).
 PDF statistics:
  1042 PDF objects out of 1200 (max. 8388607)
  941 compressed objects within 10 object streams
