@@ -1,0 +1,255 @@
+\documentclass[10pt]{beamer}
+\usepackage{graphicx}
+\pagenumbering{arabic}
+\title{UNSTEADY COUETTE FLOW IN A NEWTONIAN FLUID WITH VARIABLE MATERIAL PROPERTIES}
+\author{OLUFUNMILAYO, Temitayo Esther}
+\mode<presentation>{\usetheme{Warsaw}}
+\definecolor{uofsgreen}{rgb}{.125,.5,.25}
+\usecolortheme[named=purple]{structure}
+\begin{document}
+	\begin{frame}
+		\frametitle {\begin{center}
+				\large{\textbf{UNSTEADY COUETTE FLOW IN A NEWTONIAN FLUID WITH VARIABLE MATERIAL PROPERTIES}}
+			\end{center}}
+			\begin{center}
+				\textbf{Presented by}
+			\end{center}
+			\begin{center}
+				\textbf{OLUFUNMILAYO, Temitayo Esther}
+			\end{center}
+			\begin{center}
+				\textbf{MTH/2013/022}
+			\end{center}
+			\begin{center}
+				\textbf{Department of Mathematics,}
+				\\ \textbf{Obafemi Awolowo University, Ile-Ife, Nigeria.}
+			\end{center}
+			\begin{center}
+				\textbf{Supervisor: Prof. S. S. Okoya} 
+			\end{center}
+			\begin{center}
+			 \today
+			\end{center}
+		\end{frame}
+		
+		%\section{INTRODUCTION}
+		%\subsection{A Brief Information}
+		\begin{frame}
+			\frametitle{\textbf{Introduction}}
+		Fluids that follow Newton's viscosity equation, for which viscosity, $ \mu $, does not change with rate of deformation are generally considered to be Newtonian fluids. This type of fluid are water, kerosene, air, alcohol, glycerol and thin motor oil. In this project, the linear equation for a Newtonian fluid is considered and solved. The law of conservation of linear momentum in mathematical form is solved; in absence of body forces for an unsteady incompressible fluid. The momentum equation using the equation for a Newtonian fluid, for a Couette flow is derived.\\~\\
+		Thus, the main objective of this work is to study the unsteady flows of a Newtonian fluid when density and dynamic viscosity are not constant, i.e. these depend on the space variable. To my knowledge such studies in a Newtonian fluid does not seem to have been undertaken. A problem of unidirectional flow involving Newtonian fluid is considered. Exact analytical solution is obtained using the eigen function expansion method.
+		\end{frame}
+		\begin{frame}
+			\frametitle{\textbf{Definiton of keywords}}
+		\begin{itemize}
+		\item \textbf{Fluids:} A fluid is a substance that flows. That is, the particles making up the fluid continuously change their positions relative to one another.
+		\item \textbf{Newtonian fluid:} is a fluid in which the viscous stresses arising from its flow, at every point, are linearly proportional to the local strain rate-the rate of change of its deformation over time. Examples are water, air, alcohol, glycerol, and thin motor oil.
+		\item \textbf{Couette flow:} is the flow of a viscous flow in the space between two surfaces, one of which is moving tangentially relative to the other. The configuration often takes the form of two parallel plates or the gap between two concentric cylinders. The flow is driven by the motion of the upper plate alone, without any externally imposed pressure gradient.
+		\item \textbf{Unsteady flow:} Unsteady-state flow refers to the condition where the fluid properties at a point in the system changes over time. That is, a flow that is a function of time.
+		
+		\end{itemize}
+			
+		\end{frame}
+		
+		
+		\begin{frame}
+			\frametitle{\textbf{Aims and Objectives}}
+			The specific aims and objectives of this project is to;
+				\begin{enumerate}
+				\item Formulate the governing equation of Couette flow for a Newtonian fluid in an unsteady state.
+				\item To provide the solution for the case when the viscosity and density are linear functions of space in direction of $ y $, using the boundary and initial conditions.
+				\end{enumerate}
+	
+		\end{frame}
+		
+		
+			\begin{frame}
+				\frametitle{\textbf{Mehtodology}}
+				Available materials pertinent to the study of Newtonian and Non-Newtonian fluid of the Couette and generalized Couette flow were studied.
+				The law of conservation of linear momentum in mathematical form, for a Newtonian fluid of an unsteady Couette flow with certain assumptions is formulated.
+				In solving this problem, non-dimensional parameters were introduced with boundary and initial conditions and eigen function expansion method was employed to solve the problem.
+				
+				
+			\end{frame}
+		
+		\begin{frame}
+			\frametitle{\textbf{Mathematical Formulation / Results}}
+			The constitutive assumption for a Newtonian fluid is of the form
+			\begin{equation}
+			\bar{T} = -p \bar{I} + \mu \bar{A_1}
+			\end{equation}
+			in which $ \bar{T} $ is the Cauchy stress tensor, $ \bar{I} $ is the identity tensor, $ p $ is pressure, $ \mu $ is the Coefficient of viscosity called dynamic viscosity, $ \bar{A_1} $ is the first Rivlin-Ericksen tensor and $ -p\bar{I} $ is Spherical stress.\\
+			$$ \bar{A_1} = \bar{L} + \bar{L}^T, ~~ \bar{L} = \nabla\bar{V} $$
+			\begin{equation}
+			\bar{A_1} = (\nabla\bar{V}) + (\nabla\bar{V})^T
+			\end{equation} 
+			where $ (^T) $ signifies the matrix transpose. Further, the critical review of Dunn and Rajagopal already gives a concise discussion about the requirement of model $ Eq. (1) $ to be compatible with thermodynamics
+		\begin{equation}
+		\mu \geq 0.
+		\end{equation}
+		For unidirection flow, we take the velocity fluid
+		\begin{equation}
+		\bar{V} = ( u(y ,t), 0, 0 ).
+		\end{equation}
+			
+		\end{frame}
+		
+		\begin{frame}
+		where $ u $ is the velocity in the $ x $ direction. Moreover, what we require is that, the viscosity and density are not constants but varies with respect to the space variable $ y $. Using $ Eq. (4) $, the continuity equation is satisfied identically and the momentum equation in the absence of pressure gradient yields
+		\begin{equation}
+		\rho (y) \frac{\partial u}{\partial t} = \frac{\partial}{\partial y} \bigg( \mu (y) \frac{\partial u}{\partial y} \bigg).
+		\end{equation}\\~\\
+		
+		\textbf{Couette flow}\\
+		( Case where $ \mu $ and $ \rho $ are linear functions of y ). Let us consider the Newtonian fluid with variable viscosity and density between two rigid plates which are at rest initially. the plates at $ y = h e^{-\pi} $ is fixed and the fluid motion starts suddenly due to a constant velocity $ U_0 $ of the plate at$ y = he^{-\pi} $. The governing differential equation is $ Eq. (5) $ with the following boundary and initial conditions.\\
+		$$u ( he^{-\pi}, t ) = 0, ~~~~ for~~ all ~~ t,$$
+		\begin{equation}
+		u ( he^{\pi}, t ) = U_0, ~~~~for ~~t > 0,
+		\end{equation}
+		$$u ( y, 0 ) = 0,~~~~~ for~~ h e^{-\pi} < y < h e^{\pi}.$$
+		\end{frame}
+		
+		\begin{frame}
+		Taking
+		\begin{equation}
+		\mu(y) = k_1 \frac{y}{h}, ~~ \rho(y) = k_2 \frac{h}{y}
+		\end{equation}
+		and introducing the following non-dimensional parameters
+		\begin{equation}
+		\bar{u} = \frac{u}{U_0},~~ \bar{y} = \frac{y}{h},~~ \bar{t} = \frac{k_1}{k_2} \frac{t}{{U_0}^2}.
+		\end{equation}
+		Therefore, we have the following, after omitting the bars for simplicity
+		\begin{equation}
+		 P_1 \frac{\partial}{\partial y} \bigg( y \frac{\partial u}{\partial y} \bigg) - \frac{1}{y} \frac{\partial u}{\partial t} = 0
+		\end{equation}
+		$$ u ( e^{-\pi}, t ) = 0 ~~~ for ~~ all ~~ t $$
+		$$ u ( e^\pi, t ) = 1 ~~~ for ~~ t > 0 $$
+		\begin{equation}
+		u ( y, 0 ) = 0 ~~~ for ~~ e^{-\pi} < y < e^\pi,
+		\end{equation}
+		where
+		\begin{equation}
+		P_1 = \bigg(\frac{k_1}{k_2} \bigg)^2 \frac{1}{h^2 {U_0}^2}.
+		\end{equation}
+		and $ k_1 $, and $ k_2 $ are constants having dimensions of $ \mu $,and $ \rho $, respectively.
+		
+		\end{frame}
+		
+		\begin{frame}
+		In order to obtain the solution we write
+		\begin{equation}
+		u ( y, t ) = v(y) + w (y, t)
+		\end{equation}
+		where $ v(y) $ is a time-independent fuction representing the "stationary state" solution, and $ w(y, t) $ the function representing the "transient state" solution. Inserting $  Eq. (12) $ into $ Eq. (9) $ we find that\\
+		for stationary state, we have;
+		\begin{equation}
+		P_1 \frac{d}{dy} \bigg(y \bigg(\frac{d v}{d y} \bigg) \bigg) = 0
+		\end{equation}
+		\begin{equation}
+		\frac{d}{d y} \bigg(y \bigg(\frac{d v}{d y} \bigg) \bigg) = 0
+		\end{equation}
+		\begin{equation}
+		v( e^{-\pi} ) = 0, ~~~ v( e^\pi ) = 1 .
+		\end{equation}
+		Hence,
+		\begin{equation}
+		 v(y) = \frac{1}{2} \bigg( 1 + \frac{\ln{y}}{\pi} \bigg) .
+		\end{equation}
+				
+		\end{frame}
+		
+		\begin{frame}
+		For transient state;
+		\begin{equation}
+		P_1 \frac{\partial}{\partial y} \bigg( y \frac{\partial w}{\partial y} \bigg) - \frac{1}{y} \frac{\partial w}{\partial t} = 0
+		\end{equation}
+		$$ w ( e^{-\pi}, t ) = 0 ~~~ for ~~ all ~~ t, $$
+		$$ w( e^\pi, t ) = 0 ~~~ for ~~ t>0, $$
+		\begin{equation}
+		  w(y, t) = -v(y).
+		\end{equation}
+		Now, we will use eigen function expansion method to solve $ Eq. (17) $ subject to boundary and initial conditions $ Eq. (18) $. For that we write $ w(y, t) $ in term of complete orthonormal set $ \{\phi_n\} $ as generalised Fourier series
+		\begin{equation}
+		w(y,t) = \sum_{n = 1}^{\infty} a_n(t) \phi_n(y),
+		\end{equation}
+		where the function $ \phi_n $ satisfies the following eigenvalue problem
+		\begin{equation}
+		\frac{d}{d y} \bigg( y \frac{d \phi_n (y)}{d y} \bigg) + \lambda \frac{\phi_n(y)}{y}
+		= 0 , 
+		\end{equation}
+		\begin{equation}
+		 e^{-\pi} < y < e^\pi, ~~ \phi(e^{-\pi}) = 0 = \phi(e^\pi).
+		\end{equation}
+			
+		\end{frame}
+		
+		\begin{frame}
+		The solution of $ Eq. (20) $ gives the following eigen function $ \phi_n $ and eigen values $ \lambda_n $:
+		\begin{equation}
+		\phi_n = D \sin(n \ln y), ~~ \lambda_n = n^2, ~ n=1,2,3,...
+		\end{equation}
+		where $ D $ is a constant.
+		Now, in order to find $ a_n(t) $, we substitute $ Eq. (19) $ into $ Eq. (17) $ and use the orthonormality conditions of $ \phi_n $ and separation of variables to obtain
+		\begin{equation}
+		\frac{d a_n(t)}{a_n(t)} = - \lambda P_1 dt
+		\end{equation}
+		which on finding the solution gives
+		\begin{equation}
+		a_n(t) = E_n e^{- n^2 P_1}
+		\end{equation}
+		where $ E_n $ are the constants and $ \lambda = n^2 $.
+		We now assemble the general solution of the homogeneous problem expressed in equations $ (22) ~ and ~ (24) $
+		$$ w(y,t) = \sum_{n=1}^{\infty} a_n(t)\phi_n(t) $$
+		\begin{equation}
+		w(y,t) = \sum_{n= 1}^{\infty} F_n \sin(n \ln y) e^{- n^2 P_1 t}
+		\end{equation}
+		where $ F_n $ are the constants.
+		
+		\end{frame}
+		
+		\begin{frame}
+		Now using the boundary condition in $ Eq. (18) $; $ w(y; 0) = -v(y) $
+		\begin{equation}
+		\sum_{n= 1}^{\infty} F_n \sin(n \ln y) = w(y,0) = - \frac{1}{2} \bigg( 1 + \frac{\ln{y}}{\pi} \bigg).
+		\end{equation}
+		This requires, using orthonormality condition
+		\begin{equation}
+		F_n = \frac{-\frac{1}{2} \int_{e^{-\pi}}^{e^\pi} \frac{1}{y} \bigg( 1 + \frac{\ln{y}}{\pi} \bigg) \sin(n \ln y) dy   }{\int_{e^{-\pi} }^{e^\pi}  \sin^2 (n \ln y) \frac{1}{y} dy } = \frac{(-1)^n}{n\pi}
+		\end{equation}
+		Thus the complete velocity distribution $ u(y,t) = v(y) + w(y,t) $ is given by
+		\begin{equation}
+		u(y,t) = - \frac{1}{2} \bigg( 1 + \frac{\ln{y}}{\pi} \bigg) + \frac{1}{\pi} \sum_{n= 1}^{\infty} \frac{(-1)^n}{n} \sin(n \ln y) e^{- n^2 P_1 t}
+		\end{equation}
+		The relaxation time $ t_r $ of the velocity field is given by
+		$$ t_r = \frac{1}{p_1 n^2} $$
+		
+		
+		
+		\end{frame}
+				
+		\begin{frame}
+			\frametitle{\textbf{Conclusion}}
+	In this paper, the exact analytical solution for the problem of a Newtonian fluid was studied. The material properties of the fluid have space dependence. An eigen function expansion method has been employed to obtain the solution. The obtained solution was in term of trigonometric function. The relaxation time for the velocity profile in noted. It is found that the relaxation time decreases with an increase in dynamic viscosity.
+			
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{\textbf{References}}
+			\begin{thebibliography}{99}
+				\bibitem {} S. Asghar, T. Hayat, P.D. Ariel (2007) Unsteady Couette flows in a second grade fluid with variable material properties. Communications in Nonlinear Science and Numerical Simulation 14 (2009) 154-159
+				\bibitem {} K. R. Rajagopal (1982) A note on unsteady unidirectional flows of a non-Newtonian fluid. Int J Non-Linear Mech 1982;17:369:73.
+				\bibitem {} K.R. Rajagopal (1984) On the creeping flow of a second order fluid. J Non-Newtonian Fluid Mech 1984;48:239;46.
+				\bibitem {} Hayat T, Asghar S, Siddiqui AM. Periodic unsteady flows of a non-Newtonian fluid. Acta Mech 1998;131:169;75.
+				\bibitem {} Hayat T, Asghar S, Siddiqui AM. Some unsteady unidirectional flows in a non-Newtonian fluid. Int J Eng Sci 2000;38:337;46.
+				\bibitem {} Dunn JE, Fosdick RL. Thermodynamics, stability and boundedness of fluids of complexity 2 and fluids of second grade. Arch Rat Mech Anal 1974;56:191.
+				\bibitem {} Dunn JE, Rajagopal KR. Fluids of differential type: critical review and thermodynamic analysis. Int J Eng Sci 1995;33:689-729. 
+			\end{thebibliography}
+		\end{frame}
+				
+		
+		\begin{frame}
+			\centering\textbf{\large{	Thank You.}}
+
+		
+		\end{frame}
+	\end{document}
