@@ -1,13 +1,13 @@
 \documentclass[10pt]{beamer}
 % \mode<presentation>{\usetheme{Warsaw}}%Boadilla Antibes Singapore Hannover Madrid
 \usetheme{Warsaw}
+\usepackage{amsmath,amssymb,latexsym,enumerate}
 \title{Solution to Attribute-Based Assignment Problems}
 \subtitle{A Primer to the University Timetabling Problem}
 \author{Folarin, Wasiu Jr.}
-\institute{Obafemi Awolowo University\\Department of Mathematics}
+\institute{Department of Mathematics\\Obafemi Awolowo University\\Ile-Ife, Nigeria.}
 \date{\today}
 \logo{\includegraphics[height=0.5cm]{figures/oau.png}}
-
 \begin{document}
 	\begin{frame}
 		\titlepage
@@ -18,14 +18,93 @@
 		\tableofcontents
 	\end{frame}
 
-	\section{Section 1}
-		\subsection{sub a}
+	\section{Introduction}
+		\subsection{Abstract}		
+			\begin{frame}
+				\frametitle{Abstract}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\end{frame}
 		
-		\begin{frame}
-			\frametitle{Title}
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		\end{frame}
+		\subsection{Motivation}		
+			\begin{frame}
+				\frametitle{Motivation}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\end{frame}
 		
+		\subsection{A Reduction Problem}		
+			\begin{frame}
+				\frametitle{A Reduction Problem}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\end{frame}
+	
+	\section{The Algorithm}
+		\subsection{Highlights}
+			\begin{frame}
+				\frametitle{The Notion of Order}
+				To apply this algorithm, we first need to define the notion of order about the characteristics of interest. For example, 
+				\begin{itemize}
+					\item If the basis for assignment is distance between the partitions, we need to serialize all the states according to their relative distances, as in the sample problem
+					\item If body size, we need to assign model BMI values to each category
+				\end{itemize}
+				\vfill
+				\begin{alertblock}{NB}
+					A mix characteristics can be considered for any assignment, so long as each partition can be represented with an ideal value, which will be compared with the characteristic value of each candidate
+				\end{alertblock}
+			\end{frame}
+			
+			\begin{frame}
+				\frametitle{The Constraint Functions}
+				We define constraint function(s) based on the variables or characteristics of interest\\
+				\vfill
+				\begin{block}{Illustration}
+					\begin{align}
+						\mu_j(u_i) &= \frac{1}{1+\left( j - s(u_i) \right)^2}\\
+						\notag \\
+						\mu_j(u_i) &= \frac{\left( j - s(u_i) \right)^2}{1+\left( j - s(u_i) \right)^2} \\
+						\notag
+					\end{align}
+				\end{block}
+			\end{frame}
+			
+			
+			\begin{frame}
+				\frametitle{Adjusting for Capacities}
+				Whenever capacity is defined for each partition, we:
+				\begin{itemize}
+					\item Establish the feasibility of an optimum assignment schedule.
+					\item Determine the proportionate number of objects due to each partition
+				\end{itemize}
+				\vfill
+				\begin{block}{Illustration}
+					Let 
+					\begin{equation}
+						J(p_i) = j_i
+					\end{equation}
+					be the maximum capacity each partition $p_i$ can contain.
+					\begin{equation}
+						V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
+					\end{equation}
+					\begin{equation}
+						\mid U \mid \leq V
+					\end{equation}
+				\end{block}
+			\end{frame}
+			
+			\begin{frame}
+				\frametitle{Assigning objects to partitions}
+				The following steps conclude the assignment procedure
+				\begin{itemize}
+					\item If multiple constraints are defined, we combine each membership by mutiplying out
+					\item We assign each candidate to the best-matched partition group
+				\end{itemize}
+			\end{frame}
+			
+			\begin{frame}
+				\frametitle{The Constraint Functions}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\end{frame}
+			
+			
 		\begin{frame}
 			\frametitle{List}
 			\begin{itemize}
