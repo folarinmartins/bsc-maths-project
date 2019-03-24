@@ -3,3 +3,5 @@
 \beamer@sectionintoc {2}{A Sample Problem: NYSC Posting}{7}{0}{2}
 \beamer@subsectionintoc {2}{1}{Problem Statement}{7}{0}{2}
 \beamer@subsectionintoc {2}{2}{The Constraints}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Assignment Schedule}{12}{0}{2}
+\beamer@sectionintoc {3}{End}{13}{0}{3}

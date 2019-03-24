@@ -30,12 +30,17 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {2}{2}{2}{11/11}{The Constraints}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{2}{3}{12/12}{The Constraints}{0}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Assignment Schedule}}
+\headcommand {\slideentry {2}{3}{1}{12/12}{Assignment Schedule}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{2}{4}{13/13}{The Constraints}{0}}
+\headcommand {\beamer@sectionpages {7}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\sectionentry {3}{End}{13}{End}{0}}
+\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {10}{13}}
-\headcommand {\beamer@sectionpages {7}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@sectionpages {13}{13}}
 \headcommand {\beamer@documentpages {13}}
 \headcommand {\gdef \inserttotalframenumber {12}}
