@@ -2,172 +2,298 @@
 % \mode<presentation>{\usetheme{Warsaw}}%Boadilla Antibes Singapore Hannover Madrid
 \usetheme{Warsaw}
 \usepackage{amsmath,amssymb,latexsym,enumerate}
+\usepackage{longtable}
 \title{Solution to Attribute-Based Assignment Problems}
 \subtitle{A Primer to the University Timetabling Problem}
-\author{Folarin, Wasiu Jr.}
-\institute{Department of Mathematics\\Obafemi Awolowo University\\Ile-Ife, Nigeria.}
+\author{\textbf{Folarin, Wasiu Jr.}\\ MTH/2014/014}
+\institute{\textbf{Dr. B. S. Ogundare}\\ \textit{Supervisor}}
 \date{\today}
 \logo{\includegraphics[height=0.5cm]{figures/oau.png}}
 \begin{document}
 	\begin{frame}
 		\titlepage
 	\end{frame}
-	
-	\begin{frame}
-		\frametitle{Outline}
-		\tableofcontents
-	\end{frame}
+
+	% \begin{frame}
+	% 	\frametitle{Outline}
+	% 	\tableofcontents
+	% \end{frame}
 
 	\section{Introduction}
-		\subsection{Abstract}		
+		\subsection{Core Concepts}
 			\begin{frame}
-				\frametitle{Abstract}
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				\frametitle{The Nature of Attributes}
+				\begin{definition}
+					An Attribute is any characteristic of a group of objects that can serve as a basis for classification
+				\end{definition}
+				\begin{example}
+					\begin{itemize}
+						\item Age
+						\item State of Origin
+						\item Courses offered in current Semester
+						\item Body mass
+						\item O'Level Results
+						\item etc...
+					\end{itemize}
+				\end{example}
 			\end{frame}
-		
-		\subsection{Motivation}		
+
 			\begin{frame}
-				\frametitle{Motivation}
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				\frametitle{Partitions}
+				\begin{definition}
+					A Partition, is a classification of objects based on an \underline{ideal value} of one or more \texttt{attributes}
+				\end{definition}
+				\begin{example}
+					\begin{itemize}
+						\item Teens, Young Adults,... (based on the Age attribute of objects)
+						\item Hausa, Igbo, Yoruba,... (based on the State of Origin attribute)
+						\item etc...
+					\end{itemize}
+				\end{example}
 			\end{frame}
-		
-		\subsection{A Reduction Problem}		
+
 			\begin{frame}
-				\frametitle{A Reduction Problem}
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			\end{frame}
-	
-	\section{The Algorithm}
-		\subsection{Highlights}
-			\begin{frame}
-				\frametitle{The Notion of Order}
-				To apply this algorithm, we first need to define the notion of order about the characteristics of interest. For example, 
-				\begin{itemize}
-					\item If the basis for assignment is distance between the partitions, we need to serialize all the states according to their relative distances, as in the sample problem
-					\item If body size, we need to assign model BMI values to each category
-				\end{itemize}
+				\frametitle{Constraints}
 				\vfill
-				\begin{alertblock}{NB}
-					A mix characteristics can be considered for any assignment, so long as each partition can be represented with an ideal value, which will be compared with the characteristic value of each candidate
-				\end{alertblock}
-			\end{frame}
-			
-			\begin{frame}
-				\frametitle{The Constraint Functions}
-				We define constraint function(s) based on the variables or characteristics of interest\\
-				\vfill
-				\begin{block}{Illustration}
+				\begin{definition}<1->
+					A Constraint function, $\mu$, matches the \underline{Ideal value} of a partition, $p_i$, to the \texttt{attribute} value of an object, $u_j$, and assigns a membership value viz:
 					\begin{align}
-						\mu_j(u_i) &= \frac{1}{1+\left( j - s(u_i) \right)^2}\\
-						\notag \\
-						\mu_j(u_i) &= \frac{\left( j - s(u_i) \right)^2}{1+\left( j - s(u_i) \right)^2} \\
-						\notag
+						\mu(p_i,u_j) &\mapsto [0,1] \textit{\ \ \  i,j $\in \mathbf{Z}$ }\notag
 					\end{align}
-				\end{block}
-			\end{frame}
-			
-			
-			\begin{frame}
-				\frametitle{Adjusting for Capacities}
-				Whenever capacity is defined for each partition, we:
-				\begin{itemize}
-					\item Establish the feasibility of an optimum assignment schedule.
-					\item Determine the proportionate number of objects due to each partition
-				\end{itemize}
+
+				\end{definition}
 				\vfill
+				\begin{example}<2->
+					\begin{description}
+						\item [NYSC:] No student should be posted to their State of Origin.
+						\item [ANALYSIS:] Students should be posted as far as possible from their States of Origin
+						\item [ATTRIBUTE:] The distance of each state from a common point
+					\end{description}
+				\end{example}
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{Classes of Constraints}
+				\vfill
+				\begin{definition}<1->
+					\begin{itemize}
+						\item \textbf{Binary Constraints} assign a membership value $v \in \{0,1\}$ to each object
+						\item \textbf{Continuous Constraints} assign a membership value $v \in [0,1]$ to each object
+					\end{itemize}
+				\end{definition}
+				\begin{definition}<1->
+					\begin{itemize}
+						\item \textbf{Inclusion Constraints} admit objects based on proximity to the \texttt{ideal value}
+						\item \textbf{Exclusion Constraints} admit objects based on distance from the \texttt{ideal value}
+					\end{itemize}
+				\end{definition}
+			\end{frame}
+
+	\section{A Sample Problem: NYSC Posting}
+		\subsection{Problem Statement}
+			\begin{frame}
+				\frametitle{The NYSC Posting Problem}
+				Given a number of graduates, we seek to post them to Service States under the following constraints:
+				\begin{enumerate}
+					\item No students should be posted to their State of Origin
+					\item No students should be posted to their States of study
+					\item The maximum capacity of each state must not be exceeded%\footnote{This algorithm innately caters to capacity constraints}
+					\item All students should be assigned
+				\end{enumerate}
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{The States - Partitions}
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|}
+						\hline
+						\textbf{Serial} & \textbf{State} & \textbf{Capacity} \\
+						\hline
+						1 & Osun State & 3\\
+						\hline
+						2 & Kwara State & 2\\
+						\hline
+						3 & Enugu State & 1\\
+						\hline
+						4 & Akwa-Ibom State & 5\\
+						\hline
+						5 & Kano State & 1\\
+						\hline
+					\end{tabular}		
+				\end{center}
+			\end{frame}
+			\begin{frame}
+				\frametitle{The Graduates - Objects}
+				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						\textbf{Serial} & \textbf{Name} & \textbf{State of Origin} & \textbf{University}\\
+						\hline
+						$u_{1}$ & GR01 & Kwara(2) & OAU(1)\\
+						\hline
+						$u_{2}$ & GR02 & Kwara(2) & BUK(5)\\
+						\hline
+						$u_{3}$ & GR03 & Kwara(2) & NSUKKA(3)\\
+						\hline
+						$u_{4}$ & GR04 & Kwara(2) & UNILORIN(2)\\
+						\hline
+						$u_{5}$ & GR05 & Akwa-Ibom(4) & OAU(1)\\
+						\hline
+						$u_{6}$ & GR06 & Akwa-Ibom(4) & BUK(5)\\
+						\hline
+						$u_{7}$ & GR07 & Akwa-Ibom(4) & NSUKKA(3)\\
+						\hline
+						$\vdots $ & $\vdots $ & $\vdots $ & $\vdots $ \\
+						\hline
+						$u_{16}$ & GR16 & Kano(5) & AKSU(4)\\
+						\hline
+						$\vdots $ & $\vdots $ & $\vdots $ & $\vdots $ \\
+						\hline
+						$u_{20}$ & GR20 & Enugu(3) & AKSU(4)\\
+						\hline
+					\end{tabular}		
+				\end{center}
+			\end{frame}
+
+			\subsection{The Constraints}
+			\begin{frame}
+				\frametitle{Constraint A, $\mu_A\colon u\mapsto [0,1]$}
+				Constraint A, $\mu_A$: No student should be posted to their State of Origin
 				\begin{block}{Illustration}
-					Let 
 					\begin{equation}
-						J(p_i) = j_i
-					\end{equation}
-					be the maximum capacity each partition $p_i$ can contain.
-					\begin{equation}
-						V = \sum_{ i = 1 }^{k}{J(p_i)} = \sum_{i=1}^{k}{j_i}
-					\end{equation}
-					\begin{equation}
-						\mid U \mid \leq V
+						\mu_{A_j}(u_i) = \frac{\left(j-s_A(u_i)\right)^2}{1 + \left(j-s_A(u_i)\right)^2} \notag
 					\end{equation}
 				\end{block}
+				\begin{example}
+					\begin{align}
+						\mu_{A_1}(u_1) &= \frac{\left(1-s_A(u_1)\right)^2}{1 + \left(1-s_A(u_1)\right)^2} \notag\\
+						&= \frac{\left(1-2\right)^2}{1 + \left(1-2\right)^2} \notag \\
+						&= 0.5 \notag \\
+						&\vdots \notag
+					\end{align}
+				\end{example}
+			\end{frame}
+			\begin{frame}
+				\frametitle{Constraint B, $\mu_B\colon u\mapsto [0,1]$}
+				Constraint B, $\mu_B$: No student should be posted to their State of studies
+				\begin{block}{Illustration}
+					\begin{equation}
+						\mu_{B_j}(u_i) = \frac{\left(j-s_B(u_i)\right)^2}{1 + \left(j-s_B(u_i)\right)^2} \notag
+					\end{equation}
+				\end{block}
+				\begin{example}
+					\begin{align}
+						\mu_{B_1}(u_1) &= \frac{\left(1-s_B(u_1)\right)^2}{1 + \left(1-s_B(u_1)\right)^2}\notag\\
+						&= \frac{\left(1-1\right)^2}{1 + \left(1-1\right)^2} \notag \\
+						&= 0 \notag \\
+						&\vdots \notag
+					\end{align}
+				\end{example}
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{The Solution}				
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|}
+						\hline
+							\textbf{Name} & \textbf{S. of Origin} & \textbf{University} & \textbf{Posting} & \textbf{Membership} \\
+							\hline
+							GR06 & Akwa-Ibom & BUK, Kano & Osun & 85\% \\
+							\hline
+							GR16 & Kano & AKSU, Akwa-Ibom & Osun & 84\% \\
+							\hline
+							GR04 & Kwara & UNILORIN, Kwara & Akwa-Ibom & 64\% \\
+							\hline
+							GR01 & Kwara & OAU, Osun & Akwa-Ibom & 45\% \\
+							\hline
+							GR03 & Kwara & NSUKKA, Enugu & Kano & 88\% \\
+							\hline
+							GR05 & Akwa-Ibom & OAU, Osun & Kano & 47\% \\
+							\hline
+							GR07 & Akwa-Ibom & NSUKKA, Enugu & Kano & 45\% \\
+							\hline
+							GR20 & Enugu & AKSU, Akwa-Ibom & Kano & 40\% \\
+							\hline
+							$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+							\hline
+					\end{tabular}		
+				\end{center}
 			\end{frame}
 			
 			\begin{frame}
-				\frametitle{Assigning objects to partitions}
-				The following steps conclude the assignment procedure
-				\begin{itemize}
-					\item If multiple constraints are defined, we combine each membership by mutiplying out
-					\item We assign each candidate to the best-matched partition group
-				\end{itemize}
+				\frametitle{The Presentation}	
+				\begin{center}			
+					\begin{quote}
+						\centering \textbf{Thank You!}
+					\end{quote}					
+				\end{center}
 			\end{frame}
-			
-			\begin{frame}
-				\frametitle{The Constraint Functions}
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			\end{frame}
-			
-			
-		\begin{frame}
-			\frametitle{List}
-			\begin{itemize}
-				\item Point A
-				\item Point B
-				\begin{itemize}
-					\item part 1
-					\item part 2
-				\end{itemize}
-				\item Point C
-				\item Point D
-			\end{itemize}
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Using Columns}
-			\begin{columns}
-				\column{0.5\textwidth}
-					<text>
-				\column{0.5\textwidth}
-					\centering
-					\begin{figure}[!htb]
-						\center{\includegraphics[width=\textwidth]
-						{figures/fig1.png}}
-					\caption{\label{fig:fig1} My figure.  An example of a cool figure}
-				\end{figure}
-			\end{columns}
-		\end{frame}
-		
-		\begin{frame}
-			\frametitle{Listing}
-			\begin{description}
-				\label{terms}
-				\item[API] Application Programming Interface
-				\item[LAN] Local Area Network
-				\item[ASCII] American Standard Code for Information Interchange
-			\end{description}
-			\begin{block}{Block Title}
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-				sed do eiusmod tempor incididunt ut labore et 
-				dolore magna aliqua.
-			\end{block}
-		\end{frame}
-		\begin{frame}
-			\begin{definition}
-				A prime number is a number that...
-			\end{definition}
-			\begin{example}
-				A prime number is a number that...
-			\end{example}
-			\begin{theorem}[Pythagoras] 
-				$ a^2 + b^2 = c^2$
-			\end{theorem}
-			\begin{corollary}
-				$ x + y = y + x  $
-			\end{corollary}
-			\begin{proof}
-				$\omega +\phi = \epsilon $
-			\end{proof}
-			\hyperlink{terms}{\beamergotobutton{go to terms page}}
-		\end{frame}
-		
-		\begin{frame}
+
+
+		% \begin{frame}
+		% 	\frametitle{List}
+		% 	\begin{itemize}
+		% 		\item Point A
+		% 		\item Point B
+		% 		\begin{itemize}
+		% 			\item part 1
+		% 			\item part 2
+		% 		\end{itemize}
+		% 		\item Point C
+		% 		\item Point D
+		% 	\end{itemize}
+		% \end{frame}
+
+		% \begin{frame}
+		% 	\frametitle{Using Columns}
+		% 	\begin{columns}
+		% 		\column{0.5\textwidth}
+		% 			<text>
+		% 		\column{0.5\textwidth}
+		% 			\centering
+		% 			\begin{figure}[!htb]
+		% 				\center{\includegraphics[width=\textwidth]
+		% 				{figures/fig1.png}}
+		% 			\caption{\label{fig:fig1} My figure.  An example of a cool figure}
+		% 		\end{figure}
+		% 	\end{columns}
+		% \end{frame}
+
+		% \begin{frame}
+		% 	\frametitle{Listing}
+		% 	\begin{description}
+		% 		\label{terms}
+		% 		\item[API] Application Programming Interface
+		% 		\item[LAN] Local Area Network
+		% 		\item[ASCII] American Standard Code for Information Interchange
+		% 	\end{description}
+		% 	\begin{block}{Block Title}
+		% 		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		% 		sed do eiusmod tempor incididunt ut labore et
+		% 		dolore magna aliqua.
+		% 	\end{block}
+		% \end{frame}
+		% \begin{frame}
+		% 	\begin{definition}
+		% 		A prime number is a number that...
+		% 	\end{definition}
+		% 	\begin{example}
+		% 		A prime number is a number that...
+		% 	\end{example}
+		% 	\begin{theorem}[Pythagoras]
+		% 		$ a^2 + b^2 = c^2$
+		% 	\end{theorem}
+		% 	\begin{corollary}
+		% 		$ x + y = y + x  $
+		% 	\end{corollary}
+		% 	\begin{proof}
+		% 		$\omega +\phi = \epsilon $
+		% 	\end{proof}
+		% 	\hyperlink{terms}{\beamergotobutton{go to terms page}}
+		% \end{frame}
+
+		% \begin{frame}
 			% \frametitle{List}
 			% \begin{itemize}
 			% \pause
@@ -185,27 +311,27 @@
 			% \pause
 			% \item Point D
 			% \end{itemize}
-		\end{frame}
-		\begin{frame}
-			\frametitle{More Lists}
-			\begin{enumerate}[(I)]
-			\item<-2,4-5,7> Point A
-			\item<2-> Point B
-			\begin{itemize}
-			\item<3-> part 1
-			\item<4-> part 2
-			\end{itemize}
-			\item<5-> Point C
-			\item<6-> Point D
-			\item<7> Point D
-			\end{enumerate}
-			\textbf<2>{Example Text}
-			\textit<2>{Example Text}
-			\textsl<2>{Example Text}
-			\textrm<2>{Example Text}
-			\textsf<2>{Example Text}
-			\textcolor<2>{orange}{Example Text}
-			\alert<2>{Example Text}
-			\structure<2>{Example Text}
-		\end{frame}
+		% \end{frame}
+		% \begin{frame}
+		% 	\frametitle{More Lists}
+		% 	\begin{enumerate}[(I)]
+		% 	\item<-2,4-5,7> Point A
+		% 	\item<2-> Point B
+		% 	\begin{itemize}
+		% 	\item<3-> part 1
+		% 	\item<4-> part 2
+		% 	\end{itemize}
+		% 	\item<5-> Point C
+		% 	\item<6-> Point D
+		% 	\item<7> Point D
+		% 	\end{enumerate}
+		% 	\textbf<2>{Example Text}
+		% 	\textit<2>{Example Text}
+		% 	\textsl<2>{Example Text}
+		% 	\textrm<2>{Example Text}
+		% 	\textsf<2>{Example Text}
+		% 	\textcolor<2>{orange}{Example Text}
+		% 	\alert<2>{Example Text}
+		% 	\structure<2>{Example Text}
+		% \end{frame}
 \end{document}

@@ -1,51 +1,41 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
+\headcommand {\beamer@subsectionpages {2}{1}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Core Concepts}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{Core Concepts}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
-\headcommand {\beamer@subsectionpages {3}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Abstract}}
-\headcommand {\slideentry {1}{1}{1}{3/3}{Abstract}{0}}
+\headcommand {\slideentry {1}{1}{2}{3/3}{Core Concepts}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Motivation}}
-\headcommand {\slideentry {1}{2}{1}{4/4}{Motivation}{0}}
-\headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{A Reduction Problem}}
-\headcommand {\slideentry {1}{3}{1}{5/5}{A Reduction Problem}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\sectionentry {2}{The Algorithm}{6}{The Algorithm}{0}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Highlights}}
-\headcommand {\slideentry {2}{1}{1}{6/6}{Highlights}{0}}
+\headcommand {\slideentry {1}{1}{3}{4/5}{Core Concepts}{0}}
+\headcommand {\beamer@framepages {4}{5}}
+\headcommand {\slideentry {1}{1}{4}{6/6}{Core Concepts}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{1}{2}{7/7}{Highlights}{0}}
+\headcommand {\beamer@sectionpages {2}{6}}
+\headcommand {\beamer@subsectionpages {2}{6}}
+\headcommand {\sectionentry {2}{A Sample Problem: NYSC Posting}{7}{A Sample Problem: NYSC Posting}{0}}
+\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Problem Statement}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{1}{3}{8/8}{Highlights}{0}}
+\headcommand {\slideentry {2}{1}{2}{8/8}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{4}{9/9}{Highlights}{0}}
+\headcommand {\slideentry {2}{1}{3}{9/9}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{1}{5}{10/10}{Highlights}{0}}
+\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{The Constraints}}
+\headcommand {\slideentry {2}{2}{1}{10/10}{The Constraints}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{1}{6}{11/11}{Highlights}{0}}
+\headcommand {\slideentry {2}{2}{2}{11/11}{The Constraints}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{7}{12/12}{Highlights}{0}}
+\headcommand {\slideentry {2}{2}{3}{12/12}{The Constraints}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{1}{8}{13/13}{Highlights}{0}}
+\headcommand {\slideentry {2}{2}{4}{13/13}{The Constraints}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{1}{9}{14/14}{Highlights}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{1}{10}{15/15}{Highlights}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{1}{11}{16/22}{Highlights}{0}}
-\headcommand {\beamer@framepages {16}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {6}{22}}
-\headcommand {\beamer@sectionpages {6}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\gdef \inserttotalframenumber {16}}
+\headcommand {\beamer@partpages {1}{13}}
+\headcommand {\beamer@subsectionpages {10}{13}}
+\headcommand {\beamer@sectionpages {7}{13}}
+\headcommand {\beamer@documentpages {13}}
+\headcommand {\gdef \inserttotalframenumber {12}}
