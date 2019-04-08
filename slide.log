@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  24 MAR 2019 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  8 APR 2019 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,15 +971,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
  (./slide.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package rerunfilecheck Info: File `slide.out' has not changed.
+(rerunfilecheck)             Checksum: 742DCC69A1B20271A8192D879A2F1B70;412.
 
-
-Package rerunfilecheck Warning: File `slide.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slide.out':
-(rerunfilecheck)             Before: C22D3193668958FE4D0477426E438B63;419
-(rerunfilecheck)             After:  742DCC69A1B20271A8192D879A2F1B70;412.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1003,7 +997,7 @@ ype1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb>
-Output written on slide.pdf (13 pages, 274429 bytes).
+Output written on slide.pdf (13 pages, 274467 bytes).
 PDF statistics:
  531 PDF objects out of 1000 (max. 8388607)
  478 compressed objects within 5 object streams
