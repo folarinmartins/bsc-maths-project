@@ -14,13 +14,13 @@
 		\titlepage
 	\end{frame}
 
-	% \begin{frame}
-	% 	\frametitle{Outline}
-	% 	\tableofcontents
-	% \end{frame}
+	\begin{frame}
+		\frametitle{Outline}
+		\tableofcontents
+	\end{frame}
 
 	\section{Introduction}
-		\subsection{Core Concepts}
+		\subsection{Objective}
 			\begin{frame}
 				\frametitle{Introduction}
 				\begin{block}{Claim}
@@ -31,6 +31,8 @@
 					\end{enumerate}
 				\end{block}
 			\end{frame}
+			
+		\subsection{Core Concepts}
 			\begin{frame}
 				\frametitle{The Nature of Attributes}
 				\begin{definition}
@@ -40,14 +42,13 @@
 					\begin{itemize}
 						\item Age
 						\item State of Origin
-						\item Courses offered in current Semester
+						\item Courses offered in a semester
 						\item Body mass
 						\item O'Level Results
 						\item etc...
 					\end{itemize}
 				\end{example}
 			\end{frame}
-
 			\begin{frame}
 				\frametitle{Partitions}
 				\begin{definition}
@@ -61,7 +62,6 @@
 					\end{itemize}
 				\end{example}
 			\end{frame}
-
 			\begin{frame}
 				\frametitle{Constraints}
 				\vfill
@@ -106,10 +106,9 @@
 				\begin{block}{Problem Statement}
 					Given a number of graduates, we seek to post them to Service States under the following constraints:
 					\begin{enumerate}
-						\item No students should be posted to their State of Origin
-						\item No students should be posted to their States of study
+						\item No student should be posted to their State of origin
+						\item No student should be posted to their State of study
 						\item The maximum capacity of each state must not be exceeded%\footnote{This algorithm innately caters to capacity constraints}
-						\item All students should be assigned
 					\end{enumerate}
 				\end{block}		
 			\end{frame}
@@ -129,7 +128,7 @@
 						\hline
 						4 & Akwa-Ibom State & 5\\
 						\hline
-						5 & Kano State & 1\\
+						5 & Kano State & 10\\
 						\hline
 					\end{tabular}		
 				\end{center}
@@ -139,7 +138,7 @@
 				\begin{center}
 					\begin{tabular}{|c|c|c|c|}
 						\hline
-						\textbf{Serial} & \textbf{Name} & \textbf{State of Origin} & \textbf{University}\\
+						\textbf{Distance} & \textbf{Name} & \textbf{State of Origin} & \textbf{University}\\
 						\hline
 						$u_{1}$ & GR01 & Kwara(2) & OAU(1)\\
 						\hline
