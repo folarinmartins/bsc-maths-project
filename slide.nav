@@ -9,38 +9,40 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{1}{2}{3/3}{Core Concepts}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{3}{4/5}{Core Concepts}{0}}
-\headcommand {\beamer@framepages {4}{5}}
-\headcommand {\slideentry {1}{1}{4}{6/6}{Core Concepts}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {2}{6}}
-\headcommand {\beamer@subsectionpages {2}{6}}
-\headcommand {\sectionentry {2}{A Sample Problem: NYSC Posting}{7}{A Sample Problem: NYSC Posting}{0}}
-\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Problem Statement}}
-\headcommand {\slideentry {2}{1}{1}{7/7}{Problem Statement}{0}}
+\headcommand {\slideentry {1}{1}{3}{4/4}{Core Concepts}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{4}{5/6}{Core Concepts}{0}}
+\headcommand {\beamer@framepages {5}{6}}
+\headcommand {\slideentry {1}{1}{5}{7/7}{Core Concepts}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{1}{2}{8/8}{Problem Statement}{0}}
+\headcommand {\beamer@sectionpages {2}{7}}
+\headcommand {\beamer@subsectionpages {2}{7}}
+\headcommand {\sectionentry {2}{A Sample Problem: NYSC Posting}{8}{A Sample Problem: NYSC Posting}{0}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Problem Statement}}
+\headcommand {\slideentry {2}{1}{1}{8/8}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{3}{9/9}{Problem Statement}{0}}
+\headcommand {\slideentry {2}{1}{2}{9/9}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{The Constraints}}
-\headcommand {\slideentry {2}{2}{1}{10/10}{The Constraints}{0}}
+\headcommand {\slideentry {2}{1}{3}{10/10}{Problem Statement}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{2}{11/11}{The Constraints}{0}}
+\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{The Constraints}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{The Constraints}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Assignment Schedule}}
-\headcommand {\slideentry {2}{3}{1}{12/12}{Assignment Schedule}{0}}
+\headcommand {\slideentry {2}{2}{2}{12/12}{The Constraints}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {7}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\sectionentry {3}{End}{13}{End}{0}}
-\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Assignment Schedule}}
+\headcommand {\slideentry {2}{3}{1}{13/13}{Assignment Schedule}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
+\headcommand {\beamer@sectionpages {8}{13}}
 \headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\headcommand {\sectionentry {3}{End}{14}{End}{0}}
+\headcommand {\slideentry {3}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@sectionpages {14}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {13}}

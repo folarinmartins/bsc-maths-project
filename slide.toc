@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Core Concepts}{2}{0}{1}
-\beamer@sectionintoc {2}{A Sample Problem: NYSC Posting}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Problem Statement}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{The Constraints}{10}{0}{2}
-\beamer@subsectionintoc {2}{3}{Assignment Schedule}{12}{0}{2}
-\beamer@sectionintoc {3}{End}{13}{0}{3}
+\beamer@sectionintoc {2}{A Sample Problem: NYSC Posting}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Problem Statement}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{The Constraints}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Assignment Schedule}{13}{0}{2}
+\beamer@sectionintoc {3}{End}{14}{0}{3}

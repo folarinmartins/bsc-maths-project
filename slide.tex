@@ -22,6 +22,16 @@
 	\section{Introduction}
 		\subsection{Core Concepts}
 			\begin{frame}
+				\frametitle{Introduction}
+				\begin{block}{Claim}
+					Given any set of objects $U = \{u_1, u_2,...,u_n\}$ each possessing certain attributes, and a set of constraining conditions for assignment, we can:
+					\begin{enumerate}
+						\item Construct functions describing those constraints
+						\item Assign each object to a class of best fit
+					\end{enumerate}
+				\end{block}
+			\end{frame}
+			\begin{frame}
 				\frametitle{The Nature of Attributes}
 				\begin{definition}
 					An Attribute is any characteristic of a group of objects that can serve as a basis for classification
@@ -93,13 +103,15 @@
 		\subsection{Problem Statement}
 			\begin{frame}
 				\frametitle{The NYSC Posting Problem}
-				Given a number of graduates, we seek to post them to Service States under the following constraints:
-				\begin{enumerate}
-					\item No students should be posted to their State of Origin
-					\item No students should be posted to their States of study
-					\item The maximum capacity of each state must not be exceeded%\footnote{This algorithm innately caters to capacity constraints}
-					\item All students should be assigned
-				\end{enumerate}
+				\begin{block}{Problem Statement}
+					Given a number of graduates, we seek to post them to Service States under the following constraints:
+					\begin{enumerate}
+						\item No students should be posted to their State of Origin
+						\item No students should be posted to their States of study
+						\item The maximum capacity of each state must not be exceeded%\footnote{This algorithm innately caters to capacity constraints}
+						\item All students should be assigned
+					\end{enumerate}
+				\end{block}		
 			\end{frame}
 
 			\begin{frame}
