@@ -24,7 +24,7 @@
 \BOOKMARK [1][]{section.4.1}{Statement of Constraints}{chapter.4}% 24
 \BOOKMARK [1][]{section.4.2}{The States}{chapter.4}% 25
 \BOOKMARK [1][]{section.4.3}{The Graduates}{chapter.4}% 26
-\BOOKMARK [1][]{section.4.4}{States - Capacity, Weights and Cardinality}{chapter.4}% 27
+\BOOKMARK [1][]{section.4.4}{Capacities}{chapter.4}% 27
 \BOOKMARK [1][]{section.4.5}{Constraints}{chapter.4}% 28
 \BOOKMARK [1][]{section.4.6}{Populating the States}{chapter.4}% 29
 \BOOKMARK [2][]{subsection.4.6.1}{The Assignment Table}{section.4.6}% 30
@@ -32,4 +32,3 @@
 \BOOKMARK [1][]{section.5.1}{Discussion of Results}{chapter.5}% 32
 \BOOKMARK [1][]{section.5.2}{Improvement Suggestions}{chapter.5}% 33
 \BOOKMARK [1][]{section.5.3}{Further Work}{chapter.5}% 34
-\BOOKMARK [0][]{chapter*.48}{References}{}% 35

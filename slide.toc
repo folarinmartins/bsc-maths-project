@@ -1,8 +1,0 @@
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Objective}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Core Concepts}{4}{0}{1}
-\beamer@sectionintoc {2}{A Sample Problem: NYSC Posting}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Problem Statement}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{The Constraints}{11}{0}{2}
-\beamer@subsectionintoc {2}{3}{Assignment Schedule}{13}{0}{2}
-\beamer@sectionintoc {3}{End}{14}{0}{3}

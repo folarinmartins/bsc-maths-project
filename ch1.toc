@@ -57,7 +57,7 @@
 \contentsline {paragraph}{}{13}{section*.38}
 \contentsline {section}{\numberline {4.3}The Graduates}{14}{section.4.3}
 \contentsline {paragraph}{}{14}{section*.39}
-\contentsline {section}{\numberline {4.4}States - Capacity, Weights and Cardinality}{15}{section.4.4}
+\contentsline {section}{\numberline {4.4}Capacities}{15}{section.4.4}
 \contentsline {paragraph}{}{15}{section*.40}
 \contentsline {paragraph}{}{15}{section*.41}
 \contentsline {paragraph}{}{15}{section*.42}
@@ -73,4 +73,3 @@
 \contentsline {paragraph}{}{56}{section*.47}
 \contentsline {section}{\numberline {5.2}Improvement Suggestions}{56}{section.5.2}
 \contentsline {section}{\numberline {5.3}Further Work}{57}{section.5.3}
-\contentsline {chapter}{References}{58}{chapter*.48}

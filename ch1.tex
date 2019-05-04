@@ -7,7 +7,6 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{lscape}
-\linespread{1.6}
 \pagestyle{fancyplain}
 % \fancyhead[L]{\leftmark}
 % \fancyhead[C]{} 
@@ -21,13 +20,15 @@
 \date{March 2019}
 \author{Folarin, Wasiu Junior}
 \begin{document}
-    \normalsize
+	\linespread{1.6}
+	\normalsize
 	\pagenumbering{arabic}
 	\frontmatter
 	\begin{titlepage}
+		\large
 		\begin{center}
-			A SOLUTION TO ATTRIBUTE-BASED ASSIGNMENT PROBLEMS:\\
-			A PRIMER TO THE UNIVERSITY TIMETABLING PROBLEM
+			A SOLUTION TO ATTRIBUTE-BASED ASSIGNMENT PROBLEMS%:\\
+			% A PRIMER TO THE UNIVERSITY TIMETABLING PROBLEM
 		\end{center}
 		\vfill
 		\begin{center}
@@ -42,9 +43,10 @@
 		\begin{center}
 			A PROJECT SUBMITTED TO THE DEPARTMENT OF MATHEMATICS, FACULTY OF SCIENCE,\\
 			OBAFEMI AWOLOWO UNIVERSITY, ILE-IFE, NIGERIA\\
-			IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE AWARD OF 
-			BACHELOR OF SCIENCE (B.Sc Hons) DEGREE IN MATHEMATICS\\ \bigskip
-			MARCH, 2019
+			IN PARTIAL FULFILMENT OF THE REQUIREMENTS\\
+			FOR THE AWARD OF BACHELOR OF SCIENCE B. Sc.(Hons.)\\
+			DEGREE IN MATHEMATICS\\ \bigskip
+			APRIL, 2019
 		\end{center}
 	\end{titlepage}
 	\chapter[CERTIFICATION]{\centering CERTIFICATION}
@@ -54,13 +56,13 @@
 	\\[2ex]
 	Dr. B. S. Ogundare \hfill Date \hspace{4ex}
 	\\[1ex]
-	\textit{Supervisor}
+	Supervisor
 	\\[1.5in]
 	\rule{1.5in}{0.1pt} \hfill \rule{1in}{0.4pt}
 	\\[2ex]
 	Dr. O. P. Layeni \hfill Date \hspace{4ex}
 	\\[1ex]
-	\textit{Head of Department}
+	Head of Department
 	
 	\chapter[DEDICATION]{ \centering DEDICATION}
 		This work is dedicated to the Creatives among us and all those who have a deep and rather insatiable love for the world of logic, analytical reasoning and critical thinking...
@@ -68,14 +70,13 @@
 			\textit{May all the good dreams come to fruition!}
 		\end{center}
 	\chapter[ACKNOWLEDGEMENT]{ \centering ACKNOWLEDGEMENT}
-		Great acknowledgement to the Most High: The ONLY Wise One. And to my family, friends and colleagues for their much love. And specially to my Supervisor, Dr. B. S. Ogundare, for giving me the freedom and support to develop the techniques presented in this work.
+		Great acknowledgement to the Most High - The ONLY Wise One. And to my family, friends and colleagues for their much love. And specially to my Supervisor, Dr. B. S. Ogundare, for giving me the freedom and support to develop the techniques presented in this work.
 	\chapter[ABSTRACT]{ \centering ABSTRACT}
 		In this work, we take a mathematical exploration of certain assignment problems involving assigning a set of objects to non-overlapping subsets (partitions), in which assignment is based on certain properties possessed by the objects and the partitioning sets. Putting this in perspective, we attempt to solve a sample NYSC assignment problem. The algorithm is developed in this work, and certain notes on improvement cited. We also attempt to generalize this technique to the more complex University Timetabling problem.
 	% \listoffigures
 	\tableofcontents
 	\listoftables
 	\mainmatter
-    \linespread{1.6}
     \chapter{Introduction}
         \paragraph{In}
         introducing this study, we shall proceed under the following main sub-headings:
@@ -94,14 +95,14 @@
 		\section{Motivation}
 			\paragraph{The University Timetable Problem:}
 			This study, though it doesn't directly proffer a solution to this problem, it attempts to solve a simplified variant of it.
-			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating a lecture or examination timetable that caters to all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
+			\\In Universities, there are usually a good number of students taking courses from a large pool, and in varying mixes, based on Faculty and Institutional requirements. Typically, there are limited facilities such as lecture halls to assign to each course. The problem therefore arises in creating a lecture or examination timetable that caters for all the courses, eliminating, or at least minimizing stress and ensuring usability of the timetable.
 			\\Studies show that, in order to prepare a well usable timetabling system, provision has to be made for such considerations as the following parameters:
 			\begin{enumerate}
 				\item \underline{Time Clash}: A student group cannot have more than one exam at one time
 				\item \underline{Semester Clash}: Student groups from the same major but in different semesters cannot have exams at the same time
-				\item \underline{Core Papers}: A student group cannot take more than one core exam a day
 				\item \underline{Daily Maximum}: A student group cannot have more than one exam per day
-				\item \underline{Difficulty Level}: A student group cannot have two difficult exams in two consecutive days
+				\item \underline{Core Papers}: A student group cannot take more than one \textit{core} exam a day
+				\item \underline{Difficulty Level}: A student group cannot have two \textit{difficult}\footnote{Difficulty level for each course is assessed by some Institution-wide accepted metric(s)} exams in two consecutive days
 				\item \underline{Capacity}: The total number of students seating for exams in a particular time cannot exceed predefined limits
 				\item \underline{One-period Execution}: Each course must occur at the same time for all student groups
 				\item \underline{Periodic Unavailability}: Some exams may not be scheduled at particular time slots
@@ -133,10 +134,10 @@
             The foregoing problem statement is an attempt at reducing the more complex University Timetabling problem to a simpler form where the parameters involved are better appreciated. This study focuses on resolving the simpler NYSC batching problem, and makes recommendations on applying the concepts herein in tackling the more complex University Timetabling Problem.
 		\section{Objective}
             \paragraph{}
-                While this study seeks to address Assignment Problems involving objects with certain characteristics of interest, the specific aim of this study is to:
+                While this study seeks to address Assignment Problems involving objects with certain characteristics of interest, the specific objectives of this study are to:
                 \begin{enumerate}[(i)]
                     \item Develop a mathematical algorithm to solve assignment problems involving the distribution of candidate objects into non-overlapping groups, putting into considerations several constraining conditions
-                    \item Exercising this model on a sample problem
+                    \item Exercise this model on a sample problem
                     \item Sketch a path to evolving this class of solution to the University Timetabling problem, owing to its more complex constraints formulation.
 				\end{enumerate}        
 		\section{Scope of Work}
@@ -193,7 +194,7 @@
 					\paragraph{}
 						The Theory of Fuzzy Sets forms the basic framework upon which the solution proposed by this work is formulated		
             \subsection{Membership Probability or Degree}
-               Each assignable object in all cases studied in this text, belong to each assignable slot with varying degrees of membership, usually a value in the interval [0,1]. An object with a membership degree of 0 is referred to as unfit for the class, while an object have a higher value has a better fit, with the value of 1 being a perfect fit into the class in question.
+               Each candidate object in all cases studied in this text, belong to each partition with varying degrees of membership, described as a value in the unit interval [0,1]. An object with a membership degree of 0 is referred to as \textit{unfit} for the class, while an object having a higher value has a better fit, and the membership value of 1 being a perfect fit into the class in question.
             \subsection{Partition}
                Let X be a set, and $A_1, A_2,...,A_n$ be subsets of sets such that $A_1 \cap A_2 \cap \dots \cap A_n = \emptyset$ and $A_1 \cup A_2 \cup \dots \cup A_n = X$. The disjoint sets $A_1, A_2, \dots, A_n$ are referred to as a \textit{partition} of the set X
 	\chapter{Literature Review}
@@ -389,44 +390,80 @@
 			The 3rd and 4th constraints are innately adhered to by the algorithm, so we'll focus only on constructing Constraint Functions for the first two constraints.
 		\section{The States}
 			\paragraph{}
-				The States in this problem stand for the partitions to be filled. In order to simplify the problem, we focus only on 5 states and assume each of the 20 graduates schooled in one of these and originated from one of these states. The data represented here is in the form \{State,Capacity\}
-				\begin{enumerate}
-					\item $p_1\colon$ \{Osun State, 3\}
-					\item $p_2\colon$ \{Kwara State, 2\}
-					\item $p_3\colon$ \{Enugu State, 1\}
-					\item $p_4\colon$ \{Akwa-Ibom State, 5\}
-					\item $p_5\colon$ \{Kano State, 10\}
-				\end{enumerate}
+				The States in this problem stand for the partitions to be filled. In order to simplify the problem, we focus only on 5 states and assume each of the 20 graduates schooled, and originated from one of these states:
+				% \begin{center}
+					\begin{longtable}{|c|c|c|c|c|}
+						\hline
+						\textbf{$\Delta$s} & \textbf{State} & \textbf{Capacity} \\
+						\hline
+						1 & Osun State & 3\\
+						\hline
+						2 & Kwara State & 2\\
+						\hline
+						3 & Enugu State & 1\\
+						\hline
+						4 & Akwa-Ibom State & 5\\
+						\hline
+						5 & Kano State & 10\\
+						\hline
+						\caption{Showing the States\label{ex:tablex}}
+					\end{longtable}		
+				% \end{center}
 		\section{The Graduates}
 			\paragraph{}
-				Each graduate has a number of characteristics which include names, State of origin, and Alma Mater. Here is our list of 20 graduates which we shall consider in this sample problem - \{Name,State of Origin,School\}:
-				\begin{enumerate}[1.]
-					\item $u_1\colon$ \{GR01, Kwara(2), OAU(1)\}
-					\item $u_2\colon$ \{GR02, Kwara(2), BUK(5)\}
-					\item $u_3\colon$ \{GR03, Kwara(2), NSUKKA(3)\}
-					\item $u_4\colon$ \{GR04, Kwara(2), UNILORIN(2)\}
-					\item $u_5\colon$ \{GR05, Akwa-Ibom(4), OAU(1)\}
-					\item $u_6\colon$ \{GR06, Akwa-Ibom(4), BUK(5)\}
-					\item $u_7\colon$ \{GR07, Akwa-Ibom(4), NSUKKA(3)\}
-					\item $u_8\colon$ \{GR08, Akwa-Ibom(4), UNILORIN(2)\}
-					\item $u_9\colon$ \{GR09, Osun(1), OAU(1)\}
-					\item $u_{10}\colon$ \{GR10, Osun(1), BUK(5)\}
-					\item $u_{11}\colon$ \{GR11, Osun(1), NSUKKA(3)\}
-					\item $u_{12}\colon$ \{GR12, Osun(1), UNILORIN(2)\}
-					\item $u_{13}\colon$ \{GR13, Kano(5), OUI(1)\}
-					\item $u_{14}\colon$ \{GR14, Kano(5), NSUKKA(3)\}
-					\item $u_{15}\colon$ \{GR15, Kano(5), UNILORIN(2)\}
-					\item $u_{16}\colon$ \{GR16, Kano(5), AKSU(4)\}
-					\item $u_{17}\colon$ \{GR17, Enugu(3), UNIOSUN(1)\}
-					\item $u_{18}\colon$ \{GR18, Enugu(3), BUK(5)\}
-					\item $u_{19}\colon$ \{GR19, Enugu(3), UNILORIN(2)\}
-					\item $u_{20}\colon$ \{GR20, Enugu(3), AKSU(4)\}
-				\end{enumerate}
-		\section{States - Capacity, Weights and Cardinality}		
+				Each graduate has a number of characteristics which include names, State of origin, and Alma Mater. Here is our list of 20 graduates which we shall consider in this sample problem:
+				\begin{longtable}{|c|c|c|c|c|}
+					\hline
+					\textbf{Serial} & \textbf{Name} & \textbf{State of Origin} & \textbf{College} \\
+					\hline
+					$u_{1}$ & GR01 & Kwara & OAU, Osun\\
+					\hline
+					$u_{2}$ & GR02 & Kwara & BUK, Kano\\
+					\hline
+					$u_{3}$ & GR03 & Kwara & NSUKKA, Enugu\\
+					\hline
+					$u_{4}$ & GR04 & Kwara & UNILORIN, Kwara\\
+					\hline
+					$u_{5}$ & GR05 & Akwa-Ibom & OAU, Osun\\
+					\hline
+					$u_{6}$ & GR06 & Akwa-Ibom & BUK, Kano\\
+					\hline
+					$u_{7}$ & GR07 & Akwa-Ibom & NSUKKA, Enugu\\
+					\hline
+					$u_{8}$ & GR08 & Akwa-Ibom & UNILORIN, Kwara\\
+					\hline
+					$u_{9}$ & GR09 & Osun & OAU, Osun\\
+					\hline
+					$u_{10}$ & GR10 & Osun & BUK, Kano\\
+					\hline
+					$u_{11}$ & GR11 & Osun & NSUKKA, Enugu\\
+					\hline
+					$u_{12}$ & GR12 & Osun & UNILORIN, Kwara\\
+					\hline
+					$u_{13}$ & GR13 & Kano & OUI, Osun\\
+					\hline
+					$u_{14}$ & GR14 & Kano & NSUKKA, Enugu\\
+					\hline
+					$u_{15}$ & GR15 & Kano & UNILORIN, Kwara \\
+					\hline
+					$u_{16}$ & GR16 & Kano & AKSU, Akwa-Ibom\\
+					\hline
+					$u_{17}$ & GR17 & Enugu & UNIOSUN, Osun\\
+					\hline
+					$u_{18}$ & GR18 & Enugu & BUK, Kano\\
+					\hline
+					$u_{19}$ & GR19 & Enugu & UNILORIN, Kwara\\
+					\hline
+					$u_{20}$ & GR20 & Enugu & AKSU, Akwa-Ibom\\
+					\hline
+					\caption{Showing the Graduates\label{ex:tablex}}
+					% \endfoot
+				\end{longtable}	
+		\section{Capacities}		
 			\paragraph{}
 				As indicated in the States data, each state has a capacity, $j_i$. So in this case,
 				\begin{align}
-					J(p_1) &= j_1 = 3 \\
+					J(p_1) &= j_1 = 3\\
 					J(p_2) &= j_2 = 2\\
 					J(p_3) &= j_3 = 1\\
 					J(p_4) &= j_4 = 5\\
