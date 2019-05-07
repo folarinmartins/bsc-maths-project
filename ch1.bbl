@@ -1,0 +1,203 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Arjang%
+\ \BBA {} Saul%
+}{%
+Arjang%
+\ \BBA {} Saul%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+arjang}
+\APACinsertmetastar {%
+arjang}%
+\begin{APACrefauthors}%
+Arjang, A\BPBI A.%
+\BCBT {}\ \BBA {} Saul, I\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Profiles in Operations Research - Pioneers and
+  Innovators} {Profiles in operations research - pioneers and
+  innovators}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Series in Operations Research \&
+  Management Science}{147}{}{892}.
+\newblock
+\begin{APACrefDOI} \doi{DOI 10.1007/978-1-4419-6281-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dantzig%
+\ \BBA {} Thapa%
+}{%
+Dantzig%
+\ \BBA {} Thapa%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+dantzig}
+\APACinsertmetastar {%
+dantzig}%
+\begin{APACrefauthors}%
+Dantzig, G\BPBI B.%
+\BCBT {}\ \BBA {} Thapa, M\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {Linear Programming 1: Introduction} {Linear programming 1:
+  Introduction}.
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer-Verlag}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dantzig%
+\ \BBA {} Thapa%
+}{%
+Dantzig%
+\ \BBA {} Thapa%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+dantzig2}
+\APACinsertmetastar {%
+dantzig2}%
+\begin{APACrefauthors}%
+Dantzig, G\BPBI B.%
+\BCBT {}\ \BBA {} Thapa, M\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2003}.
+\newblock
+\APACrefbtitle {Linear Programming 2: Theory and Extensions} {Linear
+  programming 2: Theory and extensions}.
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer-Verlag}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+ITC%
+}{%
+ITC%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+itc2019}
+\APACinsertmetastar {%
+itc2019}%
+\begin{APACrefauthors}%
+ITC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {https://www.itc2019.org/home.} {https://www.itc2019.org/home.}
+\newblock
+\begin{APACrefURL} \url{https://www.itc2019.org/home} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+}{%
+Lee%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+fuz}
+\APACinsertmetastar {%
+fuz}%
+\begin{APACrefauthors}%
+Lee, K\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {First Course on Fuzzy Set Theory and Applications} {First
+  course on fuzzy set theory and applications}.
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer-Verlag}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sanchetti%
+\ \BBA {} Kapoor%
+}{%
+Sanchetti%
+\ \BBA {} Kapoor%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+stats}
+\APACinsertmetastar {%
+stats}%
+\begin{APACrefauthors}%
+Sanchetti, D.%
+\BCBT {}\ \BBA {} Kapoor, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\newblock
+\APACrefbtitle {Statistics (Theory, Methods and Applications)} {Statistics
+  (theory, methods and applications)}.
+\newblock
+\APACaddressPublisher{New Delhi, India}{Sultan Chand and Sons}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schrijver%
+}{%
+Schrijver%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+schrijver}
+\APACinsertmetastar {%
+schrijver}%
+\begin{APACrefauthors}%
+Schrijver, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{08}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the History of Combinatorial Optimization (Till
+  1960)} {On the history of combinatorial optimization (till 1960)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Handbooks in Operations Research and Management
+  Science}{12}{}{}.
+\newblock
+\begin{APACrefDOI} \doi{DOI 10.1016/S0927-0507(05)12001-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schrijver%
+}{%
+Schrijver%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+schrijver2}
+\APACinsertmetastar {%
+schrijver2}%
+\begin{APACrefauthors}%
+Schrijver, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {A Course in Combinatorial Optimization} {A course in
+  combinatorial optimization}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
