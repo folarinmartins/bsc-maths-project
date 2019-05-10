@@ -25,9 +25,7 @@ Arjang, A\BPBI A.%
   innovators}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{International Series in Operations Research \&
-  Management Science}{147}{}{892}.
-\newblock
-\begin{APACrefDOI} \doi{DOI 10.1007/978-1-4419-6281-2} \end{APACrefDOI}
+  Management Science}{147}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -198,6 +196,8 @@ Schrijver, A.%
 \newblock
 \APACrefbtitle {A Course in Combinatorial Optimization} {A course in
   combinatorial optimization}.
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer-Verlag}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

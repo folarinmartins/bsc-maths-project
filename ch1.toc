@@ -67,14 +67,14 @@
 \contentsline {paragraph}{}{19}{section*.46}
 \contentsline {section}{\numberline {4.5}Constraints}{19}{section.4.5}
 \contentsline {paragraph}{Constraint A, $\mu _A$: No student should be posted to their State of Origin}{19}{section*.47}
-\contentsline {paragraph}{Constraint B, $\mu _B$: No student should be posted to their State of Studies}{40}{section*.48}
-\contentsline {section}{\numberline {4.6}Populating the States}{64}{section.4.6}
-\contentsline {paragraph}{}{64}{section*.49}
-\contentsline {subsection}{\numberline {4.6.1}The Assignment Table}{64}{subsection.4.6.1}
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{66}{chapter.5}
-\contentsline {section}{\numberline {5.1}Discussion of Results}{66}{section.5.1}
-\contentsline {paragraph}{}{66}{section*.50}
-\contentsline {section}{\numberline {5.2}Improvement Suggestions}{66}{section.5.2}
-\contentsline {section}{\numberline {5.3}Further Work}{67}{section.5.3}
-\contentsline {section}{References}{68}{section*.51}
-\contentsline {chapter}{References}{68}{section*.51}
+\contentsline {paragraph}{Constraint B, $\mu _B$: No student should be posted to their State of Studies}{29}{section*.48}
+\contentsline {section}{\numberline {4.6}Populating the States}{42}{section.4.6}
+\contentsline {paragraph}{}{42}{section*.49}
+\contentsline {subsection}{\numberline {4.6.1}The Assignment Table}{42}{subsection.4.6.1}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Discussion of Results}{44}{section.5.1}
+\contentsline {paragraph}{}{44}{section*.50}
+\contentsline {section}{\numberline {5.2}Improvement Suggestions}{44}{section.5.2}
+\contentsline {section}{\numberline {5.3}Further Work}{45}{section.5.3}
+\contentsline {section}{References}{46}{section*.51}
+\contentsline {chapter}{References}{46}{section*.51}
